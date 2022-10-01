@@ -48,5 +48,6 @@
 #define __NVME_IO_CMD_H_
 
 void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd);
+#define TEST_MODE_FUA                   2
 
 #endif	//__NVME_IO_CMD_H_

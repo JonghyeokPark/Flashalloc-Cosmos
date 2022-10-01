@@ -85,7 +85,98 @@ void InitDataBuf()
 		tempDataBufMapPtr->tempDataBuf[bufEntry].blockingReqTail =  REQ_SLOT_TAG_NONE;
 }
 
+// (jhpark): add
+unsigned int CheckDataBufHitForShare(unsigned int logicalSliceAddr)
+{
+	unsigned int bufEntry;
+
+	bufEntry = dataBufHashTablePtr->dataBufHash[FindDataBufHashTableEntry(logicalSliceAddr)].headEntry;
+
+	for(; bufEntry != DATA_BUF_NONE; bufEntry = dataBufMapPtr->dataBuf[bufEntry].hashNextEntry)
+	{
+		if(dataBufMapPtr->dataBuf[bufEntry].logicalSliceAddr == logicalSliceAddr)
+		{
+			return bufEntry;
+		}
+	}
+	return DATA_BUF_FAIL;
+}
+
+unsigned int AllocateDataBufHitforShare(unsigned int logicalSliceAddr)
+{
+	unsigned int bufEntry;
+
+	bufEntry = dataBufHashTablePtr->dataBufHash[FindDataBufHashTableEntry(logicalSliceAddr)].headEntry;
+
+	while(bufEntry != DATA_BUF_NONE)
+	{
+		if(dataBufMapPtr->dataBuf[bufEntry].logicalSliceAddr == logicalSliceAddr)
+		{
+			if((dataBufMapPtr->dataBuf[bufEntry].nextEntry != DATA_BUF_NONE) && (dataBufMapPtr->dataBuf[bufEntry].prevEntry != DATA_BUF_NONE))
+			{
+				dataBufMapPtr->dataBuf[dataBufMapPtr->dataBuf[bufEntry].prevEntry].nextEntry = dataBufMapPtr->dataBuf[bufEntry].nextEntry;
+				dataBufMapPtr->dataBuf[dataBufMapPtr->dataBuf[bufEntry].nextEntry].prevEntry = dataBufMapPtr->dataBuf[bufEntry].prevEntry;
+			}
+			else if((dataBufMapPtr->dataBuf[bufEntry].nextEntry == DATA_BUF_NONE) && (dataBufMapPtr->dataBuf[bufEntry].prevEntry != DATA_BUF_NONE))
+			{
+				dataBufMapPtr->dataBuf[dataBufMapPtr->dataBuf[bufEntry].prevEntry].nextEntry = DATA_BUF_NONE;
+				dataBufLruList.tailEntry = dataBufMapPtr->dataBuf[bufEntry].prevEntry;
+			}
+			else if((dataBufMapPtr->dataBuf[bufEntry].nextEntry != DATA_BUF_NONE) && (dataBufMapPtr->dataBuf[bufEntry].prevEntry== DATA_BUF_NONE))
+			{
+				dataBufMapPtr->dataBuf[dataBufMapPtr->dataBuf[bufEntry].nextEntry].prevEntry  = DATA_BUF_NONE;
+				dataBufLruList.headEntry = dataBufMapPtr->dataBuf[bufEntry].nextEntry;
+			}
+			else
+			{
+				dataBufLruList.tailEntry = DATA_BUF_NONE;
+				dataBufLruList.headEntry = DATA_BUF_NONE;
+			}
+
+			if(dataBufLruList.headEntry != DATA_BUF_NONE)
+			{
+				dataBufMapPtr->dataBuf[bufEntry].prevEntry = DATA_BUF_NONE;
+				dataBufMapPtr->dataBuf[bufEntry].nextEntry = dataBufLruList.headEntry;
+				dataBufMapPtr->dataBuf[dataBufLruList.headEntry].prevEntry = bufEntry;
+				dataBufLruList.headEntry = bufEntry;
+			}
+			else
+			{
+				dataBufMapPtr->dataBuf[bufEntry].prevEntry = DATA_BUF_NONE;
+				dataBufMapPtr->dataBuf[bufEntry].nextEntry = DATA_BUF_NONE;
+				dataBufLruList.headEntry = bufEntry;
+				dataBufLruList.tailEntry = bufEntry;
+			}
+
+//			// (jhpark): make it clean!
+//			dataBufMapPtr->dataBuf[bufEntry].dirty = DATA_BUF_CLEAN;
+//
+			return bufEntry;
+		}
+		else
+			bufEntry = dataBufMapPtr->dataBuf[bufEntry].hashNextEntry;
+	}
+
+	return DATA_BUF_FAIL;
+}
 unsigned int CheckDataBufHit(unsigned int reqSlotTag)
+{
+	unsigned int bufEntry, logicalSliceAddr;
+
+	logicalSliceAddr = reqPoolPtr->reqPool[reqSlotTag].logicalSliceAddr;
+	bufEntry = dataBufHashTablePtr->dataBufHash[FindDataBufHashTableEntry(logicalSliceAddr)].headEntry;
+
+	for(; bufEntry != DATA_BUF_NONE; bufEntry = dataBufMapPtr->dataBuf[bufEntry].hashNextEntry)
+	{
+		if(dataBufMapPtr->dataBuf[bufEntry].logicalSliceAddr == logicalSliceAddr)
+		{
+			return bufEntry;
+		}
+	}
+	return DATA_BUF_FAIL;
+}
+
+unsigned int AllocateDataBufHit(unsigned int reqSlotTag)
 {
 	unsigned int bufEntry, logicalSliceAddr;
 
@@ -141,7 +232,7 @@ unsigned int CheckDataBufHit(unsigned int reqSlotTag)
 	return DATA_BUF_FAIL;
 }
 
-unsigned int AllocateDataBuf()
+unsigned int AllocateDataBufMiss(void)
 {
 	unsigned int evictedEntry = dataBufLruList.tailEntry;
 

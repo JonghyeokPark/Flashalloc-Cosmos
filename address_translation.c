@@ -201,7 +201,7 @@ void RemapBadBlock()
 			maxBadBlockCount = badBlockCount[dieNo];
 	}
 
-	mbPerbadBlockSpace = maxBadBlockCount * USER_DIES * MB_PER_BLOCK;
+	mbPerbadBlockSpace = (maxBadBlockCount * USER_DIES * KB_PER_BLOCK)/(1024);
 }
 
 void InitDieMap()
@@ -279,6 +279,8 @@ void ReadBadBlockTable(unsigned int tempBbtBufAddr[], unsigned int tempBbtBufEnt
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 			reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr = tempBbtBufAddr[dieNo] + loop * tempBbtBufEntrySize;
 
@@ -292,7 +294,7 @@ void ReadBadBlockTable(unsigned int tempBbtBufAddr[], unsigned int tempBbtBufEnt
 
 		tempPage++;
 		loop++;
-		dataSize -= BYTES_PER_DATA_REGION_OF_PAGE;
+		dataSize -= BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB;
 	}
 
 	SyncAllLowLevelReqDone();
@@ -324,6 +326,8 @@ void FindBadBlock(unsigned char dieState[], unsigned int tempBbtBufAddr[], unsig
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+				reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+				reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 				reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr = tempReadBufAddr[dieNo];
 
@@ -355,6 +359,8 @@ void FindBadBlock(unsigned char dieState[], unsigned int tempBbtBufAddr[], unsig
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 					reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr = tempReadBufAddr[dieNo];
 
@@ -422,6 +428,8 @@ void SaveBadBlockTable(unsigned char dieState[], unsigned int tempBbtBufAddr[], 
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = Vdie2PchTranslation(dieNo);
 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = Vdie2PwayTranslation(dieNo);
@@ -441,6 +449,8 @@ void SaveBadBlockTable(unsigned char dieState[], unsigned int tempBbtBufAddr[], 
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+				reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+				reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 				reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr = tempBbtBufAddr[dieNo] + loop * tempBbtBufEntrySize;
 
@@ -453,8 +463,8 @@ void SaveBadBlockTable(unsigned char dieState[], unsigned int tempBbtBufAddr[], 
 			}
 
 		loop++;
-		dataSize++;
-		dataSize -= BYTES_PER_DATA_REGION_OF_PAGE;
+		tempPage++;
+		dataSize -= BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB;
 	}
 
 	SyncAllLowLevelReqDone();
@@ -476,7 +486,7 @@ void RecoverBadBlockTable(unsigned int tempBufAddr)
 
 	//data buffer allocation
 	tempBbtBufBaseAddr = tempBufAddr;
-	tempBbtBufEntrySize = BYTES_PER_DATA_REGION_OF_PAGE + BYTES_PER_SPARE_REGION_OF_PAGE;
+	tempBbtBufEntrySize = BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB + BYTES_PER_SPARE_REGION_OF_PAGE;
 	tempReadBufBaseAddr = tempBbtBufBaseAddr + USER_DIES * USED_PAGES_FOR_BAD_BLOCK_TABLE_PER_DIE * tempBbtBufEntrySize;
 	tempReadBufEntrySize = BYTES_PER_NAND_ROW;
 	for(dieNo = 0; dieNo < USER_DIES; dieNo++)
@@ -549,6 +559,8 @@ void EraseTotalBlockSpace()
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = Vdie2PchTranslation(dieNo);
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = Vdie2PwayTranslation(dieNo);
@@ -557,7 +569,6 @@ void EraseTotalBlockSpace()
 
 			SelectLowLevelReqQ(reqSlotTag);
 		}
-
 
 	SyncAllLowLevelReqDone();
 	xil_printf("Done.\r\n");
@@ -582,6 +593,7 @@ void EraseUserBlockSpace()
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 				reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+				reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 
 				reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = Vorg2VsaTranslation(dieNo, blockNo, 0);
 
@@ -650,6 +662,10 @@ unsigned int AddrTransWrite(unsigned int logicalSliceAddr)
 		InvalidateOldVsa(logicalSliceAddr);
 
 		virtualSliceAddr = FindFreeVirtualSlice();
+//		request_write++;
+//		if(request_write % 50000 == 0){
+//			preentgcstatus();
+//		}
 
 		logicalSliceMapPtr->logicalSlice[logicalSliceAddr].virtualSliceAddr = virtualSliceAddr;
 		virtualSliceMapPtr->virtualSlice[virtualSliceAddr].logicalSliceAddr = logicalSliceAddr;
@@ -792,6 +808,8 @@ void EraseBlock(unsigned int dieNo, unsigned int blockNo)
 	reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 	reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
 	reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+	reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+	reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 	reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = Vorg2VsaTranslation(dieNo, blockNo, 0);
 	reqPoolPtr->reqPool[reqSlotTag].nandInfo.programmedPageCnt = virtualBlockMapPtr->block[dieNo][blockNo].currentPage;
 
@@ -889,7 +907,7 @@ void UpdateBadBlockTableForGrownBadBlock(unsigned int tempBufAddr)
 
 	//data buffer allocation
 	tempBbtBufBaseAddr = tempBufAddr;
-	tempBbtBufEntrySize = BYTES_PER_DATA_REGION_OF_PAGE + BYTES_PER_SPARE_REGION_OF_PAGE;
+	tempBbtBufEntrySize = BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB + BYTES_PER_SPARE_REGION_OF_PAGE;
 	for(dieNo = 0; dieNo < USER_DIES; dieNo++)
 		tempBbtBufAddr[dieNo] = tempBbtBufBaseAddr + dieNo * USED_PAGES_FOR_BAD_BLOCK_TABLE_PER_DIE * tempBbtBufEntrySize;
 
@@ -917,4 +935,3 @@ void UpdateBadBlockTableForGrownBadBlock(unsigned int tempBufAddr)
 	//update bad block tables in flash
 	SaveBadBlockTable(dieState, tempBbtBufAddr, tempBbtBufEntrySize);
 }
-

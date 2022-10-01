@@ -114,7 +114,9 @@ void identify_controller(unsigned int pBuffer)
 
 	identifyCNTL->ONCS.supportsCompare = 0x0;
 	identifyCNTL->ONCS.supportsWriteUncorrectable = 0x0;
-	identifyCNTL->ONCS.supportsDataSetManagement = 0x0;
+	// (jhpark): support DSM (for TRIM) // original = 0
+	identifyCNTL->ONCS.supportsDataSetManagement = 0x1;
+//	identifyCNTL->ONCS.supportsDataSetManagement = 0x0;
 
 	identifyCNTL->FUSES.supportsCompareWrite = 0x0;
 
@@ -161,6 +163,10 @@ void identify_namespace(unsigned int pBuffer)
 	identifyNS->NUSE[1] = STORAGE_CAPACITY_H;
 
 	identifyNS->NSFEAT.supportsThinProvisioning = 0x0;
+	// (jhpark): TRIM support
+//	identifyNS->NSFEAT.supportsDeallocated = 0x0;
+	identifyNS->NSFEAT.supportsDeallocated = 0x1;
+	identifyNS->NSFEAT.supportsNawunNawupf = 0x0;
 
 	identifyNS->NLBAF = 0x0;
 

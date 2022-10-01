@@ -80,6 +80,8 @@ void SelectiveGetFromNvmeDmaReqQ(unsigned int regSlotTag);
 void PutToNandReqQ(unsigned int reqSlotTag, unsigned chNo, unsigned wayNo);
 void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStatus, unsigned int reqCode);
 
+void process_flush_request(void);
+
 extern P_REQ_POOL reqPoolPtr;
 extern FREE_REQUEST_QUEUE freeReqQ;
 extern SLICE_REQUEST_QUEUE sliceReqQ;

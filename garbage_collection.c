@@ -49,13 +49,18 @@
 #include <assert.h>
 #include "memory_map.h"
 
+#include "ftl_stats.h"
+extern struct stats_ftl stats_ftl;
 P_GC_VICTIM_MAP gcVictimMapPtr;
+unsigned int gcount, additional_write;
+extern unsigned int request_write;
 
 void InitGcVictimMap()
 {
 	int dieNo, invalidSliceCnt;
 
 	gcVictimMapPtr = (P_GC_VICTIM_MAP) GC_VICTIM_MAP_ADDR;
+	gcount = 0;
 
 	for(dieNo=0 ; dieNo<USER_DIES; dieNo++)
 	{
@@ -72,8 +77,12 @@ void GarbageCollection(unsigned int dieNo)
 {
 	unsigned int victimBlockNo, pageNo, virtualSliceAddr, logicalSliceAddr, dieNoForGcCopy, reqSlotTag;
 
+	gcount++;
+
 	victimBlockNo = GetFromGcVictimList(dieNo);
 	dieNoForGcCopy = dieNo;
+
+	g_ftl_num_gc++;
 
 	if(virtualBlockMapPtr->block[dieNo][victimBlockNo].invalidSliceCnt != SLICES_PER_BLOCK)
 	{
@@ -97,10 +106,14 @@ void GarbageCollection(unsigned int dieNo)
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
+
 					reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = AllocateTempDataBuf(dieNo);
 					UpdateTempDataBufEntryInfoBlockingReq(reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry, reqSlotTag);
 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = virtualSliceAddr;
 
+                    stats_ftl.page_gc_read_cnt++;
 					SelectLowLevelReqQ(reqSlotTag);
 
 					//write
@@ -115,6 +128,9 @@ void GarbageCollection(unsigned int dieNo)
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_OFF;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
+
 					reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = AllocateTempDataBuf(dieNo);
 					UpdateTempDataBufEntryInfoBlockingReq(reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry, reqSlotTag);
 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = FindFreeVirtualSliceForGc(dieNoForGcCopy, victimBlockNo);
@@ -122,7 +138,9 @@ void GarbageCollection(unsigned int dieNo)
 					logicalSliceMapPtr->logicalSlice[logicalSliceAddr].virtualSliceAddr = reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr;
 					virtualSliceMapPtr->virtualSlice[reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr].logicalSliceAddr = logicalSliceAddr;
 
+                    stats_ftl.page_gc_program_cnt++;
 					SelectLowLevelReqQ(reqSlotTag);
+					additional_write++;
 				}
 		}
 	}
@@ -211,3 +229,8 @@ void SelectiveGetFromGcVictimList(unsigned int dieNo, unsigned int blockNo)
 	}
 }
 
+void preentgcstatus(){
+	if(gcount > 0){
+		xil_printf("%d %d %d\n", gcount, additional_write, request_write);
+	}
+}

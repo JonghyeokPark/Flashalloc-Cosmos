@@ -70,11 +70,50 @@
 
 volatile NVME_CONTEXT g_nvmeTask;
 
+extern struct io_flush_queue g_io_flush_queue;
+
+static void __check_finish_flush_req(void)
+{
+	struct io_flush_req *flush_req;
+
+	flush_req = g_io_flush_queue.io_flush_req  + g_io_flush_queue.tail;
+	assert(flush_req->state == FLUSH_PROGRESS);
+
+	if (!flush_req->count) {
+		set_auto_nvme_cpl(flush_req->tag, flush_req->specific,
+						  flush_req->status_field_word);
+		flush_req->state = FLUSH_NONE;
+
+		g_io_flush_queue.tail = (g_io_flush_queue.tail + 1) %
+								FLUSH_REQ_SIZE;
+	}
+}
+
+static void init_flush_queue(void)
+{
+	int i = 0;
+
+	g_io_flush_queue.head =  g_io_flush_queue.tail = 0;
+	for (i = 0; i < FLUSH_REQ_SIZE; i++) {
+		struct io_flush_req *flush_req;
+
+		flush_req = g_io_flush_queue.io_flush_req + i;
+
+		flush_req->state = FLUSH_NONE;
+		flush_req->count = 0;
+		flush_req->tag = 0;
+		flush_req->specific = 0;
+		flush_req->status_field_word = 0;
+	}
+}
+
 void nvme_main()
 {
 	unsigned int exeLlr;
 	unsigned int rstCnt = 0;
 
+	xil_printf("%s:%d flush queue reset\r\n", __func__, __LINE__);
+	init_flush_queue();
 	xil_printf("!!! Wait until FTL reset complete !!! \r\n");
 
 	InitFTL();
@@ -114,6 +153,7 @@ void nvme_main()
 				{
 					handle_nvme_io_cmd(&nvmeCmd);
 					ReqTransSliceToLowLevel();
+					process_flush_request();
 					exeLlr=0;
 				}
 			}
@@ -189,6 +229,8 @@ void nvme_main()
 			CheckDoneNvmeDmaReq();
 			SchedulingNandReq();
 		}
+		if (g_io_flush_queue.head != g_io_flush_queue.tail)
+			__check_finish_flush_req();
 	}
 }
 

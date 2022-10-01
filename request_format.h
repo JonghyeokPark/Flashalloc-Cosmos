@@ -69,6 +69,8 @@
 #define REQ_CODE_FLUSH				0x0F
 #define REQ_CODE_RxDMA				0x10
 #define REQ_CODE_TxDMA				0x20
+// (jhpark)
+#define REQ_CODE_DEALLOCATE			0x30
 
 #define REQ_CODE_OCSSD_PHY_TYPE_BASE	0xA0
 #define REQ_CODE_OCSSD_PHY_WRITE		0xA0
@@ -96,6 +98,12 @@
 #define REQ_OPT_ROW_ADDR_DEPENDENCY_NONE	0
 #define REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK 	1
 
+#define REQ_OPT_FORCE_UNIT_ACCESS_OFF			0
+#define REQ_OPT_FORCE_UNIT_ACCESS_ON 			1
+
+#define REQ_INFO_ISSUED_FLAG_OFF		0
+#define REQ_INFO_ISSUED_FLAG_ON 		1
+
 #define REQ_OPT_BLOCK_SPACE_MAIN	0
 #define REQ_OPT_BLOCK_SPACE_TOTAL 	1
 
@@ -114,7 +122,8 @@ typedef struct _NVME_DMA_INFO{
 	unsigned int nvmeBlockOffset : 16;
 	unsigned int numOfNvmeBlock : 16;
 	unsigned int reqTail	: 8;
-	unsigned int reserved0 : 8;
+	unsigned int issuedFlag : 1;
+	unsigned int reserved0 : 7;
 	unsigned int overFlowCnt;
 } NVME_DMA_INFO, *P_NVME_DMA_INFO;
 
@@ -145,8 +154,10 @@ typedef struct _REQ_OPTION{
 	unsigned int nandEcc : 1;
 	unsigned int nandEccWarning : 1;
 	unsigned int rowAddrDependencyCheck : 1;
+	unsigned int forceUnitAccess : 1;
 	unsigned int blockSpace : 1;
-	unsigned int reserved0 : 24;
+	unsigned int be_flush_req:1;
+	unsigned int reserved0 : 22;
 } REQ_OPTION, *P_REQ_OPTION;
 
 
@@ -156,6 +167,8 @@ typedef struct _SSD_REQ_FORMAT
 	unsigned int reqQueueType : 4;
 	unsigned int reqCode : 8;
 	unsigned int nvmeCmdSlotTag : 16;
+	unsigned int qID			:16;
+	unsigned int cID			:16;
 
 	unsigned int logicalSliceAddr;
 

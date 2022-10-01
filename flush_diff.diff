@@ -1,0 +1,369 @@
+diff --git a/ftl_config.c b/ftl_config.c
+index 1669ed3..d17ca89 100644
+--- a/ftl_config.c
++++ b/ftl_config.c
+@@ -94,6 +94,10 @@ void InitFTL()
+ 	else
+ 		storageCapacity_L = (MB_PER_SSD - (MB_PER_MIN_FREE_BLOCK_SPACE + MB_PER_OVER_PROVISION_BLOCK_SPACE)) * ((1024*1024) / BYTES_PER_NVME_BLOCK);
+ 
++    xil_printf("%s:%d CH %u (%u)  WAY %u (%u)\r\n", __func__, __LINE__, 
++               USER_CHANNELS, NSC_MAX_CHANNELS,
++               USER_WAYS, NSC_MAX_WAYS);
++
+ 	xil_printf("[ storage capacity %d MB ]\r\n", storageCapacity_L / ((1024*1024) / BYTES_PER_NVME_BLOCK));
+ 	xil_printf("[%d Byte/data region of page]\r\n", BYTES_PER_DATA_REGION_OF_PAGE);
+ 	xil_printf("[ ftl configuration complete. ]\r\n");
+diff --git a/ftl_config.h b/ftl_config.h
+index b53cc30..f34ef3e 100644
+--- a/ftl_config.h
++++ b/ftl_config.h
+@@ -201,10 +201,15 @@
+ 
+ //************************************************************************
+ #define	BITS_PER_FLASH_CELL		SLC_MODE	//user configurable factor
+-#define	USER_BLOCKS_PER_LUN		32		//user configurable factor
+-//LUN == PLANE. ÄÚ½º¸ð½º º¸µåÀÇ °æ¿ì, CHIP ÇÏ³ª¿¡ ÇÑ °³ÀÇ DIE°¡ Á¸ÀçÇÏ°í DIE ¾È¿¡ ÇÏ³ªÀÇ LUNÀÌ Á¸ÀçÇÔ.
+-//À§ÀÇ º¯¼ö´Â LUN ÇÏ³ª¿¡ ¼ÓÇÑ BLOCKÀÇ ¼ö Áï, CHIPÇÏ³ª¿¡ µé¾î°¥ BLOCKÀÇ ¼ö¸¦ Á¤ÇÏ´Â º¯¼ö
+-#define	USER_CHANNELS		(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
++#define	USER_BLOCKS_PER_LUN		577	        //user configurable factor
++// 32 = 1.73GiB
++// 580 = 33.1GiB (8683520)
++// 572 = 32.1GiB 
++//LUN == PLANE. ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½, CHIP ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ DIEï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ DIE ï¿½È¿ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ LUNï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
++//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ LUN ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ BLOCKï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½, CHIPï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½î°¥ BLOCKï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½
++//#define	USER_CHANNELS		(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
++//#define	USER_WAYS				8			//user configurable factor
++#define	USER_CHANNELS		    4		//user configurable factor
+ #define	USER_WAYS				8			//user configurable factor
+ //************************************************************************
+ 
+diff --git a/garbage_collection.c b/garbage_collection.c
+index 7328382..e20fe83 100644
+--- a/garbage_collection.c
++++ b/garbage_collection.c
+@@ -107,6 +107,8 @@ void GarbageCollection(unsigned int dieNo)
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
++					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
++
+ 					reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = AllocateTempDataBuf(dieNo);
+ 					UpdateTempDataBufEntryInfoBlockingReq(reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry, reqSlotTag);
+ 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = virtualSliceAddr;
+@@ -127,6 +129,8 @@ void GarbageCollection(unsigned int dieNo)
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+ 					reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
++					reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
++
+ 					reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = AllocateTempDataBuf(dieNo);
+ 					UpdateTempDataBufEntryInfoBlockingReq(reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry, reqSlotTag);
+ 					reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = FindFreeVirtualSliceForGc(dieNoForGcCopy, victimBlockNo);
+diff --git a/nvme/nvme.h b/nvme/nvme.h
+index feb9696..d1a3fa8 100644
+--- a/nvme/nvme.h
++++ b/nvme/nvme.h
+@@ -888,6 +888,21 @@ typedef struct _NVME_STATUS
+ 	NVME_IO_CQ_STATUS ioCqInfo[MAX_NUM_OF_IO_CQ];
+ } NVME_CONTEXT;
+ 
+-
+-
++struct io_flush_req {
++#define FLUSH_NONE     0
++#define FLUSH_READY    1
++#define FLUSH_PROGRESS 2
++	int state;
++	int count;
++	unsigned int tag;
++	unsigned int specific;
++	unsigned int status_field_word;
++};
++
++#define FLUSH_REQ_SIZE 10
++struct io_flush_queue {
++	int head;
++	int tail;
++	struct io_flush_req io_flush_req[FLUSH_REQ_SIZE];
++};
+ #endif	//__NVME_H_
+diff --git a/nvme/nvme_admin_cmd.c b/nvme/nvme_admin_cmd.c
+index 33d8b5d..11e1c95 100644
+--- a/nvme/nvme_admin_cmd.c
++++ b/nvme/nvme_admin_cmd.c
+@@ -416,7 +416,6 @@ extern struct stats_ftl stats_ftl;
+ static void handle_get_stats(NVME_ADMIN_COMMAND *nvmeAdminCmd,
+                              NVME_COMPLETION *nvmeCPL)
+ {
+-    int i;
+     unsigned int prp[2];
+     unsigned int diff = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR % 4096;
+     unsigned int new_addr = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR + (4096 - diff);
+@@ -428,9 +427,7 @@ static void handle_get_stats(NVME_ADMIN_COMMAND *nvmeAdminCmd,
+     memset(p, 0x00, 4096);
+     memcpy(p, &stats_ftl, sizeof(struct stats_ftl)); // dest, src, size
+ 
+-    xil_printf("%s:%d call set_direct_tx_dma\r\n", __func__, __LINE__);
+     set_direct_tx_dma(new_addr, prp[1], prp[0], 4096);
+-    xil_printf("%s:%d call check_direct_tx_dma_done\r\n", __func__, __LINE__);
+     check_direct_tx_dma_done();
+     xil_printf("%s:%d call nvmeCPL set\r\n", __func__, __LINE__);
+ 
+diff --git a/nvme/nvme_io_cmd.c b/nvme/nvme_io_cmd.c
+index f31c849..0f4f910 100644
+--- a/nvme/nvme_io_cmd.c
++++ b/nvme/nvme_io_cmd.c
+@@ -62,6 +62,28 @@
+ #include "../request_transform.h"
+ #include "../share/share.h"
+ 
++struct io_flush_queue g_io_flush_queue;
++
++static void __set_flush_req(NVME_COMMAND *nvmeCmd)
++{
++	struct io_flush_req *flush_req;
++
++
++	flush_req = g_io_flush_queue.io_flush_req + g_io_flush_queue.head;
++	assert(!flush_req->state);
++
++	flush_req->state = FLUSH_READY;
++	flush_req->tag = nvmeCmd->cmdSlotTag;
++	flush_req->specific = 0;
++	flush_req->status_field_word = 0;
++	flush_req->count = 0;
++
++	g_io_flush_queue.head = (g_io_flush_queue.head + 1) %
++							FLUSH_REQ_SIZE;
++
++	assert(g_io_flush_queue.head != g_io_flush_queue.tail);
++}
++
+ void handle_nvme_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd, unsigned int qID)
+ {
+ 	IO_READ_COMMAND_DW12 readInfo12;
+@@ -180,9 +202,7 @@ void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)
+ 		case IO_NVM_FLUSH:
+ 		{
+ 		//	xil_printf("IO Flush Command\r\n");
+-			nvmeCPL.dword[0] = 0;
+-			nvmeCPL.specific = 0x0;
+-			set_auto_nvme_cpl(nvmeCmd->cmdSlotTag, nvmeCPL.specific, nvmeCPL.statusFieldWord);
++			__set_flush_req(nvmeCmd);
+ 			break;
+ 		}
+ 		case IO_NVM_WRITE:
+diff --git a/nvme/nvme_main.c b/nvme/nvme_main.c
+index 837bdf3..50b339f 100644
+--- a/nvme/nvme_main.c
++++ b/nvme/nvme_main.c
+@@ -70,11 +70,50 @@
+ 
+ volatile NVME_CONTEXT g_nvmeTask;
+ 
++extern struct io_flush_queue g_io_flush_queue;
++
++static void __check_finish_flush_req(void)
++{
++	struct io_flush_req *flush_req;
++
++	flush_req = g_io_flush_queue.io_flush_req  + g_io_flush_queue.tail;
++	assert(flush_req->state == FLUSH_PROGRESS);
++
++	if (!flush_req->count) {
++		set_auto_nvme_cpl(flush_req->tag, flush_req->specific,
++						  flush_req->status_field_word);
++		flush_req->state = FLUSH_NONE;
++
++		g_io_flush_queue.tail = (g_io_flush_queue.tail + 1) %
++								FLUSH_REQ_SIZE;
++	}
++}
++
++static void init_flush_queue(void)
++{
++	int i = 0;
++
++	g_io_flush_queue.head =  g_io_flush_queue.tail = 0;
++	for (i = 0; i < FLUSH_REQ_SIZE; i++) {
++		struct io_flush_req *flush_req;
++
++		flush_req = g_io_flush_queue.io_flush_req + i;
++
++		flush_req->state = FLUSH_NONE;
++		flush_req->count = 0;
++		flush_req->tag = 0;
++		flush_req->specific = 0;
++		flush_req->status_field_word = 0;
++	}
++}
++
+ void nvme_main()
+ {
+ 	unsigned int exeLlr;
+ 	unsigned int rstCnt = 0;
+ 
++	xil_printf("%s:%d flush queue reset\r\n", __func__, __LINE__);
++	init_flush_queue();
+ 	xil_printf("!!! Wait until FTL reset complete !!! \r\n");
+ 
+ 	InitFTL();
+@@ -114,6 +153,7 @@ void nvme_main()
+ 				{
+ 					handle_nvme_io_cmd(&nvmeCmd);
+ 					ReqTransSliceToLowLevel();
++					process_flush_request();
+ 					exeLlr=0;
+ 				}
+ 			}
+@@ -189,6 +229,8 @@ void nvme_main()
+ 			CheckDoneNvmeDmaReq();
+ 			SchedulingNandReq();
+ 		}
++		if (g_io_flush_queue.head != g_io_flush_queue.tail)
++			__check_finish_flush_req();
+ 	}
+ }
+ 
+diff --git a/request_allocation.c b/request_allocation.c
+index 1328ce5..8002e23 100644
+--- a/request_allocation.c
++++ b/request_allocation.c
+@@ -398,6 +398,21 @@ void PutToNandReqQ(unsigned int reqSlotTag, unsigned chNo, unsigned wayNo)
+ 	notCompletedNandReqCnt++;
+ }
+ 
++extern struct io_flush_queue g_io_flush_queue;
++static void __compl_req_for_flush_req(unsigned int reqSlotTag)
++{
++	if (reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req) {
++		struct io_flush_req *flush_req;
++		flush_req = g_io_flush_queue.io_flush_req + g_io_flush_queue.tail;
++
++		assert(flush_req->state == FLUSH_PROGRESS);
++		assert(flush_req->count);
++
++		flush_req->count--;
++		reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
++	}
++}
++
+ void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStatus, unsigned int reqCode)
+ {
+ 	unsigned int reqSlotTag;
+@@ -417,6 +432,8 @@ void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStat
+ 		nandReqQ[chNo][wayNo].tailReq = REQ_SLOT_TAG_NONE;
+ 	}
+ 
++	__compl_req_for_flush_req(reqSlotTag);
++
+ 	reqPoolPtr->reqPool[reqSlotTag].reqQueueType = REQ_QUEUE_TYPE_NONE;
+ 	nandReqQ[chNo][wayNo].reqCnt--;
+ 	notCompletedNandReqCnt--;
+diff --git a/request_allocation.h b/request_allocation.h
+index 366cc9b..1e34c41 100644
+--- a/request_allocation.h
++++ b/request_allocation.h
+@@ -80,6 +80,8 @@ void SelectiveGetFromNvmeDmaReqQ(unsigned int regSlotTag);
+ void PutToNandReqQ(unsigned int reqSlotTag, unsigned chNo, unsigned wayNo);
+ void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStatus, unsigned int reqCode);
+ 
++void process_flush_request(void);
++
+ extern P_REQ_POOL reqPoolPtr;
+ extern FREE_REQUEST_QUEUE freeReqQ;
+ extern SLICE_REQUEST_QUEUE sliceReqQ;
+diff --git a/request_format.h b/request_format.h
+index 8ca8c12..e11dd11 100644
+--- a/request_format.h
++++ b/request_format.h
+@@ -156,7 +156,8 @@ typedef struct _REQ_OPTION{
+ 	unsigned int rowAddrDependencyCheck : 1;
+ 	unsigned int forceUnitAccess : 1;
+ 	unsigned int blockSpace : 1;
+-	unsigned int reserved0 : 23;
++	unsigned int be_flush_req:1;
++	unsigned int reserved0 : 22;
+ } REQ_OPTION, *P_REQ_OPTION;
+ 
+ 
+diff --git a/request_transform.c b/request_transform.c
+index 2690202..153cfaa 100644
+--- a/request_transform.c
++++ b/request_transform.c
+@@ -275,6 +275,7 @@ void EvictDataBufEntry(unsigned int originReqSlotTag)
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = reqPoolPtr->reqPool[originReqSlotTag].reqOpt.forceUnitAccess;
++		reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
+ 
+ 		reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = virtualSliceAddr;
+ 		reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = dataBufEntry;
+@@ -309,6 +310,7 @@ void DataReadFromNand(unsigned int originReqSlotTag)
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
+ 		reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = reqPoolPtr->reqPool[originReqSlotTag].reqOpt.forceUnitAccess;
++		reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
+ 
+ 		reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = virtualSliceAddr;
+ 		reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = reqPoolPtr->reqPool[originReqSlotTag].dataBufInfo.entry;
+@@ -788,3 +790,59 @@ void CheckDoneNvmeDmaReq()
+ 		reqSlotTag = prevReq;
+ 	}
+ }
++
++static void __clean_data_buf_entry(int entry)
++{
++	unsigned int reqSlotTag, virtualSliceAddr;
++
++	reqSlotTag = GetFromFreeReqQ();
++
++	virtualSliceAddr =  AddrTransWrite(dataBufMapPtr->dataBuf[entry].logicalSliceAddr);
++
++	reqPoolPtr->reqPool[reqSlotTag].reqType = REQ_TYPE_NAND;
++	reqPoolPtr->reqPool[reqSlotTag].reqCode = REQ_CODE_WRITE;
++	reqPoolPtr->reqPool[reqSlotTag].nvmeCmdSlotTag = 0xffff;
++	reqPoolPtr->reqPool[reqSlotTag].qID = 0xffff;
++	reqPoolPtr->reqPool[reqSlotTag].cID = 0xffff;
++	reqPoolPtr->reqPool[reqSlotTag].logicalSliceAddr = dataBufMapPtr->dataBuf[entry].logicalSliceAddr;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_ENTRY;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandAddr = REQ_OPT_NAND_ADDR_VSA;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEcc = REQ_OPT_NAND_ECC_ON;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEccWarning = REQ_OPT_NAND_ECC_WARNING_ON;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_CHECK;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_MAIN;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
++	reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 1;
++
++	reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr = virtualSliceAddr;
++	reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry = entry;
++	UpdateDataBufEntryInfoBlockingReq(entry, reqSlotTag);
++
++	SelectLowLevelReqQ(reqSlotTag);
++
++	dataBufMapPtr->dataBuf[entry].dirty = DATA_BUF_CLEAN;
++}
++
++extern struct io_flush_queue g_io_flush_queue;
++void process_flush_request(void)
++{
++	struct io_flush_req *flush_req;
++	int entry;
++
++	if (g_io_flush_queue.head == g_io_flush_queue.tail)
++		return;
++
++	flush_req = g_io_flush_queue.io_flush_req + g_io_flush_queue.tail;
++
++	if (flush_req->state == FLUSH_PROGRESS)
++		return;
++
++	flush_req->state = FLUSH_PROGRESS;
++
++	for (entry = 0; entry < AVAILABLE_DATA_BUFFER_ENTRY_COUNT; entry++) {
++		if (dataBufMapPtr->dataBuf[entry].dirty == DATA_BUF_DIRTY) {
++			__clean_data_buf_entry(entry);
++			flush_req->count++;
++		}
++	}
++}

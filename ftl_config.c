@@ -52,9 +52,25 @@
 #include "memory_map.h"
 #include "t4nsc_ucode.h"
 #include "nsc_driver.h"
+#include "ftl_stats.h"
 
 unsigned int storageCapacity_L;
 T4REGS chCtlReg[USER_CHANNELS];
+
+// (jhpark)
+long long g_ftl_num_write;
+long long g_ftl_num_gc;
+long long g_ftl_num_erase;
+long long g_ftl_num_copy_back;
+long long g_ftl_num_gather_gc;
+long long g_ftl_num_gather_cp;
+long long g_ftl_num_gather_write;
+long long g_ftl_num_host_write;
+
+long long g_ftl_num_trim;
+unsigned int trim_flag;
+
+struct stats_ftl stats_ftl = { 0 };
 
 void InitFTL()
 {
@@ -69,9 +85,17 @@ void InitFTL()
 	InitDataBuf();
 	InitGcVictimMap();
 
-	storageCapacity_L = (MB_PER_SSD - (MB_PER_MIN_FREE_BLOCK_SPACE + mbPerbadBlockSpace + MB_PER_OVER_PROVISION_BLOCK_SPACE)) * ((1024*1024) / BYTES_PER_NVME_BLOCK);
+	// (jhpark): add
+	g_ftl_num_trim = 0;
+	trim_flag = 1;
+
+	if(USER_BLOCKS_PER_LUN > 3072)
+		storageCapacity_L = (MB_PER_SSD - (MB_PER_MIN_FREE_BLOCK_SPACE + mbPerbadBlockSpace + MB_PER_OVER_PROVISION_BLOCK_SPACE)) * ((1024*1024) / BYTES_PER_NVME_BLOCK);
+	else
+		storageCapacity_L = (MB_PER_SSD - (MB_PER_MIN_FREE_BLOCK_SPACE + MB_PER_OVER_PROVISION_BLOCK_SPACE)) * ((1024*1024) / BYTES_PER_NVME_BLOCK);
 
 	xil_printf("[ storage capacity %d MB ]\r\n", storageCapacity_L / ((1024*1024) / BYTES_PER_NVME_BLOCK));
+	xil_printf("[%d Byte/data region of page]\r\n", BYTES_PER_DATA_REGION_OF_PAGE);
 	xil_printf("[ ftl configuration complete. ]\r\n");
 }
 
@@ -145,6 +169,8 @@ void InitNandArray()
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = chNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = wayNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = 0;	//dummy
@@ -161,6 +187,8 @@ void InitNandArray()
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
 			reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.forceUnitAccess = REQ_OPT_FORCE_UNIT_ACCESS_OFF;
+			reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = chNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = wayNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = 0;	//dummy

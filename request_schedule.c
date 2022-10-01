@@ -51,6 +51,9 @@
 #include "memory_map.h"
 #include "nvme/debug.h"
 
+#include "ftl_stats.h"
+extern struct stats_ftl stats_ftl;
+
 P_COMPLETE_FLAG_TABLE completeFlagTablePtr;
 P_STATUS_REPORT_TABLE statusReportTablePtr;
 P_ERROR_INFO_TABLE eccErrorInfoTablePtr;
@@ -669,18 +672,24 @@ void IssueNandReq(unsigned int chNo, unsigned int wayNo)
 			V2FReadPageTransferAsync(&chCtlReg[chNo], wayNo, dataBufAddr, spareDataBufAddr, errorInfo, completion, rowAddr);
 		else
 			V2FReadPageTransferRawAsync(&chCtlReg[chNo], wayNo, dataBufAddr, completion);
+
+        stats_ftl.page_read_cnt++;
 	}
 	else if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_WRITE)
 	{
 		dieStateTablePtr->dieState[chNo][wayNo].reqStatusCheckOpt = REQ_STATUS_CHECK_OPT_CHECK;
 
 		V2FProgramPageAsync(&chCtlReg[chNo], wayNo, rowAddr, dataBufAddr, spareDataBufAddr);
+
+        stats_ftl.page_program_cnt++;
 	}
 	else if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_ERASE)
 	{
 		dieStateTablePtr->dieState[chNo][wayNo].reqStatusCheckOpt = REQ_STATUS_CHECK_OPT_CHECK;
 
 		V2FEraseBlockAsync(&chCtlReg[chNo], wayNo, rowAddr);
+
+        stats_ftl.block_erase_cnt++;
 	}
 	else if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_RESET)
 	{
@@ -751,9 +760,9 @@ unsigned int GenerateDataBufAddr(unsigned int reqSlotTag)
 	if(reqPoolPtr->reqPool[reqSlotTag].reqType == REQ_TYPE_NAND)
 	{
 		if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat == REQ_OPT_DATA_BUF_ENTRY)
-			return (DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE);
+			return (DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE_FOR_DATA_BUFFER);
 		else if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat == REQ_OPT_DATA_BUF_TEMP_ENTRY)
-			return (TEMPORARY_DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE);
+			return (TEMPORARY_DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE_FOR_DATA_BUFFER);
 		else if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat == REQ_OPT_DATA_BUF_ADDR)
 			return reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
 
@@ -762,7 +771,7 @@ unsigned int GenerateDataBufAddr(unsigned int reqSlotTag)
 	else if(reqPoolPtr->reqPool[reqSlotTag].reqType == REQ_TYPE_NVME_DMA)
 	{
 		if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat == REQ_OPT_DATA_BUF_ENTRY)
-			return (DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE + reqPoolPtr->reqPool[reqSlotTag].nvmeDmaInfo.nvmeBlockOffset * BYTES_PER_NVME_BLOCK);
+			return (DATA_BUFFER_BASE_ADDR + reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.entry * BYTES_PER_DATA_REGION_OF_SLICE_FOR_DATA_BUFFER + reqPoolPtr->reqPool[reqSlotTag].nvmeDmaInfo.nvmeBlockOffset * BYTES_PER_NVME_BLOCK);
 		else
 			assert(!"[WARNING] wrong reqOpt-dataBufFormat [WARNING]");
 	}
@@ -923,7 +932,7 @@ void ExecuteNandReq(unsigned int chNo, unsigned int wayNo, unsigned int reqStatu
 						return;
 					}
 
-				if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_READ)
+				/*if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_READ)
 					xil_printf("Read Trigger FAIL on      ");
 				else if(reqPoolPtr->reqPool[reqSlotTag].reqCode == REQ_CODE_READ_TRANSFER)
 					xil_printf("Read Transfer FAIL on     ");
@@ -933,7 +942,8 @@ void ExecuteNandReq(unsigned int chNo, unsigned int wayNo, unsigned int reqStatu
 					xil_printf("Erase FAIL on             ");
 
 				rowAddr = GenerateNandRowAddr(reqSlotTag);
-				xil_printf("ch %x way %x rowAddr %x / completion %x statusReport %x \r\n", chNo, wayNo, rowAddr, completeFlagTablePtr->completeFlag[chNo][wayNo],statusReportTablePtr->statusReport[chNo][wayNo]);
+				xil_printf("ch %x way %x rowAddr %x / completion %x statusReport %x \r\n", chNo, wayNo, rowAddr, completeFlagTablePtr->completeFlag[chNo][wayNo],statusReportTablePtr->statusReport[chNo][wayNo]);*/
+				rowAddr = GenerateNandRowAddr(reqSlotTag);
 
 				if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandEcc == REQ_OPT_NAND_ECC_OFF)
 					if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat == REQ_OPT_DATA_BUF_ADDR)
@@ -954,7 +964,7 @@ void ExecuteNandReq(unsigned int chNo, unsigned int wayNo, unsigned int reqStatu
 			else if(reqStatus == REQ_STATUS_WARNING)
 			{
 				rowAddr = GenerateNandRowAddr(reqSlotTag);
-				xil_printf("ECC Uncorrectable Soon on ch %x way %x rowAddr %x / completion %x statusReport %x \r\n", chNo, wayNo, rowAddr, completeFlagTablePtr->completeFlag[chNo][wayNo],statusReportTablePtr->statusReport[chNo][wayNo]);
+				//xil_printf("ECC Uncorrectable Soon on ch %x way %x rowAddr %x / completion %x statusReport %x \r\n", chNo, wayNo, rowAddr, completeFlagTablePtr->completeFlag[chNo][wayNo],statusReportTablePtr->statusReport[chNo][wayNo]);
 
 				//grown bad block information update
 				phyBlockNo = ((rowAddr % LUN_1_BASE_ADDR) / PAGES_PER_MLC_BLOCK) + ((rowAddr / LUN_1_BASE_ADDR)* TOTAL_BLOCKS_PER_LUN);

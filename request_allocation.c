@@ -398,6 +398,21 @@ void PutToNandReqQ(unsigned int reqSlotTag, unsigned chNo, unsigned wayNo)
 	notCompletedNandReqCnt++;
 }
 
+extern struct io_flush_queue g_io_flush_queue;
+static void __compl_req_for_flush_req(unsigned int reqSlotTag)
+{
+	if (reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req) {
+		struct io_flush_req *flush_req;
+		flush_req = g_io_flush_queue.io_flush_req + g_io_flush_queue.tail;
+
+		assert(flush_req->state == FLUSH_PROGRESS);
+		assert(flush_req->count);
+
+		flush_req->count--;
+		reqPoolPtr->reqPool[reqSlotTag].reqOpt.be_flush_req = 0;
+	}
+}
+
 void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStatus, unsigned int reqCode)
 {
 	unsigned int reqSlotTag;
@@ -416,6 +431,8 @@ void GetFromNandReqQ(unsigned int chNo, unsigned int wayNo, unsigned int reqStat
 		nandReqQ[chNo][wayNo].headReq = REQ_SLOT_TAG_NONE;
 		nandReqQ[chNo][wayNo].tailReq = REQ_SLOT_TAG_NONE;
 	}
+
+	__compl_req_for_flush_req(reqSlotTag);
 
 	reqPoolPtr->reqPool[reqSlotTag].reqQueueType = REQ_QUEUE_TYPE_NONE;
 	nandReqQ[chNo][wayNo].reqCnt--;

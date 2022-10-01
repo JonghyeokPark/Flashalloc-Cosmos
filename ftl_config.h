@@ -169,7 +169,9 @@
 #define	NSC_MAX_WAYS					8
 
 //row -> page
-#define	BYTES_PER_DATA_REGION_OF_PAGE			16384
+//#define	BYTES_PER_DATA_REGION_OF_PAGE			16384
+#define	BYTES_PER_DATA_REGION_OF_PAGE			(4096) //(4096) //(16384)
+#define	BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB    (16384)
 #define BYTES_PER_SPARE_REGION_OF_PAGE			256
 // (BYTES_PER_SPARE_REGION_OF_NAND_ROW - BYTES_PER_SPARE_REGION_OF_PAGE) bytes are used by ECC engine (Parity data)
 #define	PAGES_PER_SLC_BLOCK			(ROWS_PER_SLC_BLOCK)
@@ -199,12 +201,14 @@
 
 //************************************************************************
 #define	BITS_PER_FLASH_CELL		SLC_MODE	//user configurable factor
-#define	USER_BLOCKS_PER_LUN		2048		//user configurable factor
+#define	USER_BLOCKS_PER_LUN		512		//user configurable factor
+//LUN == PLANE. 코스모스 보드의 경우, CHIP 하나에 한 개의 DIE가 존재하고 DIE 안에 하나의 LUN이 존재함.
+//위의 변수는 LUN 하나에 속한 BLOCK의 수 즉, CHIP하나에 들어갈 BLOCK의 수를 정하는 변수
 #define	USER_CHANNELS		(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
 #define	USER_WAYS				8			//user configurable factor
 //************************************************************************
 
-#define	BYTES_PER_DATA_REGION_OF_SLICE		16384		//slice is a mapping unit of FTL
+#define	BYTES_PER_DATA_REGION_OF_SLICE		(BYTES_PER_DATA_REGION_OF_PAGE)//Do not change	//slice is a mapping unit of FTL
 #define	BYTES_PER_SPARE_REGION_OF_SLICE		256
 
 #define SLICES_PER_PAGE				(BYTES_PER_DATA_REGION_OF_PAGE / BYTES_PER_DATA_REGION_OF_SLICE)	//a slice directs a page, full page mapping
@@ -228,11 +232,11 @@
 #define	USER_BLOCKS_PER_CHANNEL		(USER_BLOCKS_PER_DIE * USER_WAYS)
 #define	USER_BLOCKS_PER_SSD			(USER_BLOCKS_PER_CHANNEL * USER_CHANNELS)
 
-#define	MB_PER_BLOCK						((BYTES_PER_DATA_REGION_OF_SLICE * SLICES_PER_BLOCK) / (1024 * 1024))
-#define MB_PER_SSD							(USER_BLOCKS_PER_SSD * MB_PER_BLOCK)
-#define MB_PER_MIN_FREE_BLOCK_SPACE			(USER_DIES * MB_PER_BLOCK)
-#define MB_PER_METADATA_BLOCK_SPACE			(USER_DIES * MB_PER_BLOCK)
-#define MB_PER_OVER_PROVISION_BLOCK_SPACE	((USER_BLOCKS_PER_SSD / 10) * MB_PER_BLOCK)
+#define	KB_PER_BLOCK						((BYTES_PER_DATA_REGION_OF_SLICE * SLICES_PER_BLOCK)/(1024))
+#define MB_PER_SSD							((USER_BLOCKS_PER_SSD * KB_PER_BLOCK)/(1024))
+#define MB_PER_MIN_FREE_BLOCK_SPACE			((USER_DIES * KB_PER_BLOCK)/(1024))
+#define MB_PER_METADATA_BLOCK_SPACE			((USER_DIES * KB_PER_BLOCK)/(1024))
+#define MB_PER_OVER_PROVISION_BLOCK_SPACE	(((USER_BLOCKS_PER_SSD / 10) * KB_PER_BLOCK)/(1024))
 
 
 void InitFTL();
@@ -242,5 +246,18 @@ void CheckConfigRestriction();
 
 extern unsigned int storageCapacity_L;
 extern T4REGS chCtlReg[USER_CHANNELS];
+
+// (jhpark)
+extern long long g_ftl_num_gather_gc;
+extern long long g_ftl_num_gather_cp;
+extern long long g_ftl_num_gather_write;
+extern long long g_ftl_num_host_write;
+extern long long g_ftl_num_trim;
+extern long long g_ftl_num_write;
+extern long long g_ftl_num_gc;
+extern long long g_ftl_num_erase;
+extern long long g_ftl_num_copy_back;
+
+extern unsigned int trim_flag;
 
 #endif /* FTL_CONFIG_H_ */

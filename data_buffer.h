@@ -59,6 +59,7 @@
 
 #define FindDataBufHashTableEntry(logicalSliceAddr) ((logicalSliceAddr) % AVAILABLE_DATA_BUFFER_ENTRY_COUNT)
 
+#define	BYTES_PER_DATA_REGION_OF_SLICE_FOR_DATA_BUFFER		(16384)//Do not change
 
 typedef struct _DATA_BUF_ENTRY {
 	unsigned int logicalSliceAddr;
@@ -102,7 +103,8 @@ typedef struct _TEMPORARY_DATA_BUF_MAP{
 
 void InitDataBuf();
 unsigned int CheckDataBufHit(unsigned int reqSlotTag);
-unsigned int AllocateDataBuf();
+unsigned int AllocateDataBufHit(unsigned int reqSlotTag);
+unsigned int AllocateDataBufMiss(void);
 void UpdateDataBufEntryInfoBlockingReq(unsigned int bufEntry, unsigned int reqSlotTag);
 
 unsigned int AllocateTempDataBuf(unsigned int dieNo);
@@ -115,5 +117,9 @@ extern P_DATA_BUF_MAP dataBufMapPtr;
 extern DATA_BUF_LRU_LIST dataBufLruList;
 extern P_DATA_BUF_HASH_TABLE dataBufHashTable;
 extern P_TEMPORARY_DATA_BUF_MAP tempDataBufMapPtr;
+
+// (jhpark): add
+unsigned int CheckDataBufHitForShare(unsigned int logicalSliceAddr);
+unsigned int AllocateDataBufHitforShare(unsigned int logicalSliceAddr);
 
 #endif /* DATA_BUFFER_H_ */

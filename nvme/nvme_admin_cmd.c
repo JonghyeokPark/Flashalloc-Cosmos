@@ -54,6 +54,8 @@
 #include "host_lld.h"
 #include "nvme_identify.h"
 #include "nvme_admin_cmd.h"
+#include "../ftl_stats.h"
+#include "../memory_map.h"
 
 extern NVME_CONTEXT g_nvmeTask;
 
@@ -410,6 +412,29 @@ void handle_get_log_page(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_COMPLETION *nvme
 	nvmeCPL->specific = 0x9;//invalid log page
 }
 
+extern struct stats_ftl stats_ftl;
+static void handle_get_stats(NVME_ADMIN_COMMAND *nvmeAdminCmd,
+                             NVME_COMPLETION *nvmeCPL)
+{
+    unsigned int prp[2];
+    unsigned int diff = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR % 4096;
+    unsigned int new_addr = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR + (4096 - diff);
+    unsigned int *p = (unsigned int *)new_addr;
+
+    prp[0] = nvmeAdminCmd->PRP1[0];
+    prp[1] = nvmeAdminCmd->PRP1[1];
+
+    memset(p, 0x00, 4096);
+    memcpy(p, &stats_ftl, sizeof(struct stats_ftl)); // dest, src, size
+
+    set_direct_tx_dma(new_addr, prp[1], prp[0], 4096);
+    check_direct_tx_dma_done();
+    xil_printf("%s:%d call nvmeCPL set\r\n", __func__, __LINE__);
+
+    nvmeCPL->dword[0] = 0;
+    nvmeCPL->specific = 0x0;
+}
+
 void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 {	NVME_ADMIN_COMMAND *nvmeAdminCmd;
 	NVME_COMPLETION nvmeCPL;
@@ -424,6 +449,7 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 	needCpl = 1;
 	needSlotRelease = 0;
 
+	xil_printf("OPC = 0x%X\r\n", nvmeAdminCmd->OPC);
 /*	xil_printf("OPC = 0x%X\r\n", nvmeAdminCmd->OPC);
 		xil_printf("FUSE = 0x%X\r\n", nvmeAdminCmd->FUSE);
 		xil_printf("PSDT = 0x%X\r\n", nvmeAdminCmd->PSDT);
@@ -504,6 +530,12 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 			nvmeCPL.specific = 0x0;
 			break;
 		}
+        case ADMIN_GET_SHARE_STATS:
+        {
+            xil_printf("%s:%d call handle_get_stats\r\n", __func__, __LINE__);
+            handle_get_stats(nvmeAdminCmd, &nvmeCPL);
+            break;
+        }
 		default:
 		{
 			xil_printf("Not Support Admin Command OPC: %X\r\n", opc);
@@ -517,8 +549,7 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 	else if(needSlotRelease == 1)
 		set_nvme_slot_release(nvmeCmd->cmdSlotTag);
 	else
-
-	set_nvme_cpl(nvmeCmd->qID, nvmeAdminCmd->CID, nvmeCPL.specific, nvmeCPL.statusFieldWord);
+        set_nvme_cpl(nvmeCmd->qID, nvmeAdminCmd->CID, nvmeCPL.specific, nvmeCPL.statusFieldWord);
 
 	xil_printf("Done Admin Command OPC: %X\r\n", opc);
 

@@ -79,6 +79,8 @@
 #define ADMIN_SECURITY_SEND									0x81
 #define ADMIN_SECURITY_RECEIVE								0x82
 
+#define ADMIN_GET_SHARE_STATS                               0xf0
+
 /*Opcodes for IO Commands */
 #define IO_NVM_FLUSH										0x00
 #define IO_NVM_WRITE										0x01
@@ -86,6 +88,13 @@
 #define IO_NVM_WRITE_UNCORRECTABLE							0x04
 #define IO_NVM_COMPARE										0x05
 #define IO_NVM_DATASET_MANAGEMENT							0x09
+
+// (jhpark): PRINT support
+#define IO_NVM_PRINT_STAT 									0x80
+#define IO_NVM_RESET 										0x81
+#define IO_NVM_ALLOCATE 									0x82
+#define IO_NVM_SHARE 										0x83
+
 
 /*Status Code Type */
 #define SCT_GENERIC_COMMAND_STATUS							0
@@ -608,8 +617,10 @@ typedef struct _ADMIN_IDENTIFY_NAMESPACE
 
 	struct
 	{
+		unsigned char supportsDeallocated					:1; //nvme spec 112page
+		unsigned char supportsNawunNawupf					:1;
 		unsigned char supportsThinProvisioning				:1;
-		unsigned char reserved0								:7;
+		unsigned char reserved0								:5;
 	} NSFEAT;
 
 	unsigned char NLBAF;
@@ -763,6 +774,7 @@ typedef struct _IO_READ_COMMAND_DW15
 
 
 /* IO Dataset Management Command */
+/* original
 typedef struct _IO_DATASET_MANAGEMENT_COMMAND_DW10
 {
 	unsigned int NR							:8;
@@ -776,6 +788,31 @@ typedef struct _IO_DATASET_MANAGEMENT_COMMAND_DW11
 	unsigned int AD							:1;
 	unsigned int reserved0					:29;
 } _IO_DATASET_MANAGEMENT_COMMAND_DW11;
+*/
+
+typedef struct _IO_DATASET_MANAGEMENT_COMMAND_DW10
+{
+	union {
+		unsigned int dword;
+		struct {
+			unsigned int NR							:8;
+			unsigned int reserved0					:24;
+		};
+	};
+} IO_DATASET_MANAGEMENT_COMMAND_DW10;
+
+typedef struct _IO_DATASET_MANAGEMENT_COMMAND_DW11
+{
+	union {
+		unsigned int dword;
+		struct {
+			unsigned int IDR						:1;
+			unsigned int IDW						:1;
+			unsigned int AD							:1;
+			unsigned int reserved0					:29;
+		};
+	};
+} IO_DATASET_MANAGEMENT_COMMAND_DW11;
 
 typedef struct _DATASET_MANAGEMENT_CONTEXT_ATTRIBUTES
 {
@@ -798,6 +835,19 @@ typedef struct _DATASET_MANAGEMENT_RANGE
 
 #pragma pack(pop)
 
+// (jhpark): share
+typedef struct _DATASET_MANAGEMENT_RANGE_SHARE
+{
+    DATASET_MANAGEMENT_CONTEXT_ATTRIBUTES ContextAttributes;
+    unsigned int length;
+    unsigned int LBA1[2];
+    unsigned int LBA2[2];
+} DATASET_MANAGEMENT_RANGE_SHARE;
+
+typedef struct _NVME_METADATA
+{
+	 unsigned int LBA1[2];
+} NVME_METADATA;
 
 typedef struct _NVME_ADMIN_QUEUE_STATUS
 {
@@ -838,6 +888,21 @@ typedef struct _NVME_STATUS
 	NVME_IO_CQ_STATUS ioCqInfo[MAX_NUM_OF_IO_CQ];
 } NVME_CONTEXT;
 
+struct io_flush_req {
+#define FLUSH_NONE     0
+#define FLUSH_READY    1
+#define FLUSH_PROGRESS 2
+	int state;
+	int count;
+	unsigned int tag;
+	unsigned int specific;
+	unsigned int status_field_word;
+};
 
-
+#define FLUSH_REQ_SIZE 10
+struct io_flush_queue {
+	int head;
+	int tail;
+	struct io_flush_req io_flush_req[FLUSH_REQ_SIZE];
+};
 #endif	//__NVME_H_

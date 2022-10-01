@@ -82,7 +82,7 @@
 
 #define CLEAN_DATA_IN_BYTE						0xff
 
-#define USED_PAGES_FOR_BAD_BLOCK_TABLE_PER_DIE	(TOTAL_BLOCKS_PER_DIE / BYTES_PER_DATA_REGION_OF_PAGE + 1)
+#define USED_PAGES_FOR_BAD_BLOCK_TABLE_PER_DIE	(TOTAL_BLOCKS_PER_DIE / BYTES_PER_DATA_REGION_OF_PAGE_FOR_BB + 1)
 #define DATA_SIZE_OF_BAD_BLOCK_TABLE_PER_DIE	(TOTAL_BLOCKS_PER_DIE)
 #define START_PAGE_NO_OF_BAD_BLOCK_TABLE_BLOCK	(1)		//bad block table begins at second page for preserving a bad block mark of the block allocated to save bad block table
 
@@ -213,5 +213,6 @@ extern P_BAD_BLOCK_TABLE_INFO_MAP bbtInfoMapPtr;
 
 extern unsigned char sliceAllocationTargetDie;
 extern unsigned int mbPerbadBlockSpace;
+unsigned int request_write;
 
 #endif /* ADDRESS_TRANSLATION_H_ */
