@@ -62,6 +62,8 @@
 #include "../request_transform.h"
 #include "../share/share.h"
 
+#include "../fallocate/fallocate.h"
+
 struct io_flush_queue g_io_flush_queue;
 
 static void __set_flush_req(NVME_COMMAND *nvmeCmd)
@@ -160,8 +162,6 @@ static void hanlde_nvme_io_discard(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvm
 
 	if (dsm11.AD == 1) {
 		nr = dsm10.NR + 1;
-		// TODO(jhpark): range 더 추가하기
-
 		unsigned int diff = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR % 4096;
 		unsigned int new_addr = TEMPORARY_SPARE_DATA_BUFFER_BASE_ADDR + (4096 - diff);
 
@@ -269,6 +269,17 @@ void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)
 			set_auto_nvme_cpl(nvmeCmd->cmdSlotTag, nvmeCPL.specific, nvmeCPL.statusFieldWord);
 			// (jhpark): activate trim staring on benchmark
 			trim_flag = 1;
+			break;
+		}
+
+		case IO_NVM_FALLOCATE:
+		{
+			flashalloc(nvmeIOCmd->dword[10], nvmeIOCmd->dword[14]);
+			nvmeCPL.dword[0] = 0;
+			nvmeCPL.specific = 0x0;
+			nvmeCPL.statusField.SCT = SCT_GENERIC_COMMAND_STATUS;
+			nvmeCPL.statusField.SC = SC_SUCCESSFUL_COMPLETION;
+			set_auto_nvme_cpl(nvmeCmd->cmdSlotTag, nvmeCPL.specific, nvmeCPL.statusFieldWord);
 			break;
 		}
 		default:

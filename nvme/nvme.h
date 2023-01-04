@@ -92,7 +92,7 @@
 // (jhpark): PRINT support
 #define IO_NVM_PRINT_STAT 									0x80
 #define IO_NVM_RESET 										0x81
-#define IO_NVM_ALLOCATE 									0x82
+#define IO_NVM_FALLOCATE 									0x82
 #define IO_NVM_SHARE 										0x83
 
 
