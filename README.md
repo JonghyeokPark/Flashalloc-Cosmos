@@ -41,7 +41,7 @@ Second, You need the software tools and files
 
 ## Build
 
-Please refer to Cosmos+ OpenSSD build guide [document](doc/Cosmos+ OpenSSD 2017 Tutorial.pdf)
+Please refer to Cosmos+ OpenSSD build guide [document](doc/Cosmos+OpenSSD-2017-Tutorial.pdf)
 
 TL;DR
 1. Prepare Cosmos+ Open SSD, Window and Linux PC
