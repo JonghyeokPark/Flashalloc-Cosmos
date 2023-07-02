@@ -54,5 +54,9 @@ TL;DR
 8. You can check the Cosmos+ OpenSSD using `nvme-cli` or `lspci` command (check the `nvme0nXXXXX` in the device list)
 9. Bon appétit! :)
 
+## How to use `FlashAlloc` command
+
+TBD
+
 ## Refercnes
 All guide document for Cosmos+ OpenSSD is provided by [Cosmos Open SSD Project](https://github.com/Cosmos-OpenSSD/Cosmos-OpenSSD/tree/master).
