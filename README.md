@@ -37,6 +37,7 @@ Second, You need the software tools and files
 ## Project Structure
 - `Flashalloc` is Cosmos+ OpenSSD firmware source code which implements the Flashalloc interface for flash storages
 - `Multistream` is multi-stream prototype for Cosmos+ OpenSSD supporting eight stream-ids
+- `host` is very simple host application example for testing a flashalloc command
 -  More details are illustrated in our paper.
 
 ## Build
@@ -56,7 +57,18 @@ TL;DR
 
 ## How to use `FlashAlloc` command
 
-TBD
+```
+cd host
+make -j
+
+sudo ./playground /dev/nvmeXXX 0 32
+```
+
+- `playground` host application name
+- `/dev/nvmeXXX` Comsmos+ OpenSSD device path
+- `0` start LBA (4KiB-based offset)
+- `32` LBA length
+  
 
 ## Refercnes
 All guide document for Cosmos+ OpenSSD is provided by [Cosmos Open SSD Project](https://github.com/Cosmos-OpenSSD/Cosmos-OpenSSD/tree/master).
