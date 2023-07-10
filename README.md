@@ -4,7 +4,7 @@
 which is used to the logical address ranges of objects to the underlying flash device 
 and thus to enlighten the device to stream writes by objects. See deatil in our paper
 
-[1] Jonghyeok Park, Soyee Choi, Gihwan Oh, Soojum Im, Moon-Wook Oh, Sang-Won Lee, "FlashAlloc: Dedicating Flash Blocks By Objects". VLDB 2023
+[1] Jonghyeok Park, Soyee Choi, Gihwan Oh, Soojun Im, Moon-Wook Oh, Sang-Won Lee, "FlashAlloc: Dedicating Flash Blocks By Objects". VLDB 2023
 
 
 ## Prerequisite
