@@ -1,0 +1,1 @@
+CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/lib/jvm/java-11-openjdk-amd64/include/:/usr/lib/jvm/java-11-openjdk-amd64/include/linux/ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jvm/java-11-openjdk-amd64/lib/ DEBUG_LEVEL=0 CXX=g++ make -j7 rocksdbjavastaticrelease EXTRA_CXXFLAGS='-DUSE_SALLOCATE=1 -DROCKSDB_FALLOCATE_PRESENT=1 -DCOSMOS_DEV=\"/dev/nvme1n1\"' -B

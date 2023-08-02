@@ -1,0 +1,427 @@
+gc: 0, wr: 0, hwr: 11925, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+stream is allocated! 0
+
+stream is allocated! 3
+
+gc: 0, wr: 0, hwr: 22621, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 31594, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 40476, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+stream is allocated! 2
+
+gc: 0, wr: 0, hwr: 49174, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 57267, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 65682, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 72930, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 79637, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 87189, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 94639, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 101569, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 108747, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 116687, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 124247, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 131662, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 139068, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 147135, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 154191, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 161763, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 168511, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 175715, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 181629, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 188308, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 196349, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 202172, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 207056, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 214427, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 222545, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 228364, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 232052, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 238447, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 244358, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 248691, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 252688, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 258982, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 266472, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 272875, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 280118, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 285537, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 294074, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 299094, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 302482, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 305344, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 310223, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 318223, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 325520, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 333088, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 340339, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 348276, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 358590, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 384686, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 388545, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 399567, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 0, wr: 0, hwr: 414826, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 420629, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 425401, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 430135, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 433939, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 443841, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 447626, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 1, wr: 0, hwr: 450766, er: 1, cb: 3, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 2, wr: 0, hwr: 457484, er: 2, cb: 50, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 4, wr: 0, hwr: 461609, er: 4, cb: 161, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 7, wr: 0, hwr: 465760, er: 7, cb: 185, gwr: 0, gcb: 0, ggc: 0 trim: 0
+
+
+gc: 11, wr: 0, hwr: 473607, er: 11, cb: 343, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 20, wr: 0, hwr: 480361, er: 20, cb: 497, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 28, wr: 0, hwr: 483590, er: 28, cb: 701, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 43, wr: 0, hwr: 487853, er: 43, cb: 1025, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 69, wr: 0, hwr: 498265, er: 69, cb: 1782, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 103, wr: 0, hwr: 506871, er: 103, cb: 2676, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 135, wr: 0, hwr: 513026, er: 135, cb: 3437, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 162, wr: 0, hwr: 518595, er: 162, cb: 4389, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 199, wr: 0, hwr: 523289, er: 199, cb: 5485, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 228, wr: 0, hwr: 526410, er: 228, cb: 6417, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 251, wr: 0, hwr: 529805, er: 251, cb: 7148, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 275, wr: 0, hwr: 533578, er: 275, cb: 7981, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 293, wr: 0, hwr: 536617, er: 293, cb: 8693, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 332, wr: 0, hwr: 541301, er: 332, cb: 10257, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 383, wr: 0, hwr: 545890, er: 383, cb: 12038, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 415, wr: 0, hwr: 548433, er: 415, cb: 13570, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 429, wr: 0, hwr: 550083, er: 429, cb: 13922, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 449, wr: 0, hwr: 554254, er: 449, cb: 14795, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 473, wr: 0, hwr: 556498, er: 473, cb: 15853, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 505, wr: 0, hwr: 559216, er: 505, cb: 16934, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 531, wr: 0, hwr: 561539, er: 531, cb: 18286, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 557, wr: 0, hwr: 564311, er: 557, cb: 19446, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 587, wr: 0, hwr: 566304, er: 587, cb: 20731, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 618, wr: 0, hwr: 569030, er: 618, cb: 22325, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 652, wr: 0, hwr: 571560, er: 652, cb: 23900, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 679, wr: 0, hwr: 573858, er: 679, cb: 25238, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 704, wr: 0, hwr: 577423, er: 704, cb: 26487, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 735, wr: 0, hwr: 579151, er: 735, cb: 27737, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 765, wr: 0, hwr: 581990, er: 765, cb: 28916, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 789, wr: 0, hwr: 583586, er: 789, cb: 29932, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 809, wr: 0, hwr: 584906, er: 809, cb: 31017, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 829, wr: 0, hwr: 586437, er: 829, cb: 31899, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 842, wr: 0, hwr: 589143, er: 842, cb: 32879, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 868, wr: 0, hwr: 591387, er: 868, cb: 34270, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 911, wr: 0, hwr: 594657, er: 911, cb: 36305, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 956, wr: 0, hwr: 598228, er: 956, cb: 38295, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 997, wr: 0, hwr: 601673, er: 997, cb: 40279, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1033, wr: 0, hwr: 604648, er: 1033, cb: 41974, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1069, wr: 0, hwr: 607550, er: 1069, cb: 43787, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1108, wr: 0, hwr: 610664, er: 1108, cb: 45693, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1145, wr: 0, hwr: 613634, er: 1145, cb: 47720, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1181, wr: 0, hwr: 616510, er: 1181, cb: 49512, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1221, wr: 0, hwr: 619347, er: 1221, cb: 51760, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1261, wr: 0, hwr: 622360, er: 1261, cb: 53921, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1299, wr: 0, hwr: 625125, er: 1299, cb: 56065, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1341, wr: 0, hwr: 628335, er: 1341, cb: 58313, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1382, wr: 0, hwr: 631579, er: 1382, cb: 60757, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1430, wr: 0, hwr: 635145, er: 1430, cb: 63471, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1487, wr: 0, hwr: 638751, er: 1487, cb: 66598, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1523, wr: 0, hwr: 641080, er: 1523, cb: 69046, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1548, wr: 0, hwr: 642937, er: 1548, cb: 70816, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1576, wr: 0, hwr: 644443, er: 1576, cb: 72495, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1601, wr: 0, hwr: 646263, er: 1601, cb: 74018, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1623, wr: 0, hwr: 647693, er: 1623, cb: 75536, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1648, wr: 0, hwr: 648875, er: 1648, cb: 77203, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1671, wr: 0, hwr: 650110, er: 1671, cb: 78587, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1696, wr: 0, hwr: 651415, er: 1696, cb: 80313, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1714, wr: 0, hwr: 653540, er: 1714, cb: 81518, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1740, wr: 0, hwr: 655322, er: 1740, cb: 83325, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1762, wr: 0, hwr: 656456, er: 1762, cb: 84637, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1786, wr: 0, hwr: 657578, er: 1786, cb: 86231, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1813, wr: 0, hwr: 658832, er: 1813, cb: 88036, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1832, wr: 0, hwr: 660860, er: 1832, cb: 89355, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1862, wr: 0, hwr: 662160, er: 1862, cb: 91363, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1884, wr: 0, hwr: 663265, er: 1884, cb: 92937, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1904, wr: 0, hwr: 665808, er: 1904, cb: 94548, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1956, wr: 0, hwr: 668448, er: 1956, cb: 98253, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+gc: 1993, wr: 0, hwr: 670572, er: 1993, cb: 100767, gwr: 0, gcb: 0, ggc: 0 trim: 2
+
+
+assertion "!"[WARNING] Current page management fail [WARNING]"" failed: file "../src/address_translation.c", line 817, function: FindFreeVirtualSliceForGc
+
+NVME CC.EN: 0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+
+PCIe Bus Master: 1
+
+PCIe IRQ Disable: 0
+
+PCIe MSI Enable: 1, 0x0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+

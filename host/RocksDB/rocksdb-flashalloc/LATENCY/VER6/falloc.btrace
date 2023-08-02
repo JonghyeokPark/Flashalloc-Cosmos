@@ -1,0 +1,336 @@
+259,4    1        1     0.000000000   540  Q   R 0 + 8 [systemd-udevd]
+259,4    1        2     0.000007191   540  G   R 0 + 8 [systemd-udevd]
+259,4    1        3     0.000009284   540  I   R 0 + 8 [systemd-udevd]
+259,4    1        4     0.000038245    20  D   R 0 + 8 [kworker/1:0H]
+259,4    5        1     0.000067333     0  C   R 0 + 8 [0]
+259,4    1        5     0.000123093   540  Q   R 8 + 8 [systemd-udevd]
+259,4    1        6     0.000125549   540  G   R 8 + 8 [systemd-udevd]
+259,4    1        7     0.000126708   540  I   R 8 + 8 [systemd-udevd]
+259,4    1        8     0.000141552    20  D   R 8 + 8 [kworker/1:0H]
+259,4    5        2     0.000160666     0  C   R 8 + 8 [0]
+259,4    1        9     0.000196427   540  Q   R 24 + 8 [systemd-udevd]
+259,4    1       10     0.000198625   540  G   R 24 + 8 [systemd-udevd]
+259,4    1       11     0.000199513   540  I   R 24 + 8 [systemd-udevd]
+259,4    1       12     0.000210398    20  D   R 24 + 8 [kworker/1:0H]
+259,4    5        3     0.000228916     0  C   R 24 + 8 [0]
+259,4    7        1     0.009444576  3012  Q  RA 29937536 + 8 [systemd-udevd]
+259,4    7        2     0.009449226  3012  G  RA 29937536 + 8 [systemd-udevd]
+259,4    7        3     0.009450500  3012  P   N [systemd-udevd]
+259,4    7        4     0.009451754  3012  U   N [systemd-udevd] 1
+259,4    7        5     0.009452816  3012  I  RA 29937536 + 8 [systemd-udevd]
+259,4    7        6     0.009458004  3012  D  RA 29937536 + 8 [systemd-udevd]
+259,4    5        4     0.009513183     0  C  RA 29937536 + 8 [0]
+259,4    7        7     0.009606309  3012  Q  RA 29937648 + 8 [systemd-udevd]
+259,4    7        8     0.009610703  3012  G  RA 29937648 + 8 [systemd-udevd]
+259,4    7        9     0.009611725  3012  P   N [systemd-udevd]
+259,4    7       10     0.009612916  3012  U   N [systemd-udevd] 1
+259,4    7       11     0.009613857  3012  I  RA 29937648 + 8 [systemd-udevd]
+259,4    7       12     0.009618752  3012  D  RA 29937648 + 8 [systemd-udevd]
+259,4    5        5     0.009675601     0  C  RA 29937648 + 8 [0]
+259,4    7       13     0.009786551  3012  Q  RA 29937656 + 8 [systemd-udevd]
+259,4    7       14     0.009790776  3012  G  RA 29937656 + 8 [systemd-udevd]
+259,4    7       15     0.009791815  3012  P   N [systemd-udevd]
+259,4    7       16     0.009792989  3012  U   N [systemd-udevd] 1
+259,4    7       17     0.009793971  3012  I  RA 29937656 + 8 [systemd-udevd]
+259,4    7       18     0.009798892  3012  D  RA 29937656 + 8 [systemd-udevd]
+259,4    5        6     0.009836844     0  C  RA 29937656 + 8 [0]
+259,4    7       19     0.009933387  3012  Q  RA 29937400 + 8 [systemd-udevd]
+259,4    7       20     0.009938008  3012  G  RA 29937400 + 8 [systemd-udevd]
+259,4    7       21     0.009939032  3012  P   N [systemd-udevd]
+259,4    7       22     0.009940208  3012  U   N [systemd-udevd] 1
+259,4    7       23     0.009941135  3012  I  RA 29937400 + 8 [systemd-udevd]
+259,4    7       24     0.009946399  3012  D  RA 29937400 + 8 [systemd-udevd]
+259,4    5        7     0.009961443     0  C  RA 29937400 + 8 [0]
+259,4    7       25     0.010023416  3012  Q  RA 29937600 + 8 [systemd-udevd]
+259,4    7       26     0.010025635  3012  G  RA 29937600 + 8 [systemd-udevd]
+259,4    7       27     0.010026240  3012  P   N [systemd-udevd]
+259,4    7       28     0.010026774  3012  U   N [systemd-udevd] 1
+259,4    7       29     0.010027419  3012  I  RA 29937600 + 8 [systemd-udevd]
+259,4    7       30     0.010029333  3012  D  RA 29937600 + 8 [systemd-udevd]
+259,4    5        8     0.010043823     0  C  RA 29937600 + 8 [0]
+259,4    7       31     0.010089994  3012  Q  RA 29937408 + 8 [systemd-udevd]
+259,4    7       32     0.010092588  3012  G  RA 29937408 + 8 [systemd-udevd]
+259,4    7       33     0.010093225  3012  P   N [systemd-udevd]
+259,4    7       34     0.010093758  3012  U   N [systemd-udevd] 1
+259,4    7       35     0.010094449  3012  I  RA 29937408 + 8 [systemd-udevd]
+259,4    7       36     0.010096551  3012  D  RA 29937408 + 8 [systemd-udevd]
+259,4    5        9     0.010111273     0  C  RA 29937408 + 8 [0]
+259,4    7       37     0.010161106  3012  Q  RA 29937264 + 8 [systemd-udevd]
+259,4    7       38     0.010163693  3012  G  RA 29937264 + 8 [systemd-udevd]
+259,4    7       39     0.010164338  3012  P   N [systemd-udevd]
+259,4    7       40     0.010164868  3012  U   N [systemd-udevd] 1
+259,4    7       41     0.010165485  3012  I  RA 29937264 + 8 [systemd-udevd]
+259,4    7       42     0.010167625  3012  D  RA 29937264 + 8 [systemd-udevd]
+259,4    5       10     0.010182046     0  C  RA 29937264 + 8 [0]
+259,4    7       43     0.010214517  3012  Q  RA 29937072 + 8 [systemd-udevd]
+259,4    7       44     0.010216394  3012  G  RA 29937072 + 8 [systemd-udevd]
+259,4    7       45     0.010216935  3012  P   N [systemd-udevd]
+259,4    7       46     0.010217406  3012  U   N [systemd-udevd] 1
+259,4    7       47     0.010217990  3012  I  RA 29937072 + 8 [systemd-udevd]
+259,4    7       48     0.010219477  3012  D  RA 29937072 + 8 [systemd-udevd]
+259,4    5       11     0.010234002     0  C  RA 29937072 + 8 [0]
+259,4    7       49     0.010258017  3012  Q  RA 29936984 + 8 [systemd-udevd]
+259,4    7       50     0.010259816  3012  G  RA 29936984 + 8 [systemd-udevd]
+259,4    7       51     0.010260315  3012  P   N [systemd-udevd]
+259,4    7       52     0.010260784  3012  U   N [systemd-udevd] 1
+259,4    7       53     0.010261356  3012  I  RA 29936984 + 8 [systemd-udevd]
+259,4    7       54     0.010262708  3012  D  RA 29936984 + 8 [systemd-udevd]
+259,4    5       12     0.010276993     0  C  RA 29936984 + 8 [0]
+259,4    7       55     0.010300782  3012  Q  RA 29936928 + 8 [systemd-udevd]
+259,4    7       56     0.010302578  3012  G  RA 29936928 + 8 [systemd-udevd]
+259,4    7       57     0.010303073  3012  P   N [systemd-udevd]
+259,4    7       58     0.010303509  3012  U   N [systemd-udevd] 1
+259,4    7       59     0.010304032  3012  I  RA 29936928 + 8 [systemd-udevd]
+259,4    7       60     0.010305426  3012  D  RA 29936928 + 8 [systemd-udevd]
+259,4    5       13     0.010319826     0  C  RA 29936928 + 8 [0]
+259,4    7       61     0.010343176  3012  Q  RA 29936752 + 8 [systemd-udevd]
+259,4    7       62     0.010344968  3012  G  RA 29936752 + 8 [systemd-udevd]
+259,4    7       63     0.010345463  3012  P   N [systemd-udevd]
+259,4    7       64     0.010345902  3012  U   N [systemd-udevd] 1
+259,4    7       65     0.010346439  3012  I  RA 29936752 + 8 [systemd-udevd]
+259,4    7       66     0.010347828  3012  D  RA 29936752 + 8 [systemd-udevd]
+259,4    5       14     0.010362169     0  C  RA 29936752 + 8 [0]
+259,4    7       67     0.010385850  3012  Q  RA 29936688 + 8 [systemd-udevd]
+259,4    7       68     0.010387625  3012  G  RA 29936688 + 8 [systemd-udevd]
+259,4    7       69     0.010388115  3012  P   N [systemd-udevd]
+259,4    7       70     0.010388550  3012  U   N [systemd-udevd] 1
+259,4    7       71     0.010389083  3012  I  RA 29936688 + 8 [systemd-udevd]
+259,4    7       72     0.010390475  3012  D  RA 29936688 + 8 [systemd-udevd]
+259,4    5       15     0.010404947     0  C  RA 29936688 + 8 [0]
+259,4    7       73     0.010430412  3012  Q  RA 29936672 + 8 [systemd-udevd]
+259,4    7       74     0.010432198  3012  G  RA 29936672 + 8 [systemd-udevd]
+259,4    7       75     0.010432669  3012  P   N [systemd-udevd]
+259,4    7       76     0.010433102  3012  U   N [systemd-udevd] 1
+259,4    7       77     0.010433635  3012  I  RA 29936672 + 8 [systemd-udevd]
+259,4    7       78     0.010435009  3012  D  RA 29936672 + 8 [systemd-udevd]
+259,4    5       16     0.010449350     0  C  RA 29936672 + 8 [0]
+259,4    7       79     0.010474010  3012  Q  RA 29936712 + 8 [systemd-udevd]
+259,4    7       80     0.010475843  3012  G  RA 29936712 + 8 [systemd-udevd]
+259,4    7       81     0.010476317  3012  P   N [systemd-udevd]
+259,4    7       82     0.010476750  3012  U   N [systemd-udevd] 1
+259,4    7       83     0.010477387  3012  I  RA 29936712 + 8 [systemd-udevd]
+259,4    7       84     0.010478762  3012  D  RA 29936712 + 8 [systemd-udevd]
+259,4    5       17     0.010493101     0  C  RA 29936712 + 8 [0]
+259,4    7       85     0.010517449  3012  Q  RA 29934576 + 8 [systemd-udevd]
+259,4    7       86     0.010519379  3012  G  RA 29934576 + 8 [systemd-udevd]
+259,4    7       87     0.010519851  3012  P   N [systemd-udevd]
+259,4    7       88     0.010520282  3012  U   N [systemd-udevd] 1
+259,4    7       89     0.010520818  3012  I  RA 29934576 + 8 [systemd-udevd]
+259,4    7       90     0.010522225  3012  D  RA 29934576 + 8 [systemd-udevd]
+259,4    5       18     0.010536865     0  C  RA 29934576 + 8 [0]
+259,4    7       91     0.010638443  3012  Q  RA 2048 + 8 [systemd-udevd]
+259,4    7       92     0.010640642  3012  G  RA 2048 + 8 [systemd-udevd]
+259,4    7       93     0.010641215  3012  P   N [systemd-udevd]
+259,4    7       94     0.010641716  3012  U   N [systemd-udevd] 1
+259,4    7       95     0.010642259  3012  I  RA 2048 + 8 [systemd-udevd]
+259,4    7       96     0.010643958  3012  D  RA 2048 + 8 [systemd-udevd]
+259,4    5       19     0.010658254     0  C  RA 2048 + 8 [0]
+259,4    7       97     0.010728850  3012  Q  RA 56 + 8 [systemd-udevd]
+259,4    7       98     0.010730851  3012  G  RA 56 + 8 [systemd-udevd]
+259,4    7       99     0.010731421  3012  P   N [systemd-udevd]
+259,4    7      100     0.010731894  3012  U   N [systemd-udevd] 1
+259,4    7      101     0.010732476  3012  I  RA 56 + 8 [systemd-udevd]
+259,4    7      102     0.010733976  3012  D  RA 56 + 8 [systemd-udevd]
+259,4    5       20     0.010748225     0  C  RA 56 + 8 [0]
+259,4    7      103     0.010774142  3012  Q  RA 120 + 8 [systemd-udevd]
+259,4    7      104     0.010775939  3012  G  RA 120 + 8 [systemd-udevd]
+259,4    7      105     0.010776475  3012  P   N [systemd-udevd]
+259,4    7      106     0.010776942  3012  U   N [systemd-udevd] 1
+259,4    7      107     0.010777510  3012  I  RA 120 + 8 [systemd-udevd]
+259,4    7      108     0.010778976  3012  D  RA 120 + 8 [systemd-udevd]
+259,4    5       21     0.010793166     0  C  RA 120 + 8 [0]
+259,4    7      109     0.011364875  3012  Q  RA 16 + 8 [systemd-udevd]
+259,4    7      110     0.011367327  3012  G  RA 16 + 8 [systemd-udevd]
+259,4    7      111     0.011367982  3012  P   N [systemd-udevd]
+259,4    7      112     0.011368560  3012  U   N [systemd-udevd] 1
+259,4    7      113     0.011369179  3012  I  RA 16 + 8 [systemd-udevd]
+259,4    7      114     0.011371019  3012  D  RA 16 + 8 [systemd-udevd]
+259,4    7      115     0.011379220  3012  Q  RA 32 + 24 [systemd-udevd]
+259,4    7      116     0.011380969  3012  G  RA 32 + 24 [systemd-udevd]
+259,4    7      117     0.011381433  3012  P   N [systemd-udevd]
+259,4    7      118     0.011381845  3012  U   N [systemd-udevd] 1
+259,4    7      119     0.011382338  3012  I  RA 32 + 24 [systemd-udevd]
+259,4    5       22     0.011385534     0  C  RA 16 + 8 [0]
+259,4    7      120     0.011387601  3012  D  RA 32 + 24 [systemd-udevd]
+259,4    7      121     0.011403703  3012  Q  RA 64 + 56 [systemd-udevd]
+259,4    7      122     0.011405649  3012  G  RA 64 + 56 [systemd-udevd]
+259,4    7      123     0.011406083  3012  P   N [systemd-udevd]
+259,4    7      124     0.011406519  3012  U   N [systemd-udevd] 1
+259,4    7      125     0.011407024  3012  I  RA 64 + 56 [systemd-udevd]
+259,4    7      126     0.011409870  3012  D  RA 64 + 56 [systemd-udevd]
+259,4    5       23     0.011431484     0  C  RA 32 + 24 [0]
+259,4    5       24     0.011445291     0  C  RA 64 + 56 [0]
+259,4    7      127     0.011518489  3012  Q  RA 128 + 384 [systemd-udevd]
+259,4    7      128     0.011522034  3012  G  RA 128 + 384 [systemd-udevd]
+259,4    7      129     0.011522517  3012  P   N [systemd-udevd]
+259,4    7      130     0.011522977  3012  U   N [systemd-udevd] 1
+259,4    7      131     0.011523517  3012  I  RA 128 + 384 [systemd-udevd]
+259,4    7      132     0.011530916  3012  D  RA 128 + 384 [systemd-udevd]
+259,4    5       25     0.011650777     0  C  RA 128 + 384 [0]
+259,4    7      133     0.011944436  3012  Q  RA 512 + 512 [systemd-udevd]
+259,4    7      134     0.011949433  3012  G  RA 512 + 512 [systemd-udevd]
+259,4    7      135     0.011950243  3012  P   N [systemd-udevd]
+259,4    7      136     0.011950864  3012  U   N [systemd-udevd] 1
+259,4    7      137     0.011951659  3012  I  RA 512 + 512 [systemd-udevd]
+259,4    7      138     0.011960921  3012  D  RA 512 + 512 [systemd-udevd]
+259,4    5       26     0.012116941     0  C  RA 512 + 512 [0]
+259,4    7      139     0.012601948  3012  Q  RA 29936640 + 32 [systemd-udevd]
+259,4    7      140     0.012606750  3012  G  RA 29936640 + 32 [systemd-udevd]
+259,4    7      141     0.012607782  3012  P   N [systemd-udevd]
+259,4    7      142     0.012609025  3012  U   N [systemd-udevd] 1
+259,4    7      143     0.012610000  3012  I  RA 29936640 + 32 [systemd-udevd]
+259,4    7      144     0.012618370  3012  D  RA 29936640 + 32 [systemd-udevd]
+259,4    7      145     0.012623893  3012  Q  RA 29936680 + 8 [systemd-udevd]
+259,4    7      146     0.012625292  3012  G  RA 29936680 + 8 [systemd-udevd]
+259,4    7      147     0.012625752  3012  P   N [systemd-udevd]
+259,4    7      148     0.012626211  3012  U   N [systemd-udevd] 1
+259,4    7      149     0.012626701  3012  I  RA 29936680 + 8 [systemd-udevd]
+259,4    7      150     0.012628276  3012  D  RA 29936680 + 8 [systemd-udevd]
+259,4    7      151     0.012638471  3012  Q  RA 29936696 + 16 [systemd-udevd]
+259,4    7      152     0.012639819  3012  G  RA 29936696 + 16 [systemd-udevd]
+259,4    7      153     0.012640292  3012  P   N [systemd-udevd]
+259,4    5       27     0.012640384     0  C  RA 29936640 + 32 [0]
+259,4    7      154     0.012640728  3012  U   N [systemd-udevd] 1
+259,4    7      155     0.012641213  3012  I  RA 29936696 + 16 [systemd-udevd]
+259,4    7      156     0.012643637  3012  D  RA 29936696 + 16 [systemd-udevd]
+259,4    5       28     0.012650669     0  C  RA 29936680 + 8 [0]
+259,4    7      157     0.012653184  3012  Q  RA 29936720 + 32 [systemd-udevd]
+259,4    7      158     0.012655134  3012  G  RA 29936720 + 32 [systemd-udevd]
+259,4    7      159     0.012655608  3012  P   N [systemd-udevd]
+259,4    7      160     0.012656049  3012  U   N [systemd-udevd] 1
+259,4    7      161     0.012656549  3012  I  RA 29936720 + 32 [systemd-udevd]
+259,4    7      162     0.012659583  3012  D  RA 29936720 + 32 [systemd-udevd]
+259,4    5       29     0.012697218     0  C  RA 29936720 + 32 [0]
+259,4    7      163     0.012707109  3012  Q  RA 29936760 + 168 [systemd-udevd]
+259,4    7      164     0.012708941  3012  G  RA 29936760 + 168 [systemd-udevd]
+259,4    7      165     0.012709410  3012  P   N [systemd-udevd]
+259,4    7      166     0.012709864  3012  U   N [systemd-udevd] 1
+259,4    7      167     0.012710351  3012  I  RA 29936760 + 168 [systemd-udevd]
+259,4    5       30     0.012712009     0  C  RA 29936696 + 16 [0]
+259,4    7      168     0.012714025  3012  D  RA 29936760 + 168 [systemd-udevd]
+259,4    7      169     0.012726859  3012  Q  RA 29936936 + 48 [systemd-udevd]
+259,4    7      170     0.012728537  3012  G  RA 29936936 + 48 [systemd-udevd]
+259,4    7      171     0.012728978  3012  P   N [systemd-udevd]
+259,4    7      172     0.012729417  3012  U   N [systemd-udevd] 1
+259,4    7      173     0.012729916  3012  I  RA 29936936 + 48 [systemd-udevd]
+259,4    7      174     0.012733054  3012  D  RA 29936936 + 48 [systemd-udevd]
+259,4    7      175     0.012756091  3012  Q  RA 29936992 + 80 [systemd-udevd]
+259,4    7      176     0.012757544  3012  G  RA 29936992 + 80 [systemd-udevd]
+259,4    7      177     0.012757975  3012  P   N [systemd-udevd]
+259,4    7      178     0.012758436  3012  U   N [systemd-udevd] 1
+259,4    7      179     0.012758934  3012  I  RA 29936992 + 80 [systemd-udevd]
+259,4    7      180     0.012761550  3012  D  RA 29936992 + 80 [systemd-udevd]
+259,4    7      181     0.012778907  3012  Q  RA 29937080 + 72 [systemd-udevd]
+259,4    7      182     0.012780421  3012  G  RA 29937080 + 72 [systemd-udevd]
+259,4    7      183     0.012780892  3012  P   N [systemd-udevd]
+259,4    7      184     0.012781324  3012  U   N [systemd-udevd] 1
+259,4    7      185     0.012781811  3012  I  RA 29937080 + 72 [systemd-udevd]
+259,4    7      186     0.012784185  3012  D  RA 29937080 + 72 [systemd-udevd]
+259,4    5       31     0.012813169     0  C  RA 29936760 + 168 [0]
+259,4    5       32     0.012825186     0  C  RA 29936936 + 48 [0]
+259,4    5       33     0.012845773     0  C  RA 29936992 + 80 [0]
+259,4    5       34     0.012883366     0  C  RA 29937080 + 72 [0]
+259,4    7      187     0.013188204  3012  Q  RA 29937152 + 112 [systemd-udevd]
+259,4    7      188     0.013190338  3012  G  RA 29937152 + 112 [systemd-udevd]
+259,4    7      189     0.013190991  3012  P   N [systemd-udevd]
+259,4    7      190     0.013191509  3012  U   N [systemd-udevd] 1
+259,4    7      191     0.013192148  3012  I  RA 29937152 + 112 [systemd-udevd]
+259,4    7      192     0.013195676  3012  D  RA 29937152 + 112 [systemd-udevd]
+259,4    7      193     0.013234149  3012  Q  RA 29937272 + 128 [systemd-udevd]
+259,4    7      194     0.013235565  3012  G  RA 29937272 + 128 [systemd-udevd]
+259,4    7      195     0.013236073  3012  P   N [systemd-udevd]
+259,4    7      196     0.013236493  3012  U   N [systemd-udevd] 1
+259,4    7      197     0.013237010  3012  I  RA 29937272 + 128 [systemd-udevd]
+259,4    7      198     0.013239343  3012  D  RA 29937272 + 128 [systemd-udevd]
+259,4    5       35     0.013257429     0  C  RA 29937152 + 112 [0]
+259,4    7      199     0.013270385  3012  Q  RA 29937416 + 120 [systemd-udevd]
+259,4    7      200     0.013272149  3012  G  RA 29937416 + 120 [systemd-udevd]
+259,4    7      201     0.013272651  3012  P   N [systemd-udevd]
+259,4    7      202     0.013273069  3012  U   N [systemd-udevd] 1
+259,4    7      203     0.013273559  3012  I  RA 29937416 + 120 [systemd-udevd]
+259,4    7      204     0.013276346  3012  D  RA 29937416 + 120 [systemd-udevd]
+259,4    7      205     0.013290176  3012  Q  RA 29937544 + 56 [systemd-udevd]
+259,4    5       36     0.013290292     0  C  RA 29937272 + 128 [0]
+259,4    7      206     0.013291505  3012  G  RA 29937544 + 56 [systemd-udevd]
+259,4    7      207     0.013291941  3012  P   N [systemd-udevd]
+259,4    7      208     0.013292364  3012  U   N [systemd-udevd] 1
+259,4    7      209     0.013292843  3012  I  RA 29937544 + 56 [systemd-udevd]
+259,4    7      210     0.013295669  3012  D  RA 29937544 + 56 [systemd-udevd]
+259,4    7      211     0.013305907  3012  Q  RA 29937608 + 40 [systemd-udevd]
+259,4    7      212     0.013307435  3012  G  RA 29937608 + 40 [systemd-udevd]
+259,4    7      213     0.013307868  3012  P   N [systemd-udevd]
+259,4    7      214     0.013308282  3012  U   N [systemd-udevd] 1
+259,4    7      215     0.013308759  3012  I  RA 29937608 + 40 [systemd-udevd]
+259,4    7      216     0.013311424  3012  D  RA 29937608 + 40 [systemd-udevd]
+259,4    5       37     0.013336519     0  C  RA 29937416 + 120 [0]
+259,4    5       38     0.013350739     0  C  RA 29937544 + 56 [0]
+259,4    5       39     0.013361152     0  C  RA 29937608 + 40 [0]
+259,4    7      217     0.013698774  3012  Q  RA 4096 + 8 [systemd-udevd]
+259,4    7      218     0.013701103  3012  G  RA 4096 + 8 [systemd-udevd]
+259,4    7      219     0.013701725  3012  P   N [systemd-udevd]
+259,4    7      220     0.013702240  3012  U   N [systemd-udevd] 1
+259,4    7      221     0.013702858  3012  I  RA 4096 + 8 [systemd-udevd]
+259,4    7      222     0.013704781  3012  D  RA 4096 + 8 [systemd-udevd]
+259,4    5       40     0.013718900     0  C  RA 4096 + 8 [0]
+259,4    6        1     0.173909350  2996  I   N 0 [db_bench]
+259,4    6        2     0.173912829  2996  D   N 0 [db_bench]
+259,4    7      223     1.036103471  3031  I   N 0 [ioctl]
+259,4    7      224     1.036105196  3031  D   N 0 [ioctl]
+259,4    7      225   201.484366525    54  C   N [65531]
+259,4    7      226   201.484380993    54  C   N [65531]
+CPU1 (259,4):
+ Reads Queued:           3,       12KiB	 Writes Queued:           0,        0KiB
+ Read Dispatches:        3,       12KiB	 Write Dispatches:        0,        0KiB
+ Reads Requeued:         0		 Writes Requeued:         0
+ Reads Completed:        0,        0KiB	 Writes Completed:        0,        0KiB
+ Read Merges:            0,        0KiB	 Write Merges:            0,        0KiB
+ Read depth:             4        	 Write depth:             0
+ IO unplugs:             0        	 Timer unplugs:           0
+CPU5 (259,4):
+ Reads Queued:           0,        0KiB	 Writes Queued:           0,        0KiB
+ Read Dispatches:        0,        0KiB	 Write Dispatches:        0,        0KiB
+ Reads Requeued:         0		 Writes Requeued:         0
+ Reads Completed:       40,     1036KiB	 Writes Completed:        0,        0KiB
+ Read Merges:            0,        0KiB	 Write Merges:            0,        0KiB
+ Read depth:             4        	 Write depth:             0
+ IO unplugs:             0        	 Timer unplugs:           0
+CPU6 (259,4):
+ Reads Queued:           0,        0KiB	 Writes Queued:           0,        0KiB
+ Read Dispatches:        0,        0KiB	 Write Dispatches:        0,        0KiB
+ Reads Requeued:         0		 Writes Requeued:         0
+ Reads Completed:        0,        0KiB	 Writes Completed:        0,        0KiB
+ Read Merges:            0,        0KiB	 Write Merges:            0,        0KiB
+ Read depth:             4        	 Write depth:             0
+ PC Reads Queued:        0,        0KiB	 PC Writes Queued:        0,        0KiB
+ PC Read Disp.:          1,        0KiB	 PC Write Disp.:          0,        0KiB
+ PC Reads Req.:          0		 PC Writes Req.:          0
+ PC Reads Compl.:        0		 PC Writes Compl.:        0
+ IO unplugs:             0        	 Timer unplugs:           0
+CPU7 (259,4):
+ Reads Queued:          37,     1024KiB	 Writes Queued:           0,        0KiB
+ Read Dispatches:       37,     1024KiB	 Write Dispatches:        0,        0KiB
+ Reads Requeued:         0		 Writes Requeued:         0
+ Reads Completed:        0,        0KiB	 Writes Completed:        0,        0KiB
+ Read Merges:            0,        0KiB	 Write Merges:            0,        0KiB
+ Read depth:             4        	 Write depth:             0
+ PC Reads Queued:        0,        0KiB	 PC Writes Queued:        0,        0KiB
+ PC Read Disp.:          1,        0KiB	 PC Write Disp.:          0,        0KiB
+ PC Reads Req.:          0		 PC Writes Req.:          0
+ PC Reads Compl.:        2		 PC Writes Compl.:        0
+ IO unplugs:            37        	 Timer unplugs:           0
+
+Total (259,4):
+ Reads Queued:          40,     1036KiB	 Writes Queued:           0,        0KiB
+ Read Dispatches:       40,     1036KiB	 Write Dispatches:        0,        0KiB
+ Reads Requeued:         0		 Writes Requeued:         0
+ Reads Completed:       40,     1036KiB	 Writes Completed:        0,        0KiB
+ Read Merges:            0,        0KiB	 Write Merges:            0,        0KiB
+ PC Reads Queued:        0,        0KiB	 PC Writes Queued:        0,        0KiB
+ PC Read Disp.:          2,        0KiB	 PC Write Disp.:          0,        0KiB
+ PC Reads Req.:          0		 PC Writes Req.:          0
+ PC Reads Compl.:        2		 PC Writes Compl.:        0
+ IO unplugs:            37        	 Timer unplugs:           0
+
+Throughput (R/W): 5KiB/s / 0KiB/s
+Events (259,4): 280 entries
+Skips: 0 forward (0 -   0.0%)

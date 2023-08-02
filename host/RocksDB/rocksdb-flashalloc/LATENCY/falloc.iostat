@@ -1,0 +1,122 @@
+Linux 5.4.20 (csoyee-Z170X-UD5) 	2023년 05월 25일 	_x86_64_	(8 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           1.47    0.00    1.35   10.96    0.00   86.21
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1          3.06    6.03      0.08      2.39     0.00   139.56   0.00  95.86    0.09    4.61   0.01    27.72   406.51   0.56   0.51
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          27.53    0.00    5.30    8.96    0.00   58.21
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        126.00  175.00     70.59    125.39     0.00    94.00   0.00  34.94    1.82   14.34   2.26   573.68   733.74   1.50  45.20
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          29.85    0.00    6.17   10.20    0.00   53.78
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        120.00  426.00    113.34    390.28     0.00    47.00   0.00   9.94    3.84   43.10  17.73   967.20   938.14   1.45  79.20
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          29.27    0.00    5.90   11.06    0.00   53.77
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        105.00  478.00    101.34    445.42     0.00    56.00   0.00  10.49    8.59   18.00   8.37   988.34   954.20   1.40  81.60
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          27.60    0.00    5.52    6.40    0.00   60.48
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        122.00  429.00    117.43    400.01     0.00    45.00   0.00   9.49    3.20   29.66  12.00   985.67   954.80   1.53  84.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          29.31    0.00    5.33    7.36    0.00   57.99
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        141.00  413.00    125.95    365.81     0.00    55.00   0.00  11.75    5.40   57.33  23.35   914.70   907.00   1.48  82.00
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          31.78    0.00    6.41    7.29    0.00   54.52
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        340.00  390.00    144.34    359.99     0.00    43.00   0.00   9.93    4.74   27.39  10.82   434.73   945.21   1.09  79.60
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          10.50    0.00    4.75    6.88    0.00   77.88
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        187.00  367.00    151.35    333.82     0.00    48.00   0.00  11.57    6.01   23.74   8.73   828.77   931.43   1.52  84.00
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.49    0.00    3.00    6.99    0.00   83.52
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        282.00  178.00    229.09    170.27     0.00    17.00   0.00   8.72    2.70    7.02   1.02   831.87   979.53   1.82  83.60
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           7.07    0.00    2.85    6.45    0.00   83.62
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        232.00  162.00    222.09    150.40     0.00    24.00   0.00  12.90    2.74    7.31   0.97   980.28   950.67   1.92  75.60
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           5.64    0.00    3.63    2.26    0.00   88.47
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        269.00  207.00    200.09    192.40     0.00    24.00   0.00  10.39    2.83   11.14   2.08   761.68   951.77   1.65  78.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          11.31    0.00    4.77    3.27    0.00   80.65
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        253.00  269.00    145.38    244.83     1.00    34.00   0.39  11.22    3.23   11.15   2.78   588.41   932.00   1.43  74.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          33.04    0.00    4.40    7.91    0.00   54.65
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        170.00  402.00    152.61    355.65     0.00    76.00   0.00  15.90    7.45   17.40   7.13   919.22   905.94   1.51  86.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          31.65    0.00    4.79    7.82    0.00   55.74
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        130.00  410.00    121.43    378.12     0.00    47.00   0.00  10.28    3.05   23.45   8.92   956.52   944.37   1.57  84.80
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           8.34    0.00    4.98    3.74    0.00   82.94
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        179.00  270.00    175.35    253.07     0.00    23.00   0.00   7.85    4.12   35.95   9.50  1003.13   959.81   1.84  82.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.42    0.00    3.27    1.64    0.00   88.68
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        207.00  204.00    188.18    192.40     0.00    25.00   0.00  10.92    2.91   12.58   2.32   930.92   965.78   2.05  84.40
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.35    0.00    3.74    1.74    0.00   88.17
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        218.00  204.00    196.18    192.40     0.00    24.00   0.00  10.53    2.78   10.05   1.75   921.50   965.76   1.91  80.80
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           7.21    0.00    3.73    1.99    0.00   87.06
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        230.00  164.00    216.18    156.27     0.00    17.00   0.00   9.39    2.73    7.47   1.01   962.47   975.73   2.08  82.00
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.47    0.00    3.48    2.61    0.00   87.44
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        224.00  176.00    210.18    164.40     0.00    24.00   0.00  12.00    2.80   11.34   1.76   960.82   956.50   2.17  86.80
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           7.24    0.00    3.25    6.12    0.00   83.40
+
+Device            r/s     w/s     rMB/s     wMB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+nvme1n1        226.00  211.00    188.18    192.63     0.00    77.00   0.00  26.74    2.96    8.60   1.58   852.64   934.86   1.89  82.40
+

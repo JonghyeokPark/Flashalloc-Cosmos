@@ -1,0 +1,2605 @@
+gc: 0, wr: 0, hwr: 0, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+[ERROR] sallocate lsa: 37284352 loop: 256
+assertion "!"[WARNING] Logical address is larger than maximum logical address served by SSD [WARNING]"" failed: file "../src/sallocate/sallocate.c", line 341, function: sallocateOpt
+
+NVME CC.EN: 0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+
+PCIe Bus Master: 1
+
+PCIe IRQ Disable: 0
+
+PCIe MSI Enable: 1, 0x0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+
+ÿ[!] MMU has been enabled.
+
+
+
+
+[ NAND device reset complete. ]
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 1F500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 7 rowAddr 25100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 25C00 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+Erase FAIL on             ch 2 way 3 rowAddr 2F700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 2FD00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 2FD00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 2 way 3 rowAddr 30B00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 4 way 6 rowAddr 4B100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 7 rowAddr 4B200 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 7 way 7 rowAddr 4B400 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+Erase FAIL on             ch 2 way 3 rowAddr 51200 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 51300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 51B00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 7 rowAddr 52000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 52700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 7 rowAddr 54A00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 7 rowAddr 55200 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 56500 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 58D00 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 0 way 3 rowAddr 5BD00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 5E500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 5F800 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr 62700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 62800 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 2 way 3 rowAddr 62900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 65000 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 68400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 68500 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 1 way 1 rowAddr 69300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 7 rowAddr 69400 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 3 rowAddr 6B100 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 2 way 5 rowAddr 6D300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 3 rowAddr 6D700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 7 rowAddr 6D800 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr 6DA00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 7 rowAddr 6E800 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 6F500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 7 rowAddr 6FC00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 70000 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 0 rowAddr 70900 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 1 rowAddr 72000 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 3 way 1 rowAddr 75800 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 76100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 3 rowAddr 76700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 76D00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr 78400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr 78500 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 2 way 7 rowAddr 7A300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 7B000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 7 rowAddr 7C900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 3 rowAddr 7D100 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+Erase FAIL on             ch 0 way 7 rowAddr 80000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 80100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr 80200 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 0 way 1 rowAddr 82100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 0 rowAddr 83800 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 7 rowAddr 83800 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 85500 / completion 0 statusReport 1C3C3 
+
+
+
+
+Erase FAIL on             ch 1 way 1 rowAddr 89C00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 0 rowAddr 89F00 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 1 way 4 rowAddr 8C900 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 8CE00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 7 way 2 rowAddr 89600 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 1 way 1 rowAddr 93400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr 93500 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 3 way 3 rowAddr 95700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 96600 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 1 way 1 rowAddr 96A00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 5 rowAddr 96D00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 3 rowAddr 9BB00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 9CF00 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+Erase FAIL on             ch 3 way 1 rowAddr A2500 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr A2A00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 1 rowAddr A2E00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr A3D00 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 0 way 5 rowAddr A6300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 7 rowAddr A6300 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 2 way 7 rowAddr A7900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr A7B00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 6 way 3 rowAddr AA500 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 5 rowAddr AA500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 4 rowAddr AA700 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 5 rowAddr AA700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 7 rowAddr AAF00 / completion 0 statusReport 1C3C3 
+
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr ADA00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 1 rowAddr ADC00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 1 rowAddr AE100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr AE900 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+Erase FAIL on             ch 5 way 0 rowAddr B3400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 5 way 0 rowAddr B3600 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 5 way 0 rowAddr B3C00 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 1 way 1 rowAddr B5000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 5 way 0 rowAddr B5600 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 1 rowAddr B6300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 5 way 7 rowAddr B6600 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr BB400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 1 rowAddr BB400 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 7 rowAddr BBA00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 6 rowAddr BC100 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 3 way 1 rowAddr BCD00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 1 rowAddr BD700 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 1 way 0 rowAddr BEB00 / completion 0 statusReport 1FFC3 
+
+
+
+
+Erase FAIL on             ch 0 way 6 rowAddr C3300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 4 way 3 rowAddr C3C00 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 5 way 7 rowAddr CB800 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 5 way 7 rowAddr CBA00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 1 rowAddr CC500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 0 rowAddr CC700 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 0 way 7 rowAddr CD000 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+Erase FAIL on             ch 4 way 1 rowAddr D2900 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 2 way 3 rowAddr D2E00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 1 way 1 rowAddr E1D00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 4 rowAddr E1D00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr E2000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 0 rowAddr E2100 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 7 way 7 rowAddr E2C00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr E2E00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 7 rowAddr E3000 / completion 0 statusReport 1FFC3 
+
+
+
+Erase FAIL on             ch 0 way 4 rowAddr E5E00 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 1 way 1 rowAddr E6C00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 1 rowAddr E6D00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 6 rowAddr E7100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr E7D00 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 4 way 1 rowAddr EBB00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 4 rowAddr EBC00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 1 rowAddr EC100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 4 rowAddr ECA00 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 3 way 0 rowAddr ED600 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 1 rowAddr ED800 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 1 way 7 rowAddr EDC00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 0 rowAddr EE900 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 3 way 0 rowAddr EFE00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 7 rowAddr F0600 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 7 rowAddr F0800 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr F0A00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 7 rowAddr F0E00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 2 rowAddr F6500 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 1 way 1 rowAddr F6600 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 7 way 0 rowAddr F6700 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 5 way 2 rowAddr F6A00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 4 rowAddr F6A00 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 5 way 2 rowAddr F6B00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 6 rowAddr F6C00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 7 way 0 rowAddr F6F00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 4 rowAddr F8300 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 4 rowAddr F8500 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+Erase FAIL on             ch 2 way 4 rowAddr FC000 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 2 way 0 rowAddr FE300 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 5 rowAddr FEB00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 1 rowAddr FEB00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 2 way 2 rowAddr FF900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 3 rowAddr FF900 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 102800 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 5 way 0 rowAddr 102A00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 234F00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 1 rowAddr 236300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 5 rowAddr 238900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 238B00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 239100 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 1 rowAddr 239500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 7 way 5 rowAddr 239900 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 253700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 253700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 254100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 5 way 0 rowAddr 255F00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 256100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr 259200 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 7 way 7 rowAddr 260600 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 1 rowAddr 260F00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 1 way 4 rowAddr 263900 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 6 rowAddr 263B00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 6 way 3 rowAddr 264200 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 5 way 5 rowAddr 264400 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 5 way 5 rowAddr 264E00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 1 rowAddr 265100 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 2 way 1 rowAddr 267700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 0 rowAddr 267C00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 268F00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 2 rowAddr 269C00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 2 rowAddr 26A600 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 26BE00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 1 rowAddr 26DD00 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+Erase FAIL on             ch 5 way 5 rowAddr 274400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 1 rowAddr 274500 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+Erase FAIL on             ch 2 way 7 rowAddr 27EB00 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 0 way 2 rowAddr 290800 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 3 way 7 rowAddr 2A6100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 1 rowAddr 2A6B00 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 0 way 6 rowAddr 2A9000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 6 rowAddr 2AA500 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 1 way 2 rowAddr 2ABE00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 2 rowAddr 2AC300 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 1 way 2 rowAddr 2AF700 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 6 rowAddr 2AF700 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 0 way 1 rowAddr 2AFB00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 7 rowAddr 2B0300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 4 rowAddr 2B0F00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 1 way 4 rowAddr 2B2400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 4 rowAddr 2B2500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 1 way 2 rowAddr 2B2900 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 2 way 4 rowAddr 2B3200 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 2B3A00 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 1 way 5 rowAddr 2B5500 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+Erase FAIL on             ch 3 way 7 rowAddr 2B9100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 1 rowAddr 2B9300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 7 rowAddr 2B9300 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 2 way 3 rowAddr 2C3200 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 5 way 1 rowAddr 2C3500 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 2C5400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 2C5400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 3 rowAddr 2C7600 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 4 way 1 rowAddr 2E0100 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 5 way 4 rowAddr 2E7E00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 2E8300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 7 rowAddr 2E8900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 7 rowAddr 2E9200 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 2 rowAddr 2E9400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 2 rowAddr 2E9500 / completion 0 statusReport 1C3C3 
+
+
+
+
+Erase FAIL on             ch 2 way 2 rowAddr 2EB400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 6 way 1 rowAddr 2E8E00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 7 way 5 rowAddr 2EC300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 3 rowAddr 2EC800 / completion 0 statusReport 1FFC3 
+
+
+
+Erase FAIL on             ch 2 way 6 rowAddr 2ED100 / completion 0 statusReport 1C3C3 
+
+
+
+Erase FAIL on             ch 0 way 1 rowAddr 2EE500 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 2EF400 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2EF800 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+Erase FAIL on             ch 1 way 7 rowAddr 2F1D00 / completion 0 statusReport 1FFC3 
+
+
+
+Erase FAIL on             ch 7 way 5 rowAddr 2F2A00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 4 way 3 rowAddr 2F3000 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 4 way 3 rowAddr 2F3100 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 4 way 4 rowAddr 2F3200 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 2 way 3 rowAddr 2F3700 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 7 way 7 rowAddr 2F4400 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 4 way 4 rowAddr 2F4800 / completion 0 statusReport 1FFC3 
+
+
+Erase FAIL on             ch 4 way 4 rowAddr 2F4A00 / completion 0 statusReport 1FFC3 
+
+
+
+Erase FAIL on             ch 3 way 5 rowAddr 2F5800 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 7 way 5 rowAddr 2F6200 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2F6300 / completion 0 statusReport 1C3C3 
+
+
+
+
+Erase FAIL on             ch 4 way 4 rowAddr 2F7300 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 3 way 4 rowAddr 2F7400 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 3 way 4 rowAddr 2F7500 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 2 rowAddr 2F7A00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 5 rowAddr 2F8400 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 2 way 3 rowAddr 2F8F00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2F9800 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2F9900 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 7 way 5 rowAddr 2F9A00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2F9B00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 6 way 3 rowAddr 2FA900 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 4 rowAddr 2FAA00 / completion 0 statusReport 1FFC3 
+
+Erase FAIL on             ch 7 way 5 rowAddr 2FB100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 7 rowAddr 2FB300 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 5 rowAddr 2FB500 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+Erase FAIL on             ch 7 way 5 rowAddr 2FD300 / completion 0 statusReport 1C3C3 
+
+
+
+
+Erase FAIL on             ch 2 way 5 rowAddr 2FE100 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 3 way 5 rowAddr 2FE100 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 3 way 6 rowAddr 2FE100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 2FE100 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 7 way 5 rowAddr 2FE100 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+Erase FAIL on             ch 3 way 6 rowAddr 2FE900 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 3 way 4 rowAddr 2FEB00 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 2 way 7 rowAddr 2FEB00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 0 way 7 rowAddr 2FEB00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 6 way 3 rowAddr 2FEE00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 6 way 3 rowAddr 2FEF00 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2FF000 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 4 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 3 way 5 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+
+
+Erase FAIL on             ch 2 way 5 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+
+Erase FAIL on             ch 3 way 6 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 2 way 7 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 7 way 5 rowAddr 2FF100 / completion 0 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+
+Erase FAIL on             ch 1 way 2 rowAddr 300E00 / completion 0 statusReport 1FFC3 
+Erase FAIL on             ch 0 way 3 rowAddr 301900 / completion 0 statusReport 1FFC3 
+
+
+
+Erase FAIL on             ch 7 way 2 rowAddr 303700 / completion 0 statusReport 1C3C3 
+Erase FAIL on             ch 1 way 4 rowAddr 303800 / completion 0 statusReport 1FFC3 
+
+
+
+
+
+
+Read Transfer FAIL on     ch 2 way 2 rowAddr 1 / completion A5000001 statusReport 1C1C1 
+Read Transfer FAIL on     ch 3 way 0 rowAddr 1 / completion A5000001 statusReport 1C1C1 
+
+
+
+
+
+
+
+
+Read Transfer FAIL on     ch 5 way 4 rowAddr 1 / completion A5000001 statusReport 1C1C1 
+
+
+
+
+
+
+
+
+
+
+
+
+[ bad block table of ch 2 way 0 does not exist.]
+
+
+
+
+[ bad block table of ch 1 way 1 does not exist.]
+
+
+[ bad block table of ch 7 way 1 does not exist.]
+[ bad block table of ch 0 way 2 does not exist.]
+[ bad block table of ch 1 way 2 does not exist.]
+[ bad block table of ch 2 way 2 does not exist.]
+
+
+
+
+
+[ bad block table of ch 0 way 3 does not exist.]
+[ bad block table of ch 3 way 3 does not exist.]
+
+
+
+
+[ bad block table of ch 2 way 4 does not exist.]
+
+
+[ bad block table of ch 6 way 4 does not exist.]
+[ bad block table of ch 7 way 4 does not exist.]
+
+[ bad block table of ch 0 way 5 does not exist.]
+[ bad block table of ch 1 way 5 does not exist.]
+
+[ bad block table of ch 4 way 5 does not exist.]
+
+[ bad block table of ch 0 way 6 does not exist.]
+
+
+[ bad block table of ch 4 way 6 does not exist.]
+[ bad block table of ch 5 way 6 does not exist.]
+[ bad block table of ch 6 way 6 does not exist.]
+
+[ bad block table of ch 7 way 6 does not exist.]
+[ bad block table of ch 0 way 7 does not exist.]
+[ bad block table of ch 1 way 7 does not exist.]
+
+
+[ bad block table of ch 6 way 7 does not exist.]
+[ bad block table of ch 7 way 7 does not exist.]
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 17500 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 17D00 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 639 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 2CD00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 717 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 2D200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 722 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2DD00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 733 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2F700 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 759 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 2FD00 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 833 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 35D00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 861 
+
+
+
+
+
+
+
+
+
+
+	bad block is detected: Ch 4 Way 6 phyBlock 1067 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 1078 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 43800 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 7 Way 7 phyBlock 1080 
+
+Read Trigger FAIL on      ch 0 way 6 rowAddr 44100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 6 phyBlock 1089 
+
+
+
+
+
+Read Trigger FAIL on      ch 2 way 7 rowAddr 48400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 1156 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 48500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 1157 
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 48A00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 1162 
+
+	bad block is detected: Ch 7 Way 7 phyBlock 1176 
+	bad block is detected: Ch 2 Way 3 phyBlock 1182 
+
+
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 4D800 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 4E500 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 3 phyBlock 1253 
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr 54A00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr 55200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 7 phyBlock 1362 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 56500 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 58D00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 1421 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 59100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 1425 
+
+
+
+	bad block is detected: Ch 0 Way 3 phyBlock 1469 
+	bad block is detected: Ch 0 Way 1 phyBlock 1503 
+	bad block is detected: Ch 0 Way 1 phyBlock 1509 
+	bad block is detected: Ch 0 Way 1 phyBlock 1528 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 63F00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 65000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 1616 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 68400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 1668 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 68500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 1669 
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr 69100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 1681 
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr 69300 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 1708 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 6B700 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 6BA00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 6BF00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr 6D300 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 6D700 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 6D800 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 7 Way 7 phyBlock 1752 
+
+
+	bad block is detected: Ch 7 Way 7 phyBlock 1754 
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr 6E800 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 6F500 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 6FC00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 1788 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 70000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 1792 
+
+Read Trigger FAIL on      ch 1 way 0 rowAddr 70900 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 1 rowAddr 72000 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 72900 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 73B00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 73D00 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+Read Trigger FAIL on      ch 3 way 3 rowAddr 76700 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 76D00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr 78400 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr 78500 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 2 Way 7 phyBlock 1953 
+
+Read Trigger FAIL on      ch 2 way 7 rowAddr 7C900 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 1993 
+
+	bad block is detected: Ch 0 Way 3 phyBlock 2001 
+	bad block is detected: Ch 0 Way 1 phyBlock 2005 
+	bad block is detected: Ch 0 Way 7 phyBlock 2008 
+
+
+
+
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr 83800 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 3 way 0 rowAddr 83800 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 85500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 2133 
+Read Trigger FAIL on      ch 0 way 6 rowAddr 86800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 6 phyBlock 2152 
+
+
+
+
+
+	bad block is detected: Ch 0 Way 6 phyBlock 2191 
+Read Trigger FAIL on      ch 3 way 1 rowAddr 89500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 1 phyBlock 2197 
+
+Read Trigger FAIL on      ch 7 way 2 rowAddr 89600 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 2 phyBlock 2198 
+Read Trigger FAIL on      ch 3 way 5 rowAddr 89800 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr 89C00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 6 way 1 rowAddr 89C00 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 6 Way 1 phyBlock 2204 
+Read Trigger FAIL on      ch 1 way 0 rowAddr 89F00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 0 phyBlock 2207 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 2215 
+	bad block is detected: Ch 1 Way 4 phyBlock 2249 
+	bad block is detected: Ch 2 Way 3 phyBlock 2254 
+
+
+	bad block is detected: Ch 1 Way 2 phyBlock 2311 
+	bad block is detected: Ch 3 Way 1 phyBlock 2348 
+
+
+	bad block is detected: Ch 6 Way 1 phyBlock 2382 
+	bad block is detected: Ch 3 Way 3 phyBlock 2391 
+	bad block is detected: Ch 2 Way 7 phyBlock 2406 
+	bad block is detected: Ch 1 Way 1 phyBlock 2410 
+	bad block is detected: Ch 2 Way 5 phyBlock 2413 
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr 98500 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 4 phyBlock 2437 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 98B00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 0 way 3 rowAddr 98B00 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 2443 
+	bad block is detected: Ch 0 Way 3 phyBlock 2443 
+Read Trigger FAIL on      ch 1 way 1 rowAddr 99000 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 2448 
+
+
+
+
+
+Read Trigger FAIL on      ch 4 way 5 rowAddr 9B800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 4 Way 5 phyBlock 2488 
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 9BB00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 3 phyBlock 2491 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 9CF00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr 9D600 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr 9D700 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr A0400 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr A0600 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 4 phyBlock 2566 
+
+
+	bad block is detected: Ch 0 Way 4 phyBlock 2567 
+
+Read Trigger FAIL on      ch 4 way 7 rowAddr A1100 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 4 rowAddr A2400 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 1 Way 4 phyBlock 2596 
+Read Trigger FAIL on      ch 3 way 1 rowAddr A2500 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 3 Way 1 phyBlock 2597 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr A2A00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 2602 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr A2E00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 2606 
+Read Trigger FAIL on      ch 0 way 1 rowAddr A3D00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 3 rowAddr A5100 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr A5900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 3 phyBlock 2649 
+
+
+
+	bad block is detected: Ch 2 Way 7 phyBlock 2675 
+
+
+
+Read Trigger FAIL on      ch 0 way 5 rowAddr AA500 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 6 Way 3 phyBlock 2725 
+
+	bad block is detected: Ch 0 Way 5 phyBlock 2725 
+
+
+Read Trigger FAIL on      ch 2 way 4 rowAddr AA700 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 2 Way 4 phyBlock 2727 
+
+	bad block is detected: Ch 0 Way 5 phyBlock 2727 
+Read Trigger FAIL on      ch 2 way 7 rowAddr AAF00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr AB200 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 6 rowAddr AC900 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 5 Way 3 phyBlock 2762 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr AE000 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr AE100 / completion A5000001 statusReport 1FFC3 
+
+
+
+	bad block is detected: Ch 0 Way 3 phyBlock 2795 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr AF600 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 2806 
+
+Read Trigger FAIL on      ch 1 way 0 rowAddr AF700 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 0 phyBlock 2807 
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr B0200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 4 phyBlock 2818 
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr B2400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 0 phyBlock 2852 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr B6000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 2912 
+Read Trigger FAIL on      ch 0 way 1 rowAddr B6300 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 2915 
+Read Trigger FAIL on      ch 5 way 7 rowAddr B6600 / completion A5000001 statusReport 1C3C3 
+
+Read Trigger FAIL on      ch 5 way 7 rowAddr B6E00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 7 phyBlock 2926 
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 4 way 3 rowAddr B9F00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 4 Way 3 phyBlock 2975 
+Read Trigger FAIL on      ch 0 way 1 rowAddr BB400 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+
+
+
+
+
+	bad block is detected: Ch 6 Way 3 phyBlock 3018 
+
+Read Trigger FAIL on      ch 3 way 1 rowAddr BCD00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 1 phyBlock 3021 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr BDB00 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 3 Way 6 phyBlock 3054 
+	bad block is detected: Ch 6 Way 0 phyBlock 3078 
+
+
+	bad block is detected: Ch 0 Way 7 phyBlock 3098 
+	bad block is detected: Ch 6 Way 1 phyBlock 3104 
+	bad block is detected: Ch 6 Way 1 phyBlock 3106 
+
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 3151 
+
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr C7800 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 0 way 1 rowAddr C7C00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 2 rowAddr C8900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 2 phyBlock 3209 
+Read Trigger FAIL on      ch 0 way 3 rowAddr C8B00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 3 phyBlock 3211 
+
+Read Trigger FAIL on      ch 6 way 1 rowAddr C8E00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 6 Way 1 phyBlock 3214 
+
+Read Trigger FAIL on      ch 3 way 6 rowAddr CA100 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 6 phyBlock 3233 
+Read Trigger FAIL on      ch 6 way 3 rowAddr CA300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 6 Way 3 phyBlock 3235 
+Read Trigger FAIL on      ch 5 way 5 rowAddr CA800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 5 phyBlock 3240 
+
+
+	bad block is detected: Ch 1 Way 2 phyBlock 3251 
+
+
+Read Trigger FAIL on      ch 5 way 7 rowAddr CC200 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+	bad block is detected: Ch 0 Way 7 phyBlock 3280 
+
+
+
+
+
+Read Trigger FAIL on      ch 1 way 2 rowAddr D0200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 2 phyBlock 3330 
+Read Trigger FAIL on      ch 2 way 0 rowAddr D0400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 0 phyBlock 3332 
+
+	bad block is detected: Ch 2 Way 0 phyBlock 3333 
+	bad block is detected: Ch 2 Way 0 phyBlock 3335 
+
+
+
+
+Read Trigger FAIL on      ch 3 way 7 rowAddr D3C00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr D3D00 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 3408 
+
+
+
+
+	bad block is detected: Ch 3 Way 3 phyBlock 3442 
+Read Trigger FAIL on      ch 6 way 3 rowAddr D7900 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr D8300 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr D8A00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr D8E00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr D9B00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr DA400 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr DBE00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 6 rowAddr DC300 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 3 way 3 rowAddr DC900 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 3 Way 3 phyBlock 3529 
+Read Trigger FAIL on      ch 2 way 4 rowAddr DCE00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 4 rowAddr DD400 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 4 rowAddr DD500 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 1 Way 4 phyBlock 3541 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr DD800 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 0 way 4 rowAddr DD800 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr DD900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 4 phyBlock 3545 
+Read Trigger FAIL on      ch 2 way 0 rowAddr DE000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 0 phyBlock 3552 
+Read Trigger FAIL on      ch 3 way 3 rowAddr DE800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 3 phyBlock 3560 
+Read Trigger FAIL on      ch 2 way 1 rowAddr DF500 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr DF600 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 1 Way 1 phyBlock 3574 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 3575 
+
+Read Trigger FAIL on      ch 1 way 2 rowAddr DF900 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr DF900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 3577 
+
+	bad block is detected: Ch 1 Way 2 phyBlock 3577 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr E0500 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+
+	bad block is detected: Ch 3 Way 4 phyBlock 3601 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 1 way 0 rowAddr E2100 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 3617 
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr E2A00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr E2B00 / completion A5000001 statusReport 1C3C3 
+
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr E3800 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr E4A00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr E5300 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 3667 
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr E5B00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 4 rowAddr E5C00 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 2 Way 4 phyBlock 3676 
+Read Trigger FAIL on      ch 0 way 4 rowAddr E5E00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 4 phyBlock 3678 
+Read Trigger FAIL on      ch 0 way 4 rowAddr E5F00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr E6C00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 3692 
+Read Trigger FAIL on      ch 1 way 1 rowAddr E6D00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 3693 
+
+	bad block is detected: Ch 2 Way 6 phyBlock 3697 
+
+
+	bad block is detected: Ch 1 Way 7 phyBlock 3744 
+
+	bad block is detected: Ch 0 Way 7 phyBlock 3763 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr ED800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 3800 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 3801 
+
+Read Trigger FAIL on      ch 1 way 7 rowAddr EDC00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 7 phyBlock 3804 
+
+	bad block is detected: Ch 1 Way 0 phyBlock 3817 
+	bad block is detected: Ch 2 Way 4 phyBlock 3830 
+
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr F0600 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr F0800 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 3 way 5 rowAddr F1000 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 5 Way 0 phyBlock 3875 
+	bad block is detected: Ch 0 Way 3 phyBlock 3883 
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr F3400 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 4 phyBlock 3892 
+Read Trigger FAIL on      ch 0 way 4 rowAddr F3500 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 4 phyBlock 3893 
+Read Trigger FAIL on      ch 2 way 1 rowAddr F3900 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 3897 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr F4000 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 3904 
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr F4300 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 1 rowAddr F4400 / completion A5000001 statusReport 1C3C3 
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr F4400 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 3908 
+	bad block is detected: Ch 3 Way 1 phyBlock 3908 
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr F4800 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr F4900 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 1 way 6 rowAddr F5D00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 6 phyBlock 3933 
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr F5E00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 3934 
+
+Read Trigger FAIL on      ch 0 way 2 rowAddr F6500 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 2 phyBlock 3941 
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr F6600 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 7 way 0 rowAddr F6600 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 3942 
+
+	bad block is detected: Ch 7 Way 0 phyBlock 3943 
+Read Trigger FAIL on      ch 0 way 3 rowAddr F6900 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr F6A00 / completion A5000001 statusReport 1FFC3 
+
+
+
+	bad block is detected: Ch 5 Way 2 phyBlock 3947 
+
+
+	bad block is detected: Ch 1 Way 6 phyBlock 3948 
+
+
+	bad block is detected: Ch 7 Way 0 phyBlock 3950 
+
+
+
+
+	bad block is detected: Ch 0 Way 4 phyBlock 3972 
+Read Trigger FAIL on      ch 0 way 4 rowAddr F8500 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 4 phyBlock 3973 
+Read Trigger FAIL on      ch 0 way 3 rowAddr F8E00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 2 rowAddr FA100 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 7 rowAddr FA200 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr FB400 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 0 Way 4 phyBlock 4020 
+
+
+	bad block is detected: Ch 0 Way 4 phyBlock 4021 
+Read Trigger FAIL on      ch 2 way 4 rowAddr FC000 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 3 way 7 rowAddr FC300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 7 phyBlock 4035 
+Read Trigger FAIL on      ch 1 way 1 rowAddr FCC00 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 4044 
+
+	bad block is detected: Ch 0 Way 6 phyBlock 4044 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr FCD00 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 1 Way 1 phyBlock 4045 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr FD000 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 6 way 3 rowAddr FD100 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 6 way 3 rowAddr FD900 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr FDA00 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 5 Way 0 phyBlock 4059 
+
+
+
+
+
+	bad block is detected: Ch 2 Way 0 phyBlock 4065 
+	bad block is detected: Ch 0 Way 1 phyBlock 4065 
+	bad block is detected: Ch 1 Way 1 phyBlock 4065 
+	bad block is detected: Ch 2 Way 1 phyBlock 4065 
+
+	bad block is detected: Ch 3 Way 1 phyBlock 4065 
+	bad block is detected: Ch 0 Way 2 phyBlock 4065 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr FE300 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 2 rowAddr FE300 / completion A5000001 statusReport 1FFC3 
+
+
+
+
+	bad block is detected: Ch 2 Way 0 phyBlock 4067 
+
+
+
+
+	bad block is detected: Ch 2 Way 2 phyBlock 4067 
+
+
+	bad block is detected: Ch 1 Way 4 phyBlock 4067 
+
+
+Read Trigger FAIL on      ch 0 way 0 rowAddr FE900 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 4 rowAddr FE900 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr FE900 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 1 rowAddr FE900 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 2 way 0 rowAddr FE900 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 3 way 0 rowAddr FE900 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr FE900 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 3 Way 0 phyBlock 4073 
+	bad block is detected: Ch 0 Way 1 phyBlock 4073 
+	bad block is detected: Ch 1 Way 1 phyBlock 4073 
+
+	bad block is detected: Ch 2 Way 1 phyBlock 4073 
+	bad block is detected: Ch 0 Way 2 phyBlock 4073 
+	bad block is detected: Ch 2 Way 2 phyBlock 4073 
+	bad block is detected: Ch 1 Way 3 phyBlock 4073 
+	bad block is detected: Ch 1 Way 4 phyBlock 4073 
+
+Read Trigger FAIL on      ch 0 way 0 rowAddr FEB00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 0 way 1 rowAddr FEB00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 1 rowAddr FEB00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 0 rowAddr FEB00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr FEB00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr FEB00 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 2 Way 0 phyBlock 4075 
+
+
+
+
+
+	bad block is detected: Ch 1 Way 3 phyBlock 4075 
+	bad block is detected: Ch 1 Way 4 phyBlock 4075 
+
+
+
+Read Trigger FAIL on      ch 2 way 0 rowAddr FF100 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr FF100 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 2 rowAddr FF100 / completion A5000001 statusReport 1C3C3 
+
+Read Trigger FAIL on      ch 3 way 0 rowAddr FF100 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 4 way 2 rowAddr FF100 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr FF100 / completion A5000001 statusReport 1FFC3 
+
+
+
+	bad block is detected: Ch 0 Way 0 phyBlock 4081 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 4081 
+	bad block is detected: Ch 1 Way 1 phyBlock 4081 
+	bad block is detected: Ch 2 Way 1 phyBlock 4081 
+
+	bad block is detected: Ch 4 Way 2 phyBlock 4081 
+	bad block is detected: Ch 1 Way 3 phyBlock 4081 
+	bad block is detected: Ch 1 Way 4 phyBlock 4081 
+	bad block is detected: Ch 3 Way 4 phyBlock 4081 
+	bad block is detected: Ch 2 Way 7 phyBlock 4081 
+
+Read Trigger FAIL on      ch 0 way 2 rowAddr FF300 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 3 rowAddr FF300 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 2 rowAddr FF300 / completion A5000001 statusReport 1C3C3 
+
+Read Trigger FAIL on      ch 0 way 0 rowAddr FF300 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 4 rowAddr FF300 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 0 rowAddr FF300 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 4083 
+	bad block is detected: Ch 1 Way 1 phyBlock 4083 
+
+
+	bad block is detected: Ch 0 Way 2 phyBlock 4083 
+
+	bad block is detected: Ch 2 Way 2 phyBlock 4083 
+	bad block is detected: Ch 1 Way 3 phyBlock 4083 
+	bad block is detected: Ch 1 Way 4 phyBlock 4083 
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr FF700 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 4087 
+
+
+
+
+
+
+	bad block is detected: Ch 3 Way 0 phyBlock 4089 
+	bad block is detected: Ch 0 Way 1 phyBlock 4089 
+
+
+	bad block is detected: Ch 2 Way 1 phyBlock 4089 
+
+	bad block is detected: Ch 0 Way 2 phyBlock 4089 
+	bad block is detected: Ch 2 Way 2 phyBlock 4089 
+	bad block is detected: Ch 1 Way 3 phyBlock 4089 
+
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr FFA00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 0 way 2 rowAddr FFB00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 1 rowAddr FFB00 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 2 way 0 rowAddr FFB00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 3 way 0 rowAddr FFB00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 0 way 1 rowAddr FFB00 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr FFB00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 2 rowAddr FFB00 / completion A5000001 statusReport 1C3C3 
+
+
+
+	bad block is detected: Ch 3 Way 0 phyBlock 4091 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 4091 
+	bad block is detected: Ch 1 Way 1 phyBlock 4091 
+
+	bad block is detected: Ch 2 Way 1 phyBlock 4091 
+	bad block is detected: Ch 0 Way 2 phyBlock 4091 
+	bad block is detected: Ch 2 Way 2 phyBlock 4091 
+
+	bad block is detected: Ch 1 Way 3 phyBlock 4091 
+	bad block is detected: Ch 1 Way 4 phyBlock 4091 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr FFC00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 4092 
+Read Trigger FAIL on      ch 3 way 0 rowAddr 100C00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 0 phyBlock 4108 
+
+
+Read Trigger FAIL on      ch 5 way 2 rowAddr 101800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 2 phyBlock 4120 
+
+
+	bad block is detected: Ch 1 Way 3 phyBlock 4122 
+Read Trigger FAIL on      ch 2 way 1 rowAddr 101C00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 4124 
+Read Trigger FAIL on      ch 1 way 1 rowAddr 102600 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 1 phyBlock 4134 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 102800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 5 Way 0 phyBlock 4138 
+Read Trigger FAIL on      ch 5 way 0 rowAddr 102B00 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr 103600 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 0 phyBlock 4150 
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr 103700 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 1 way 6 rowAddr 103C00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 6 phyBlock 4156 
+Read Trigger FAIL on      ch 1 way 2 rowAddr 104000 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 6 way 0 rowAddr 105200 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 6 Way 0 phyBlock 4178 
+
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr 231F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 0 phyBlock 4983 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 4993 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 239300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 5099 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 239500 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 5101 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 239900 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 5105 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 239B00 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+
+
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 5219 
+Read Trigger FAIL on      ch 4 way 7 rowAddr 240D00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 4 Way 7 phyBlock 5221 
+Read Trigger FAIL on      ch 5 way 0 rowAddr 246F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 0 phyBlock 5319 
+
+
+
+
+
+
+	bad block is detected: Ch 7 Way 7 phyBlock 5466 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 250800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 5472 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 251700 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 5487 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 253700 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 253700 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 5519 
+	bad block is detected: Ch 2 Way 3 phyBlock 5519 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 254100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 5529 
+
+Read Trigger FAIL on      ch 5 way 0 rowAddr 255F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 0 phyBlock 5559 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 256100 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 7 Way 7 phyBlock 5610 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 25B500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 5645 
+
+
+	bad block is detected: Ch 7 Way 5 phyBlock 5647 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 25CA00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 5666 
+
+
+	bad block is detected: Ch 7 Way 7 phyBlock 5726 
+
+
+
+
+Read Trigger FAIL on      ch 5 way 5 rowAddr 264400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 5 phyBlock 5788 
+
+
+	bad block is detected: Ch 5 Way 5 phyBlock 5790 
+
+Read Trigger FAIL on      ch 1 way 7 rowAddr 264700 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 7 phyBlock 5791 
+
+
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 0 way 2 rowAddr 26A600 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 2 phyBlock 5886 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 26E500 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 26E500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 0 phyBlock 5949 
+	bad block is detected: Ch 2 Way 3 phyBlock 5949 
+	bad block is detected: Ch 7 Way 5 phyBlock 5949 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 26E700 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 5951 
+Read Trigger FAIL on      ch 2 way 6 rowAddr 26ED00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 6 phyBlock 5957 
+Read Trigger FAIL on      ch 0 way 2 rowAddr 26F800 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr 26FF00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr 270500 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 271600 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 271A00 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 6002 
+Read Trigger FAIL on      ch 3 way 2 rowAddr 272500 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 6 rowAddr 273500 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 5 way 5 rowAddr 274400 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 3 way 1 rowAddr 274500 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 3 Way 1 phyBlock 6045 
+
+Read Trigger FAIL on      ch 3 way 1 rowAddr 274F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 1 phyBlock 6055 
+
+
+
+	bad block is detected: Ch 3 Way 6 phyBlock 6125 
+
+
+Read Trigger FAIL on      ch 1 way 2 rowAddr 27DD00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 27EB00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 6211 
+
+Read Trigger FAIL on      ch 2 way 7 rowAddr 27F100 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 6217 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 27F900 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 27FA00 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 7 Way 7 phyBlock 6226 
+Read Trigger FAIL on      ch 3 way 7 rowAddr 280100 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 7 phyBlock 6233 
+
+
+	bad block is detected: Ch 2 Way 1 phyBlock 6253 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 281700 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 6255 
+
+
+	bad block is detected: Ch 1 Way 3 phyBlock 6268 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 283F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 6295 
+
+Read Trigger FAIL on      ch 5 way 6 rowAddr 284000 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 285900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 1 phyBlock 6321 
+
+Read Trigger FAIL on      ch 2 way 6 rowAddr 286300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 6 phyBlock 6331 
+
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 6431 
+	bad block is detected: Ch 2 Way 0 phyBlock 6476 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 28FC00 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+	bad block is detected: Ch 7 Way 7 phyBlock 6534 
+
+
+
+
+	bad block is detected: Ch 3 Way 7 phyBlock 6595 
+
+
+Read Trigger FAIL on      ch 1 way 6 rowAddr 29AD00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 6 phyBlock 6661 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 6669 
+
+
+	bad block is detected: Ch 3 Way 1 phyBlock 6711 
+
+
+	bad block is detected: Ch 3 Way 7 phyBlock 6731 
+	bad block is detected: Ch 1 Way 2 phyBlock 6741 
+
+
+
+	bad block is detected: Ch 3 Way 5 phyBlock 6761 
+
+	bad block is detected: Ch 3 Way 4 phyBlock 6770 
+
+	bad block is detected: Ch 0 Way 0 phyBlock 6779 
+
+
+	bad block is detected: Ch 3 Way 2 phyBlock 6820 
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 6851 
+
+	bad block is detected: Ch 1 Way 6 phyBlock 6861 
+	bad block is detected: Ch 2 Way 7 phyBlock 6865 
+	bad block is detected: Ch 0 Way 6 phyBlock 6888 
+	bad block is detected: Ch 3 Way 6 phyBlock 6909 
+	bad block is detected: Ch 2 Way 4 phyBlock 6915 
+	bad block is detected: Ch 2 Way 3 phyBlock 6919 
+	bad block is detected: Ch 1 Way 4 phyBlock 6924 
+	bad block is detected: Ch 3 Way 2 phyBlock 6926 
+Read Trigger FAIL on      ch 1 way 2 rowAddr 2ABE00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 2 phyBlock 6934 
+
+
+
+
+
+
+
+
+
+
+Read Trigger FAIL on      ch 1 way 4 rowAddr 2B2500 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 1 way 2 rowAddr 2B2900 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 2 phyBlock 7041 
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 7058 
+
+
+Read Trigger FAIL on      ch 3 way 7 rowAddr 2B5900 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 7089 
+	bad block is detected: Ch 3 Way 7 phyBlock 7089 
+Read Trigger FAIL on      ch 3 way 7 rowAddr 2B5B00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 7 phyBlock 7091 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 2B6000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 7096 
+
+Read Trigger FAIL on      ch 7 way 7 rowAddr 2B6200 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 7098 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 2B6400 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 7 Way 7 phyBlock 7100 
+Read Trigger FAIL on      ch 1 way 4 rowAddr 2B7200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 4 phyBlock 7114 
+
+
+	bad block is detected: Ch 1 Way 1 phyBlock 7128 
+
+Read Trigger FAIL on      ch 3 way 7 rowAddr 2B9300 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 3 way 1 rowAddr 2B9300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 1 phyBlock 7147 
+
+
+Read Trigger FAIL on      ch 2 way 7 rowAddr 2B9B00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 7155 
+
+Read Trigger FAIL on      ch 6 way 3 rowAddr 2BA000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 6 Way 3 phyBlock 7160 
+
+	bad block is detected: Ch 2 Way 0 phyBlock 7170 
+
+
+
+Read Trigger FAIL on      ch 0 way 6 rowAddr 2BF200 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 6 phyBlock 7242 
+
+Read Trigger FAIL on      ch 5 way 1 rowAddr 2BF400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 1 phyBlock 7244 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2BF700 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 7247 
+
+	bad block is detected: Ch 0 Way 1 phyBlock 7254 
+
+
+
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 7306 
+
+
+
+Read Trigger FAIL on      ch 3 way 2 rowAddr 2C4C00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 2 phyBlock 7332 
+
+
+Read Trigger FAIL on      ch 0 way 1 rowAddr 2C5400 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2C5400 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 7340 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2C7600 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 3 phyBlock 7374 
+
+	bad block is detected: Ch 0 Way 2 phyBlock 7384 
+	bad block is detected: Ch 0 Way 1 phyBlock 7387 
+
+
+Read Trigger FAIL on      ch 3 way 3 rowAddr 2C9B00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 3 phyBlock 7411 
+
+Read Trigger FAIL on      ch 2 way 2 rowAddr 2CAB00 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 4 way 0 rowAddr 2CBF00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 4 Way 0 phyBlock 7447 
+Read Trigger FAIL on      ch 7 way 7 rowAddr 2CC200 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 4 Way 1 phyBlock 7470 
+	bad block is detected: Ch 3 Way 5 phyBlock 7473 
+	bad block is detected: Ch 7 Way 7 phyBlock 7480 
+	bad block is detected: Ch 1 Way 1 phyBlock 7492 
+	bad block is detected: Ch 0 Way 4 phyBlock 7533 
+
+	bad block is detected: Ch 6 Way 2 phyBlock 7547 
+	bad block is detected: Ch 4 Way 1 phyBlock 7561 
+	bad block is detected: Ch 1 Way 6 phyBlock 7585 
+Read Trigger FAIL on      ch 3 way 4 rowAddr 2D5B00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 0 way 1 rowAddr 2D5D00 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 3 Way 5 phyBlock 7609 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 7639 
+
+	bad block is detected: Ch 6 Way 2 phyBlock 7649 
+	bad block is detected: Ch 4 Way 3 phyBlock 7659 
+	bad block is detected: Ch 2 Way 3 phyBlock 7665 
+	bad block is detected: Ch 5 Way 1 phyBlock 7669 
+	bad block is detected: Ch 3 Way 6 phyBlock 7682 
+
+
+
+
+Read Trigger FAIL on      ch 3 way 5 rowAddr 2DD400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 5 phyBlock 7724 
+
+
+
+
+
+
+Read Trigger FAIL on      ch 0 way 4 rowAddr 2DEB00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 4 phyBlock 7747 
+
+	bad block is detected: Ch 2 Way 2 phyBlock 7766 
+Read Trigger FAIL on      ch 4 way 1 rowAddr 2E0100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 2 Way 4 phyBlock 7772 
+
+	bad block is detected: Ch 6 Way 3 phyBlock 7786 
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2E1500 / completion A5000001 statusReport 1C3C3 
+
+Read Trigger FAIL on      ch 0 way 3 rowAddr 2E2800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 3 phyBlock 7808 
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr 2E3100 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 3 phyBlock 7817 
+
+	bad block is detected: Ch 3 Way 7 phyBlock 7841 
+	bad block is detected: Ch 6 Way 7 phyBlock 7842 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2E5300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 7851 
+
+	bad block is detected: Ch 2 Way 0 phyBlock 7857 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2E6D00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2E6D00 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 7 Way 5 phyBlock 7877 
+Read Trigger FAIL on      ch 3 way 4 rowAddr 2E7800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 4 phyBlock 7888 
+
+
+	bad block is detected: Ch 7 Way 5 phyBlock 7889 
+Read Trigger FAIL on      ch 5 way 4 rowAddr 2E7E00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 4 phyBlock 7894 
+
+Read Trigger FAIL on      ch 2 way 7 rowAddr 2E8300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 7 phyBlock 7899 
+
+Read Trigger FAIL on      ch 3 way 7 rowAddr 2E8900 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 7 phyBlock 7905 
+
+	bad block is detected: Ch 6 Way 1 phyBlock 7910 
+
+Read Trigger FAIL on      ch 3 way 2 rowAddr 2E9500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 7 phyBlock 7920 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2EA800 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 7936 
+
+
+	bad block is detected: Ch 7 Way 5 phyBlock 7937 
+Read Trigger FAIL on      ch 1 way 2 rowAddr 2EB000 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 1 Way 2 phyBlock 7944 
+
+Read Trigger FAIL on      ch 2 way 2 rowAddr 2EB400 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 2 phyBlock 7948 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2EC200 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 7962 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2EC300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 7963 
+Read Trigger FAIL on      ch 0 way 3 rowAddr 2EC800 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 0 Way 3 phyBlock 7968 
+
+Read Trigger FAIL on      ch 4 way 3 rowAddr 2ECC00 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 4 Way 3 phyBlock 7972 
+
+
+
+Read Trigger FAIL on      ch 3 way 2 rowAddr 2ED000 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 2 way 6 rowAddr 2ED100 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 1 Way 4 phyBlock 7980 
+
+Read Trigger FAIL on      ch 2 way 3 rowAddr 2EDE00 / completion A5000001 statusReport 1C3C3 
+
+
+
+
+	bad block is detected: Ch 2 Way 3 phyBlock 8012 
+
+
+	bad block is detected: Ch 4 Way 1 phyBlock 8024 
+	bad block is detected: Ch 6 Way 6 phyBlock 8024 
+Read Trigger FAIL on      ch 4 way 1 rowAddr 2F0100 / completion A5000001 statusReport 1FFC3 
+
+
+	bad block is detected: Ch 4 Way 0 phyBlock 8031 
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8033 
+	bad block is detected: Ch 2 Way 4 phyBlock 8038 
+	bad block is detected: Ch 7 Way 6 phyBlock 8048 
+	bad block is detected: Ch 1 Way 7 phyBlock 8053 
+	bad block is detected: Ch 7 Way 5 phyBlock 8056 
+	bad block is detected: Ch 4 Way 1 phyBlock 8057 
+	bad block is detected: Ch 0 Way 6 phyBlock 8060 
+	bad block is detected: Ch 6 Way 6 phyBlock 8064 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2F2B00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 4 Way 3 phyBlock 8072 
+Read Trigger FAIL on      ch 4 way 4 rowAddr 2F3200 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 2 Way 3 phyBlock 8079 
+
+
+
+
+Read Trigger FAIL on      ch 4 way 4 rowAddr 2F4800 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 4 way 4 rowAddr 2F4A00 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2F5000 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 7 Way 5 phyBlock 8104 
+
+
+
+
+	bad block is detected: Ch 4 Way 4 phyBlock 8112 
+
+
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8122 
+Read Trigger FAIL on      ch 1 way 2 rowAddr 2F6500 / completion A5000001 statusReport 1FFC3 
+	bad block is detected: Ch 3 Way 2 phyBlock 8128 
+	bad block is detected: Ch 3 Way 2 phyBlock 8129 
+Read Trigger FAIL on      ch 2 way 1 rowAddr 2F6F00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 8135 
+
+
+
+	bad block is detected: Ch 4 Way 4 phyBlock 8138 
+	bad block is detected: Ch 4 Way 4 phyBlock 8139 
+	bad block is detected: Ch 3 Way 4 phyBlock 8140 
+
+	bad block is detected: Ch 3 Way 2 phyBlock 8146 
+	bad block is detected: Ch 0 Way 5 phyBlock 8156 
+	bad block is detected: Ch 2 Way 3 phyBlock 8167 
+	bad block is detected: Ch 7 Way 5 phyBlock 8176 
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8179 
+
+	bad block is detected: Ch 6 Way 3 phyBlock 8193 
+
+
+
+	bad block is detected: Ch 3 Way 7 phyBlock 8203 
+Read Trigger FAIL on      ch 5 way 1 rowAddr 2FB500 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 1 Way 4 phyBlock 8212 
+
+
+Read Trigger FAIL on      ch 1 way 5 rowAddr 2FC600 / completion A5000001 statusReport 1FFC3 
+
+	bad block is detected: Ch 1 Way 7 phyBlock 8232 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2FD300 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 1 Way 3 phyBlock 8236 
+
+
+
+	bad block is detected: Ch 0 Way 4 phyBlock 8244 
+	bad block is detected: Ch 7 Way 5 phyBlock 8248 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2FE100 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 4 Way 0 phyBlock 8249 
+	bad block is detected: Ch 2 Way 5 phyBlock 8249 
+
+	bad block is detected: Ch 3 Way 6 phyBlock 8249 
+
+Read Trigger FAIL on      ch 3 way 4 rowAddr 2FE300 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 2FE300 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 3 Way 4 phyBlock 8251 
+
+	bad block is detected: Ch 3 Way 6 phyBlock 8251 
+
+Read Trigger FAIL on      ch 1 way 4 rowAddr 2FE500 / completion A5000001 statusReport 1FFC3 
+
+Read Trigger FAIL on      ch 1 way 3 rowAddr 2FE900 / completion A5000001 statusReport 1FFC3 
+Read Trigger FAIL on      ch 3 way 6 rowAddr 2FE900 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 2 Way 5 phyBlock 8257 
+
+
+Read Trigger FAIL on      ch 3 way 6 rowAddr 2FEB00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 2 way 5 rowAddr 2FEB00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 4 phyBlock 8259 
+
+	bad block is detected: Ch 3 Way 6 phyBlock 8259 
+	bad block is detected: Ch 0 Way 7 phyBlock 8259 
+
+	bad block is detected: Ch 2 Way 7 phyBlock 8259 
+Read Trigger FAIL on      ch 6 way 3 rowAddr 2FEE00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 6 Way 3 phyBlock 8262 
+
+
+	bad block is detected: Ch 6 Way 3 phyBlock 8263 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2FF000 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8264 
+Read Trigger FAIL on      ch 3 way 6 rowAddr 2FF100 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2FF100 / completion A5000001 statusReport 1C3C3 
+
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr 2FF100 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 4 phyBlock 8265 
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8265 
+	bad block is detected: Ch 3 Way 6 phyBlock 8265 
+
+	bad block is detected: Ch 0 Way 7 phyBlock 8265 
+
+
+
+Read Trigger FAIL on      ch 2 way 5 rowAddr 2FF300 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 2 way 7 rowAddr 2FF300 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 3 way 5 rowAddr 2FF300 / completion A5000001 statusReport 1C3C3 
+
+	bad block is detected: Ch 3 Way 4 phyBlock 8267 
+	bad block is detected: Ch 2 Way 5 phyBlock 8267 
+	bad block is detected: Ch 3 Way 5 phyBlock 8267 
+	bad block is detected: Ch 3 Way 6 phyBlock 8267 
+
+
+
+Read Trigger FAIL on      ch 2 way 4 rowAddr 2FF500 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 4 phyBlock 8269 
+
+Read Trigger FAIL on      ch 2 way 1 rowAddr 2FF700 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 2 Way 1 phyBlock 8271 
+Read Trigger FAIL on      ch 3 way 4 rowAddr 2FF900 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 0 way 7 rowAddr 2FF900 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 6 rowAddr 2FF900 / completion A5000001 statusReport 1C3C3 
+
+
+
+	bad block is detected: Ch 2 Way 7 phyBlock 8273 
+
+Read Trigger FAIL on      ch 7 way 5 rowAddr 2FFB00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 0 way 7 rowAddr 2FFB00 / completion A5000001 statusReport 1FFC3 
+
+
+Read Trigger FAIL on      ch 3 way 5 rowAddr 2FFB00 / completion A5000001 statusReport 1C3C3 
+Read Trigger FAIL on      ch 3 way 6 rowAddr 2FFB00 / completion A5000001 statusReport 1C3C3 
+
+
+	bad block is detected: Ch 3 Way 6 phyBlock 8275 
+	bad block is detected: Ch 0 Way 7 phyBlock 8275 
+	bad block is detected: Ch 2 Way 7 phyBlock 8275 
+
+Read Trigger FAIL on      ch 3 way 0 rowAddr 2FFD00 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 3 Way 0 phyBlock 8277 
+Read Trigger FAIL on      ch 5 way 1 rowAddr 300200 / completion A5000001 statusReport 1C3C3 
+	bad block is detected: Ch 5 Way 1 phyBlock 8282 
+
+
+
+
+	bad block is detected: Ch 0 Way 3 phyBlock 8305 
+
+	bad block is detected: Ch 7 Way 5 phyBlock 8321 
+
+
+
+
+
+	bad block is detected: Ch 0 Way 1 phyBlock 8343 
+	bad block is detected: Ch 3 Way 6 phyBlock 8350 
+	bad block is detected: Ch 7 Way 5 phyBlock 8358 
+
+[ bad block table of Ch 0 Way 0 is saved. ]
+[ bad block table of Ch 1 Way 0 is saved. ]
+
+[ bad block table of Ch 2 Way 0 is saved. ]
+[ bad block table of Ch 3 Way 0 is saved. ]
+[ bad block table of Ch 4 Way 0 is saved. ]
+[ bad block table of Ch 5 Way 0 is saved. ]
+[ bad block table of Ch 6 Way 0 is saved. ]
+
+[ bad block table of Ch 7 Way 0 is saved. ]
+[ bad block table of Ch 0 Way 1 is saved. ]
+[ bad block table of Ch 1 Way 1 is saved. ]
+
+
+
+
+[ bad block table of Ch 2 Way 2 is saved. ]
+
+
+[ bad block table of Ch 7 Way 2 is saved. ]
+
+
+[ bad block table of Ch 3 Way 3 is saved. ]
+[ bad block table of Ch 4 Way 3 is saved. ]
+[ bad block table of Ch 5 Way 3 is saved. ]
+
+[ bad block table of Ch 6 Way 3 is saved. ]
+[ bad block table of Ch 7 Way 3 is saved. ]
+[ bad block table of Ch 0 Way 4 is saved. ]
+[ bad block table of Ch 1 Way 4 is saved. ]
+
+[ bad block table of Ch 2 Way 4 is saved. ]
+[ bad block table of Ch 3 Way 4 is saved. ]
+
+[ bad block table of Ch 4 Way 4 is saved. ]
+[ bad block table of Ch 5 Way 4 is saved. ]
+[ bad block table of Ch 6 Way 4 is saved. ]
+[ bad block table of Ch 7 Way 4 is saved. ]
+[ bad block table of Ch 0 Way 5 is saved. ]
+
+[ bad block table of Ch 1 Way 5 is saved. ]
+[ bad block table of Ch 2 Way 5 is saved. ]
+[ bad block table of Ch 3 Way 5 is saved. ]
+[ bad block table of Ch 4 Way 5 is saved. ]
+[ bad block table of Ch 5 Way 5 is saved. ]
+
+
+[ bad block table of Ch 7 Way 5 is saved. ]
+
+
+
+[ bad block table of Ch 3 Way 6 is saved. ]
+
+
+[ bad block table of Ch 5 Way 6 is saved. ]
+
+
+
+[ bad block table of Ch 0 Way 7 is saved. ]
+
+
+[ bad block table of Ch 2 Way 7 is saved. ]
+
+
+
+
+
+
+
+Bad block remapping end
+[ storage capacity 14618 MB ]
+
+
+
+

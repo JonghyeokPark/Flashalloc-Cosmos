@@ -1,0 +1,41 @@
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+Keys:       16 bytes each
+Values:     1024 bytes each (512 bytes after compression)
+Entries:    2621440
+Prefix:    0 bytes
+Keys per prefix:    0
+RawSize:    2600.0 MB (estimated)
+FileSize:   1320.0 MB (estimated)
+Write rate: 0 bytes/second
+Read rate: 0 ops/second
+Compression: NoCompression
+Compression sampling rate: 0
+Memtablerep: skip_list
+Perf Level: 1
+------------------------------------------------
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+DB path: [/home/csoyee/nvme]
+fillrandom   :      37.587 micros/op 106410 ops/sec;  105.5 MB/s
+DB path: [/home/csoyee/nvme]
+readrandom   :      21.689 micros/op 183391 ops/sec;  181.9 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.698 micros/op 314470 ops/sec;  311.9 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.681 micros/op 315153 ops/sec;  312.6 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.682 micros/op 314247 ops/sec;  311.7 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.659 micros/op 315713 ops/sec;  313.1 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.678 micros/op 314851 ops/sec;  312.3 MB/s (2621440 of 2621440 found)
+
+DB path: [/home/csoyee/nvme]
+readrandom   :      12.689 micros/op 315009 ops/sec;  312.4 MB/s (2621440 of 2621440 found)
+

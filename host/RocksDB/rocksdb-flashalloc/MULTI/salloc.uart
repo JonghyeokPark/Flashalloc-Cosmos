@@ -1,0 +1,452 @@
+, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 535909, er: 0, cb: 0, gwr: 488, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 563825, er: 0, cb: 0, gwr: 8876, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 595169, er: 0, cb: 0, gwr: 19512, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 624129, er: 0, cb: 0, gwr: 30219, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 651684, er: 0, cb: 0, gwr: 38268, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 683506, er: 0, cb: 0, gwr: 51939, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 711894, er: 0, cb: 0, gwr: 60399, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 730123, er: 0, cb: 0, gwr: 72251, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 745670, er: 0, cb: 0, gwr: 84919, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 762393, er: 0, cb: 0, gwr: 97884, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 784244, er: 0, cb: 0, gwr: 107969, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 816082, er: 0, cb: 0, gwr: 121682, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 845925, er: 0, cb: 0, gwr: 133441, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 862745, er: 0, cb: 0, gwr: 146384, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 879161, er: 0, cb: 0, gwr: 159324, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 896303, er: 0, cb: 0, gwr: 172333, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 915764, er: 0, cb: 0, gwr: 181237, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 946763, er: 0, cb: 0, gwr: 193992, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 977991, er: 0, cb: 0, gwr: 206686, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 997692, er: 0, cb: 0, gwr: 218679, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1014350, er: 0, cb: 0, gwr: 231840, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1034083, er: 0, cb: 0, gwr: 247962, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1048295, er: 0, cb: 0, gwr: 259094, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1075817, er: 0, cb: 0, gwr: 269315, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1102746, er: 0, cb: 0, gwr: 279264, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1122934, er: 0, cb: 0, gwr: 287994, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1142214, er: 0, cb: 0, gwr: 304305, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1157842, er: 0, cb: 0, gwr: 317311, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1173575, er: 0, cb: 0, gwr: 330126, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1189610, er: 0, cb: 0, gwr: 342919, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1209619, er: 0, cb: 0, gwr: 359421, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1226537, er: 0, cb: 0, gwr: 368849, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1256476, er: 0, cb: 0, gwr: 381391, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1291224, er: 0, cb: 0, gwr: 393289, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1315222, er: 0, cb: 0, gwr: 405658, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1331105, er: 0, cb: 0, gwr: 418456, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1347251, er: 0, cb: 0, gwr: 431429, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1363199, er: 0, cb: 0, gwr: 444152, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1379264, er: 0, cb: 0, gwr: 456919, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1394830, er: 0, cb: 0, gwr: 469546, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1410793, er: 0, cb: 0, gwr: 482309, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1430893, er: 0, cb: 0, gwr: 495702, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1451195, er: 0, cb: 0, gwr: 511471, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1467130, er: 0, cb: 0, gwr: 524448, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1483127, er: 0, cb: 0, gwr: 537345, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1499765, er: 0, cb: 0, gwr: 550140, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1515811, er: 0, cb: 0, gwr: 563190, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1536904, er: 0, cb: 0, gwr: 572427, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1563355, er: 0, cb: 0, gwr: 585218, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1594761, er: 0, cb: 0, gwr: 598351, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1621526, er: 0, cb: 0, gwr: 607803, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1651805, er: 0, cb: 0, gwr: 620385, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1674744, er: 0, cb: 0, gwr: 631793, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1690753, er: 0, cb: 0, gwr: 644301, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1706660, er: 0, cb: 0, gwr: 656989, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1722566, er: 0, cb: 0, gwr: 669588, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1738305, er: 0, cb: 0, gwr: 681902, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1754010, er: 0, cb: 0, gwr: 694305, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1769184, er: 0, cb: 0, gwr: 706586, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1792963, er: 0, cb: 0, gwr: 722655, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1808677, er: 0, cb: 0, gwr: 735641, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1824126, er: 0, cb: 0, gwr: 748074, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1840768, er: 0, cb: 0, gwr: 761752, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1859710, er: 0, cb: 0, gwr: 777517, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1875040, er: 0, cb: 0, gwr: 789173, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 1891123, er: 0, cb: 0, gwr: 802089, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1, wr: 0, hwr: 1911386, er: 19, cb: 0, gwr: 818890, gcb: 0, ggc: 18 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 8, wr: 0, hwr: 1930769, er: 50, cb: 0, gwr: 835728, gcb: 0, ggc: 42 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 8, wr: 0, hwr: 1947020, er: 75, cb: 0, gwr: 848537, gcb: 0, ggc: 67 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 8, wr: 0, hwr: 1962569, er: 111, cb: 0, gwr: 861472, gcb: 0, ggc: 103 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 16, wr: 0, hwr: 1981909, er: 143, cb: 0, gwr: 874687, gcb: 0, ggc: 127 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 35, wr: 0, hwr: 2001492, er: 198, cb: 0, gwr: 883635, gcb: 0, ggc: 163 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 93, wr: 0, hwr: 2027974, er: 312, cb: 0, gwr: 891797, gcb: 0, ggc: 219 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 153, wr: 0, hwr: 2058343, er: 404, cb: 0, gwr: 903973, gcb: 0, ggc: 251 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 270, wr: 0, hwr: 2088951, er: 578, cb: 0, gwr: 912109, gcb: 0, ggc: 308 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 363, wr: 0, hwr: 2115484, er: 793, cb: 0, gwr: 923572, gcb: 0, ggc: 430 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 363, wr: 0, hwr: 2130661, er: 913, cb: 0, gwr: 935429, gcb: 0, ggc: 550 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 363, wr: 0, hwr: 2145479, er: 1055, cb: 0, gwr: 947098, gcb: 0, ggc: 692 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 363, wr: 0, hwr: 2159271, er: 1168, cb: 0, gwr: 957565, gcb: 0, ggc: 805 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 412, wr: 0, hwr: 2177594, er: 1341, cb: 0, gwr: 969297, gcb: 0, ggc: 929 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 412, wr: 0, hwr: 2192785, er: 1459, cb: 0, gwr: 981422, gcb: 0, ggc: 1047 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 430, wr: 0, hwr: 2208431, er: 1594, cb: 0, gwr: 993660, gcb: 0, ggc: 1164 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 463, wr: 0, hwr: 2226877, er: 1749, cb: 0, gwr: 1008822, gcb: 0, ggc: 1286 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 463, wr: 0, hwr: 2241890, er: 1898, cb: 0, gwr: 1020910, gcb: 0, ggc: 1435 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 463, wr: 0, hwr: 2256686, er: 2013, cb: 0, gwr: 1032972, gcb: 0, ggc: 1550 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 470, wr: 0, hwr: 2272912, er: 2139, cb: 0, gwr: 1045757, gcb: 0, ggc: 1669 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 514, wr: 0, hwr: 2291341, er: 2312, cb: 0, gwr: 1059911, gcb: 0, ggc: 1798 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 517, wr: 0, hwr: 2308626, er: 2425, cb: 0, gwr: 1070662, gcb: 0, ggc: 1908 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 556, wr: 0, hwr: 2326660, er: 2592, cb: 0, gwr: 1085000, gcb: 0, ggc: 2036 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 561, wr: 0, hwr: 2342794, er: 2718, cb: 0, gwr: 1097692, gcb: 0, ggc: 2157 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 561, wr: 0, hwr: 2358620, er: 2858, cb: 0, gwr: 1110520, gcb: 0, ggc: 2297 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 564, wr: 0, hwr: 2374464, er: 2952, cb: 0, gwr: 1123072, gcb: 0, ggc: 2388 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 594, wr: 0, hwr: 2389777, er: 3091, cb: 0, gwr: 1135761, gcb: 0, ggc: 2497 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 619, wr: 0, hwr: 2403744, er: 3264, cb: 0, gwr: 1147468, gcb: 0, ggc: 2645 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 628, wr: 0, hwr: 2422836, er: 3398, cb: 0, gwr: 1160189, gcb: 0, ggc: 2770 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 661, wr: 0, hwr: 2438417, er: 3552, cb: 0, gwr: 1172886, gcb: 0, ggc: 2891 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 670, wr: 0, hwr: 2453443, er: 3678, cb: 0, gwr: 1185435, gcb: 0, ggc: 3008 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 670, wr: 0, hwr: 2476512, er: 3823, cb: 0, gwr: 1206019, gcb: 0, ggc: 3153 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 670, wr: 0, hwr: 2492624, er: 3977, cb: 0, gwr: 1218977, gcb: 0, ggc: 3307 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 688, wr: 0, hwr: 2508378, er: 4115, cb: 0, gwr: 1231696, gcb: 0, ggc: 3427 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 716, wr: 0, hwr: 2521994, er: 4270, cb: 0, gwr: 1242112, gcb: 0, ggc: 3554 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 767, wr: 0, hwr: 2549658, er: 4401, cb: 0, gwr: 1255546, gcb: 0, ggc: 3634 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 884, wr: 0, hwr: 2576401, er: 4617, cb: 6, gwr: 1264381, gcb: 5, ggc: 3733 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1002, wr: 0, hwr: 2602637, er: 4864, cb: 18, gwr: 1273012, gcb: 28, ggc: 3862 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1128, wr: 0, hwr: 2628903, er: 5061, cb: 60, gwr: 1281124, gcb: 51, ggc: 3933 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1201, wr: 0, hwr: 2650676, er: 5268, cb: 111, gwr: 1289897, gcb: 121, ggc: 4067 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1251, wr: 0, hwr: 2668509, er: 5440, cb: 139, gwr: 1301076, gcb: 181, ggc: 4189 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 1252, wr: 0, hwr: 2687343, er: 5557, cb: 140, gwr: 1316269, gcb: 263, ggc: 4305 trim: 0 mid_salloc: 0 fff_salloc: 86
+
+
+gc: 1255, wr: 0, hwr: 2701715, er: 5711, cb: 150, gwr: 1327568, gcb: 407, ggc: 4456 trim: 0 mid_salloc: 0 fff_salloc: 209
+
+
+gc: 1288, wr: 0, hwr: 2716511, er: 5867, cb: 164, gwr: 1339419, gcb: 445, ggc: 4579 trim: 0 mid_salloc: 0 fff_salloc: 228
+
+
+gc: 1303, wr: 0, hwr: 2730988, er: 6014, cb: 168, gwr: 1350635, gcb: 487, ggc: 4711 trim: 0 mid_salloc: 0 fff_salloc: 228
+
+
+gc: 1304, wr: 0, hwr: 2748662, er: 6155, cb: 168, gwr: 1365202, gcb: 516, ggc: 4851 trim: 0 mid_salloc: 0 fff_salloc: 228
+
+
+gc: 1305, wr: 0, hwr: 2763704, er: 6268, cb: 168, gwr: 1377257, gcb: 594, ggc: 4963 trim: 0 mid_salloc: 0 fff_salloc: 228
+
+
+gc: 1355, wr: 0, hwr: 2781397, er: 6447, cb: 184, gwr: 1388868, gcb: 678, ggc: 5092 trim: 0 mid_salloc: 0 fff_salloc: 456
+
+
+gc: 1355, wr: 0, hwr: 2795379, er: 6577, cb: 184, gwr: 1399202, gcb: 1009, ggc: 5222 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1371, wr: 0, hwr: 2812389, er: 6728, cb: 205, gwr: 1412675, gcb: 1105, ggc: 5357 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1395, wr: 0, hwr: 2829110, er: 6866, cb: 213, gwr: 1426630, gcb: 1308, ggc: 5471 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1398, wr: 0, hwr: 2843537, er: 7006, cb: 213, gwr: 1438198, gcb: 1601, ggc: 5608 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1400, wr: 0, hwr: 2857692, er: 7118, cb: 213, gwr: 1449634, gcb: 2028, ggc: 5718 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1411, wr: 0, hwr: 2871242, er: 7285, cb: 213, gwr: 1460332, gcb: 2345, ggc: 5874 trim: 0 mid_salloc: 0 fff_salloc: 457
+
+
+gc: 1428, wr: 0, hwr: 2886248, er: 7423, cb: 217, gwr: 1472227, gcb: 2588, ggc: 5995 trim: 0 mid_salloc: 0 fff_salloc: 685
+
+
+gc: 1460, wr: 0, hwr: 2905643, er: 7591, cb: 306, gwr: 1484616, gcb: 2961, ggc: 6131 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1478, wr: 0, hwr: 2921477, er: 7721, cb: 348, gwr: 1497435, gcb: 3035, ggc: 6243 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1497, wr: 0, hwr: 2937157, er: 7861, cb: 348, gwr: 1510077, gcb: 3247, ggc: 6364 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1503, wr: 0, hwr: 2953335, er: 7993, cb: 361, gwr: 1522783, gcb: 3556, ggc: 6490 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1509, wr: 0, hwr: 2969651, er: 8118, cb: 373, gwr: 1535542, gcb: 3632, ggc: 6609 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1522, wr: 0, hwr: 2984595, er: 8254, cb: 381, gwr: 1547454, gcb: 3678, ggc: 6732 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1541, wr: 0, hwr: 3000464, er: 8396, cb: 402, gwr: 1560145, gcb: 3836, ggc: 6855 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1543, wr: 0, hwr: 3016159, er: 8508, cb: 402, gwr: 1572753, gcb: 4022, ggc: 6965 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1553, wr: 0, hwr: 3029491, er: 8645, cb: 435, gwr: 1583509, gcb: 4344, ggc: 7092 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1566, wr: 0, hwr: 3049239, er: 8784, cb: 443, gwr: 1599767, gcb: 4545, ggc: 7218 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1581, wr: 0, hwr: 3064969, er: 8924, cb: 463, gwr: 1612457, gcb: 4744, ggc: 7343 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1601, wr: 0, hwr: 3084606, er: 9068, cb: 476, gwr: 1626171, gcb: 4759, ggc: 7467 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1624, wr: 0, hwr: 3097293, er: 9242, cb: 497, gwr: 1635469, gcb: 5000, ggc: 7618 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1641, wr: 0, hwr: 3111462, er: 9355, cb: 535, gwr: 1646478, gcb: 5163, ggc: 7714 trim: 0 mid_salloc: 0 fff_salloc: 1027
+
+
+gc: 1716, wr: 0, hwr: 3128463, er: 9490, cb: 981, gwr: 1648147, gcb: 5534, ggc: 7774 trim: 0 mid_salloc: 0 fff_salloc: 1054
+
+
+gc: 1811, wr: 0, hwr: 3151767, er: 9681, cb: 1654, gwr: 1659164, gcb: 6667, ggc: 7870 trim: 0 mid_salloc: 0 fff_salloc: 1416
+
+
+gc: 1928, wr: 0, hwr: 3173291, er: 9891, cb: 2343, gwr: 1664867, gcb: 7713, ggc: 7963 trim: 0 mid_salloc: 0 fff_salloc: 1444
+
+
+gc: 2027, wr: 0, hwr: 3193077, er: 10105, cb: 2971, gwr: 1671780, gcb: 9099, ggc: 8078 trim: 0 mid_salloc: 0 fff_salloc: 4185
+
+
+gc: 2147, wr: 0, hwr: 3217192, er: 10333, cb: 4135, gwr: 1677601, gcb: 10191, ggc: 8186 trim: 0 mid_salloc: 0 fff_salloc: 6151
+
+
+gc: 2206, wr: 0, hwr: 3228692, er: 10501, cb: 4766, gwr: 1682265, gcb: 12215, ggc: 8295 trim: 0 mid_salloc: 0 fff_salloc: 6805
+
+
+gc: 2228, wr: 0, hwr: 3238494, er: 10644, cb: 4919, gwr: 1688240, gcb: 13701, ggc: 8416 trim: 0 mid_salloc: 0 fff_salloc: 6905
+
+
+gc: 2242, wr: 0, hwr: 3250325, er: 10796, cb: 5049, gwr: 1696924, gcb: 15409, ggc: 8554 trim: 0 mid_salloc: 0 fff_salloc: 7262
+
+
+NVME CC.EN: 0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+
+PCIe Bus Master: 1
+
+PCIe IRQ Disable: 0
+
+PCIe MSI Enable: 1, 0x0
+
+PCIe MSI Enable: 0, 0x0
+
+PCIe IRQ Disable: 1
+
+PCIe Bus Master: 0
+

@@ -1,0 +1,195 @@
+gc: 0, wr: 0, hwr: 19555, er: 0, cb: 0, gwr: 0, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 46380, er: 0, cb: 0, gwr: 4, gcb: 0, ggc: 0 trim: 0 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 90644, er: 0, cb: 0, gwr: 18911, gcb: 0, ggc: 0 trim: 3 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 136148, er: 0, cb: 0, gwr: 46302, gcb: 0, ggc: 0 trim: 3 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 177366, er: 0, cb: 0, gwr: 62333, gcb: 0, ggc: 0 trim: 3 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 223612, er: 0, cb: 0, gwr: 77589, gcb: 0, ggc: 0 trim: 3 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 251507, er: 0, cb: 0, gwr: 92478, gcb: 0, ggc: 0 trim: 11355 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 297384, er: 0, cb: 0, gwr: 109681, gcb: 0, ggc: 0 trim: 11355 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 347675, er: 0, cb: 0, gwr: 153310, gcb: 0, ggc: 0 trim: 11355 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 392441, er: 0, cb: 0, gwr: 166710, gcb: 0, ggc: 0 trim: 50416 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 445171, er: 0, cb: 0, gwr: 188296, gcb: 0, ggc: 0 trim: 50416 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 480311, er: 0, cb: 0, gwr: 220207, gcb: 0, ggc: 0 trim: 50416 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 527421, er: 0, cb: 0, gwr: 235137, gcb: 0, ggc: 0 trim: 50416 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 575075, er: 0, cb: 0, gwr: 282106, gcb: 0, ggc: 0 trim: 50416 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 617121, er: 0, cb: 0, gwr: 305709, gcb: 0, ggc: 0 trim: 84778 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 660671, er: 0, cb: 0, gwr: 337857, gcb: 0, ggc: 0 trim: 84779 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 712818, er: 0, cb: 0, gwr: 361275, gcb: 0, ggc: 0 trim: 84780 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 756214, er: 0, cb: 0, gwr: 386546, gcb: 0, ggc: 0 trim: 84846 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 807522, er: 0, cb: 0, gwr: 407926, gcb: 0, ggc: 0 trim: 84846 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 0, wr: 0, hwr: 854139, er: 3, cb: 0, gwr: 453267, gcb: 0, ggc: 3 trim: 84846 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 41, wr: 0, hwr: 897999, er: 67, cb: 0, gwr: 470985, gcb: 0, ggc: 26 trim: 92673 mid_salloc: 0 fff_salloc: 0
+
+
+gc: 154, wr: 0, hwr: 941733, er: 577, cb: 0, gwr: 499106, gcb: 0, ggc: 423 trim: 92673 mid_salloc: 0 fff_salloc: 45
+
+
+gc: 346, wr: 0, hwr: 995898, er: 863, cb: 0, gwr: 532410, gcb: 1, ggc: 517 trim: 92673 mid_salloc: 0 fff_salloc: 114
+
+
+gc: 346, wr: 0, hwr: 1032756, er: 1243, cb: 0, gwr: 564695, gcb: 77, ggc: 897 trim: 99479 mid_salloc: 0 fff_salloc: 114
+
+
+gc: 463, wr: 0, hwr: 1075700, er: 1902, cb: 138, gwr: 580615, gcb: 1248, ggc: 1439 trim: 99479 mid_salloc: 0 fff_salloc: 114
+
+
+gc: 596, wr: 0, hwr: 1112775, er: 2253, cb: 653, gwr: 600596, gcb: 2701, ggc: 1657 trim: 103395 mid_salloc: 0 fff_salloc: 114
+
+
+gc: 650, wr: 0, hwr: 1149050, er: 2510, cb: 1114, gwr: 621983, gcb: 3417, ggc: 1860 trim: 103395 mid_salloc: 0 fff_salloc: 463
+
+
+gc: 654, wr: 0, hwr: 1182875, er: 2853, cb: 1119, gwr: 655200, gcb: 4324, ggc: 2199 trim: 103395 mid_salloc: 0 fff_salloc: 463
+
+
+gc: 717, wr: 0, hwr: 1214111, er: 3253, cb: 1322, gwr: 673696, gcb: 5173, ggc: 2536 trim: 137534 mid_salloc: 0 fff_salloc: 572
+
+
+gc: 793, wr: 0, hwr: 1253118, er: 3585, cb: 1910, gwr: 695119, gcb: 7275, ggc: 2792 trim: 137534 mid_salloc: 0 fff_salloc: 1486
+
+
+gc: 801, wr: 0, hwr: 1288296, er: 3783, cb: 1928, gwr: 729561, gcb: 8300, ggc: 2982 trim: 137534 mid_salloc: 0 fff_salloc: 1724
+
+
+gc: 837, wr: 0, hwr: 1319821, er: 4184, cb: 2048, gwr: 756659, gcb: 11349, ggc: 3347 trim: 137665 mid_salloc: 0 fff_salloc: 1823
+
+
+gc: 909, wr: 0, hwr: 1343084, er: 4360, cb: 3184, gwr: 765851, gcb: 13422, ggc: 3451 trim: 137665 mid_salloc: 0 fff_salloc: 2263
+
+
+gc: 1025, wr: 0, hwr: 1368662, er: 4859, cb: 3953, gwr: 770696, gcb: 15270, ggc: 3834 trim: 137665 mid_salloc: 0 fff_salloc: 5793
+
+
+gc: 1125, wr: 0, hwr: 1404642, er: 5110, cb: 4947, gwr: 791408, gcb: 16664, ggc: 3985 trim: 141916 mid_salloc: 0 fff_salloc: 5848
+
+
+gc: 1212, wr: 0, hwr: 1425375, er: 5537, cb: 5306, gwr: 800504, gcb: 20693, ggc: 4325 trim: 141916 mid_salloc: 0 fff_salloc: 6790
+
+
+gc: 1214, wr: 0, hwr: 1445747, er: 5789, cb: 5313, gwr: 820343, gcb: 22551, ggc: 4575 trim: 141916 mid_salloc: 0 fff_salloc: 6854
+
+
+gc: 1235, wr: 0, hwr: 1478239, er: 5889, cb: 5627, gwr: 850136, gcb: 23937, ggc: 4654 trim: 141916 mid_salloc: 0 fff_salloc: 8897
+
+
+gc: 1265, wr: 0, hwr: 1495085, er: 6328, cb: 5793, gwr: 863770, gcb: 25783, ggc: 5063 trim: 141987 mid_salloc: 0 fff_salloc: 8935
+
+
+gc: 1366, wr: 0, hwr: 1523526, er: 6549, cb: 6360, gwr: 874309, gcb: 26839, ggc: 5183 trim: 141987 mid_salloc: 0 fff_salloc: 9417
+
+
+gc: 1437, wr: 0, hwr: 1551918, er: 6672, cb: 7059, gwr: 891673, gcb: 27602, ggc: 5235 trim: 141987 mid_salloc: 0 fff_salloc: 10238
+
+
+gc: 1440, wr: 0, hwr: 1583496, er: 6896, cb: 7062, gwr: 922482, gcb: 28962, ggc: 5456 trim: 141987 mid_salloc: 0 fff_salloc: 10376
+
+
+gc: 1441, wr: 0, hwr: 1615116, er: 7019, cb: 7076, gwr: 953383, gcb: 30062, ggc: 5578 trim: 141987 mid_salloc: 0 fff_salloc: 10434
+
+
+gc: 1509, wr: 0, hwr: 1641172, er: 7234, cb: 8395, gwr: 972203, gcb: 32418, ggc: 5725 trim: 141987 mid_salloc: 0 fff_salloc: 10702
+
+
+gc: 1569, wr: 0, hwr: 1655255, er: 7504, cb: 8852, gwr: 977683, gcb: 35530, ggc: 5935 trim: 141987 mid_salloc: 0 fff_salloc: 10908
+
+
+gc: 1619, wr: 0, hwr: 1674086, er: 7657, cb: 9717, gwr: 987955, gcb: 37931, ggc: 6038 trim: 141987 mid_salloc: 0 fff_salloc: 12045
+
+
+gc: 1619, wr: 0, hwr: 1678202, er: 7753, cb: 9717, gwr: 991718, gcb: 41046, ggc: 6134 trim: 141987 mid_salloc: 0 fff_salloc: 12045
+
+
+gc: 1619, wr: 0, hwr: 1678258, er: 7914, cb: 9717, gwr: 991768, gcb: 45261, ggc: 6295 trim: 148498 mid_salloc: 0 fff_salloc: 12045
+
+
+gc: 1683, wr: 0, hwr: 1686149, er: 8086, cb: 10443, gwr: 992741, gcb: 47940, ggc: 6403 trim: 149011 mid_salloc: 0 fff_salloc: 12045
+
+
+gc: 1689, wr: 0, hwr: 1700662, er: 8295, cb: 10700, gwr: 1005833, gcb: 55303, ggc: 6606 trim: 149011 mid_salloc: 0 fff_salloc: 12162
+
+
+gc: 1694, wr: 0, hwr: 1704831, er: 8395, cb: 10967, gwr: 1009617, gcb: 59377, ggc: 6701 trim: 149011 mid_salloc: 0 fff_salloc: 12178
+
+
+gc: 1700, wr: 0, hwr: 1713118, er: 8471, cb: 11228, gwr: 1017524, gcb: 62656, ggc: 6771 trim: 149011 mid_salloc: 0 fff_salloc: 12333
+
+
+gc: 1710, wr: 0, hwr: 1721366, er: 8518, cb: 11733, gwr: 1025074, gcb: 64193, ggc: 6808 trim: 149011 mid_salloc: 0 fff_salloc: 12545
+
+
+gc: 1721, wr: 0, hwr: 1725515, er: 8641, cb: 12193, gwr: 1028333, gcb: 68601, ggc: 6920 trim: 149011 mid_salloc: 0 fff_salloc: 13102
+
+
+gc: 1751, wr: 0, hwr: 1732742, er: 8781, cb: 13750, gwr: 1033408, gcb: 73671, ggc: 7030 trim: 149011 mid_salloc: 0 fff_salloc: 13119
+
+
+gc: 1754, wr: 0, hwr: 1734442, er: 8878, cb: 13914, gwr: 1034571, gcb: 77520, ggc: 7124 trim: 149011 mid_salloc: 0 fff_salloc: 13248
+
+
+gc: 1754, wr: 0, hwr: 1734482, er: 8968, cb: 13914, gwr: 1034589, gcb: 82045, ggc: 7214 trim: 149011 mid_salloc: 0 fff_salloc: 13265
+
+
+gc: 1761, wr: 0, hwr: 1741269, er: 9010, cb: 14381, gwr: 1040647, gcb: 83770, ggc: 7249 trim: 149011 mid_salloc: 0 fff_salloc: 13298
+
+
+gc: 1838, wr: 0, hwr: 1751543, er: 9214, cb: 18211, gwr: 1041148, gcb: 89266, ggc: 7376 trim: 149011 mid_salloc: 0 fff_salloc: 13821
+
+
+gc: 1888, wr: 0, hwr: 1757560, er: 9426, cb: 20651, gwr: 1042543, gcb: 96812, ggc: 7538 trim: 149011 mid_salloc: 0 fff_salloc: 13963
+
+
+gc: 1948, wr: 0, hwr: 1763553, er: 9514, cb: 22519, gwr: 1043618, gcb: 97921, ggc: 7566 trim: 149011 mid_salloc: 0 fff_salloc: 14168
+
+
+gc: 2005, wr: 0, hwr: 1772603, er: 9603, cb: 24537, gwr: 1045871, gcb: 99524, ggc: 7598 trim: 149011 mid_salloc: 0 fff_salloc: 14439
+
+
+gc: 2035, wr: 0, hwr: 1778359, er: 9720, cb: 24998, gwr: 1048444, gcb: 103001, ggc: 7685 trim: 149011 mid_salloc: 0 fff_salloc: 16142
+
+
+gc: 2084, wr: 0, hwr: 1790178, er: 9797, cb: 26419, gwr: 1053838, gcb: 103827, ggc: 7713 trim: 149011 mid_salloc: 0 fff_salloc: 19955
+
+
+gc: 2099, wr: 0, hwr: 1795071, er: 9872, cb: 26989, gwr: 1056957, gcb: 106598, ggc: 7773 trim: 149011 mid_salloc: 0 fff_salloc: 20586
+
+
