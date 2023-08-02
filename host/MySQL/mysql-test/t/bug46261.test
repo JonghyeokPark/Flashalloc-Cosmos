@@ -1,0 +1,21 @@
+# The include statement below is a temp one for tests that are yet to
+#be ported to run with InnoDB,
+#but needs to be kept for tests that would need MyISAM in future.
+--source include/force_myisam_default.inc
+
+--source include/not_embedded.inc
+--source include/have_example_plugin.inc
+
+--echo #
+--echo # Bug#46261 Plugins can be installed with --skip-grant-tables
+--echo #
+
+--replace_regex /\.dll/.so/
+--error ER_OPTION_PREVENTS_STATEMENT
+eval INSTALL PLUGIN example SONAME '$EXAMPLE_PLUGIN';
+
+--replace_regex /\.dll/.so/
+--error ER_OPTION_PREVENTS_STATEMENT
+eval UNINSTALL PLUGIN example;
+
+--echo End of 5.1 tests

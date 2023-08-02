@@ -1,0 +1,1 @@
+cd /home/csoyee/git/mysql-dwblr-salloc && '/usr/local/bin/cpack' -G TGZ --config CPackConfig.cmake

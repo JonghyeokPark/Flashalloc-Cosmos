@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcsv_embedded.a  CMakeFiles/csv_embedded.dir/ha_tina.cc.o CMakeFiles/csv_embedded.dir/transparent_file.cc.o
+/usr/bin/ranlib libcsv_embedded.a

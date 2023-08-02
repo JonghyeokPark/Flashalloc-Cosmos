@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmysqld.a  CMakeFiles/mysqlserver.dir/mysqlserver_depends.c.o
+/usr/bin/ranlib libmysqld.a

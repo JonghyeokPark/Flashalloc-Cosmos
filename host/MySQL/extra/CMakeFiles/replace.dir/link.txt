@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF   CMakeFiles/replace.dir/replace.c.o  -o replace  -lpthread ../mysys/libmysys.a ../dbug/libdbug.a ../mysys/libmysys.a ../dbug/libdbug.a ../strings/libstrings.a ../zlib/libzlib.a -lm -lpthread 

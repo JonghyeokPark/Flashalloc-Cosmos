@@ -1,0 +1,1 @@
+/usr/bin/g++    -Wall -Wno-unused-parameter -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF    CMakeFiles/my_safe_process.dir/safe_process.cc.o  -o CMakeFiles/CMakeRelink.dir/my_safe_process  -lpthread 

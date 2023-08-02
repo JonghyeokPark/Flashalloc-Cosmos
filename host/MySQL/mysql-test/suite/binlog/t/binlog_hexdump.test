@@ -1,0 +1,11 @@
+# The include statement below is a temp one for tests that are yet to
+#be ported to run with InnoDB,
+#but needs to be kept for tests that would need MyISAM in future.
+--source include/force_myisam_default.inc
+
+#
+# Bug#11747887 - MYSQLBINLOG --HEXDUMP PRINTS LAST ROW OF HEXDUMP
+# 	         INCORRECTLY
+
+--replace_regex s/	Xid = [0-9]*/	Xid = <number>/#
+--exec $MYSQL_BINLOG --hexdump suite/binlog/std_data/bug11747887-bin.000003

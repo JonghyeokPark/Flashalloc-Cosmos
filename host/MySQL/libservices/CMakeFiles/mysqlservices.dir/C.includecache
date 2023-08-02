@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/my_plugin_log_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/my_snprintf_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/my_thread_scheduler_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/mysql_malloc_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/mysql_string_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/thd_alloc_service.c
+service_versions.h
+-
+
+/home/woonhak/workspace/mysql-5.7.2-dblwr/libservices/thd_wait_service.c
+service_versions.h
+-
+
+include/service_versions.h
+

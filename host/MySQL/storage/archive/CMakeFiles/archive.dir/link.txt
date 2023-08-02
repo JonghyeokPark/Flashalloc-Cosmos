@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarchive.a  CMakeFiles/archive.dir/azio.c.o CMakeFiles/archive.dir/ha_archive.cc.o
+/usr/bin/ranlib libarchive.a

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -fPIC   -shared  -o auth_test_plugin.so CMakeFiles/auth_test_plugin.dir/test_plugin.c.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

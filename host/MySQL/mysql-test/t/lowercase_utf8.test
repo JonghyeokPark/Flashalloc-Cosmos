@@ -1,0 +1,14 @@
+# The include statement below is a temp one for tests that are yet to
+#be ported to run with InnoDB,
+#but needs to be kept for tests that would need MyISAM in future.
+--source include/force_myisam_default.inc
+
+#
+# Bug#25830 SHOW TABLE STATUS behaves differently depending on table name
+#
+set names utf8;
+create table `Ö` (id int);
+show tables from test like 'Ö';
+show tables from test like 'ö';
+drop table `Ö`;
+

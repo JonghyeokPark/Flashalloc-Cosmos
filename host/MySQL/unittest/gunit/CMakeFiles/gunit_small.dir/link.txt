@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgunit_small.a  CMakeFiles/gunit_small.dir/gunit_test_main.cc.o CMakeFiles/gunit_small.dir/skip_trailing.cc.o CMakeFiles/gunit_small.dir/tap_event_listener.cc.o CMakeFiles/gunit_small.dir/thread_utils.cc.o
+/usr/bin/ranlib libgunit_small.a

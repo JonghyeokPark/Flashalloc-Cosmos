@@ -1,0 +1,15 @@
+# The include statement below is a temp one for tests that are yet to
+#be ported to run with InnoDB,
+#but needs to be kept for tests that would need MyISAM in future.
+--source include/force_myisam_default.inc
+
+# Requires statement logging
+-- source include/have_binlog_format_statement.inc
+-- source include/master-slave.inc
+let $engine_type=MyISAM;
+-- source extra/rpl_tests/rpl_log.test
+
+
+# End of 4.1 tests
+# Adding comment for force manual merge 5.0 -> wl1012: Delete me
+--source include/rpl_end.inc

@@ -1,0 +1,45 @@
+[mysqld]
+
+# Basic settings
+default-storage-engine  = innodb
+pid-file        = /home/csoyee/back/log3/mysql1.pid
+socket          = /tmp/mysql.sock
+port            = 3306
+datadir         = /home/csoyee/nvme/mysql-data/
+log-error       = /home/csoyee/back/log3/mysql_error.log
+user=root
+
+#file-per-table ON
+innodb_file_per_table=1
+
+# Buffer settings
+innodb_buffer_pool_size=10G
+innodb_buffer_pool_instances=8
+
+# Transaction log settings
+innodb_log_file_size=2G
+innodb_log_files_in_group=3
+innodb_log_buffer_size=32M
+
+# Log group path (iblog0, iblog1)
+innodb_log_group_home_dir=/home/csoyee/back/log3/
+
+# Flush settings
+# 0: every 1 seconds, 1: fsync on commits, 2: writes on commits
+innodb_flush_log_at_trx_commit=0
+innodb_flush_neighbors=0
+innodb_flush_method=O_DIRECT
+
+# Doublewrite buffer ON
+innodb_doublewrite=ON
+
+# Separate DWB 
+innodb_doublewrite_file=/home/csoyee/nvme/stream/dblwr_data.ibd
+innodb_use_streamid=ON  #if this option turned off, then streamid will not be applied
+
+# Asynchronous I/O control
+innodb_use_native_aio=true
+
+# Connection control
+max_connections = 1024
+open_files_limit = 24000

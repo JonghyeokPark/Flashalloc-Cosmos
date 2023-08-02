@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgunit_large.a  CMakeFiles/gunit_large.dir/gunit_test_main_server.cc.o CMakeFiles/gunit_large.dir/test_utils.cc.o CMakeFiles/gunit_large.dir/tap_event_listener.cc.o CMakeFiles/gunit_large.dir/thread_utils.cc.o
+/usr/bin/ranlib libgunit_large.a

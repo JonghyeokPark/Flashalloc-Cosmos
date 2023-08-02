@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wno-unused-parameter -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -fPIC   -shared  -o semisync_master.so CMakeFiles/semisync_master.dir/semisync.cc.o CMakeFiles/semisync_master.dir/semisync_master.cc.o CMakeFiles/semisync_master.dir/semisync_master_plugin.cc.o  -lpthread ../../libservices/libmysqlservices.a -lpthread 

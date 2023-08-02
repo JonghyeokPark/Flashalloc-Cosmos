@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF   CMakeFiles/re.dir/main.c.o CMakeFiles/re.dir/split.c.o CMakeFiles/re.dir/debug.c.o  -o re  -lpthread libregex.a ../strings/libstrings.a ../mysys/libmysys.a ../dbug/libdbug.a ../mysys/libmysys.a ../dbug/libdbug.a ../strings/libstrings.a ../zlib/libzlib.a -lm -lpthread 

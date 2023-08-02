@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgtest.a  CMakeFiles/gtest.dir/__/__/source_downloads/gmock-1.6.0/gtest/src/gtest-all.cc.o
+/usr/bin/ranlib libgtest.a

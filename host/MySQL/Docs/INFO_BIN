@@ -1,0 +1,61 @@
+===== Information about the build process: =====
+Build was run at 2015-12-21 19:45:54 on host 'vldb-desktop'
+
+Build was done on  Linux-4.1.0-rc1+ using x86_64
+Build was done using cmake 2.8.12 
+
+===== Compiler flags used (from the 'sql/' subdirectory): =====
+# compile C with /usr/bin/gcc
+# compile CXX with /usr/bin/g++
+C_FLAGS =  -Wall -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -I/home/woonhak/workspace/mysql-5.7.2-dblwr/include -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql/conn_handler -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql/auth -I/home/woonhak/workspace/mysql-5.7.2-dblwr/regex -I/home/woonhak/workspace/mysql-5.7.2-dblwr/zlib -I/home/woonhak/workspace/mysql-5.7.2-dblwr/extra/yassl/include -I/home/woonhak/workspace/mysql-5.7.2-dblwr/extra/yassl/taocrypt/include    -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED
+C_DEFINES = -DHAVE_CONFIG_H -DHAVE_REPLICATION -DMYSQL_SERVER
+CXX_FLAGS =  -Wall -Wno-unused-parameter -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -I/home/woonhak/workspace/mysql-5.7.2-dblwr/include -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql/conn_handler -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql -I/home/woonhak/workspace/mysql-5.7.2-dblwr/sql/auth -I/home/woonhak/workspace/mysql-5.7.2-dblwr/regex -I/home/woonhak/workspace/mysql-5.7.2-dblwr/zlib -I/home/woonhak/workspace/mysql-5.7.2-dblwr/extra/yassl/include -I/home/woonhak/workspace/mysql-5.7.2-dblwr/extra/yassl/taocrypt/include    -DHAVE_YASSL -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED
+CXX_DEFINES = -DHAVE_CONFIG_H -DHAVE_REPLICATION -DMYSQL_SERVER
+
+Pointer size: 8
+
+===== Feature flags used: =====
+-- Cache values
+CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+CMAKE_INSTALL_PREFIX:PATH=/home/woonhak/bin/mysql
+COMMUNITY_BUILD:BOOL=ON
+ENABLED_PROFILING:BOOL=ON
+ENABLE_DEBUG_SYNC:BOOL=ON
+ENABLE_DOWNLOADS:BOOL=1
+ENABLE_GCOV:BOOL=OFF
+ENABLE_GPROF:BOOL=OFF
+ENABLE_MEMCACHED_SASL:BOOL=OFF
+ENABLE_MEMCACHED_SASL_PWDB:BOOL=OFF
+FEATURE_SET:STRING=community
+INSTALL_LAYOUT:STRING=STANDALONE
+MERGE_UNITTESTS:BOOL=ON
+MUTEXTYPE:STRING=event
+MYSQL_DATADIR:PATH=/home/woonhak/bin/data
+MYSQL_MAINTAINER_MODE:BOOL=OFF
+OPTIMIZER_TRACE:BOOL=ON
+WITH_ARCHIVE_STORAGE_ENGINE:BOOL=ON
+WITH_BLACKHOLE_STORAGE_ENGINE:BOOL=ON
+WITH_CLIENT_PROTOCOL_TRACING:BOOL=ON
+WITH_DEBUG:BOOL=OFF
+WITH_DEFAULT_COMPILER_OPTIONS:BOOL=ON
+WITH_DEFAULT_FEATURE_SET:BOOL=ON
+WITH_EDITLINE:STRING=bundled
+WITH_EMBEDDED_SERVER:BOOL=ON
+WITH_EXAMPLE_STORAGE_ENGINE:BOOL=OFF
+WITH_EXTRA_CHARSETS:STRING=all
+WITH_FEDERATED_STORAGE_ENGINE:BOOL=ON
+WITH_INNOBASE_STORAGE_ENGINE:BOOL=ON
+WITH_INNODB_EXTRA_DEBUG:BOOL=OFF
+WITH_INNODB_MEMCACHED:BOOL=OFF
+WITH_LIBEVENT:STRING=bundled
+WITH_LIBWRAP:BOOL=OFF
+WITH_PARTITION_STORAGE_ENGINE:BOOL=ON
+WITH_PERFSCHEMA_STORAGE_ENGINE:BOOL=ON
+WITH_PIC:BOOL=OFF
+WITH_SSL:STRING=bundled
+WITH_TEST_TRACE_PLUGIN:BOOL=OFF
+WITH_UNIT_TESTS:BOOL=ON
+WITH_VALGRIND:BOOL=OFF
+WITH_ZLIB:STRING=bundled
+
+===== EOF =====
