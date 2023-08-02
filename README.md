@@ -37,7 +37,8 @@ Second, You need the software tools and files
 ## Project Structure
 - `Flashalloc` is Cosmos+ OpenSSD firmware source code which implements the Flashalloc interface for flash storages
 - `Multistream` is multi-stream prototype for Cosmos+ OpenSSD supporting eight stream-ids
-- `host` is very simple host application example for testing a flashalloc command
+- `host` incorporates the implementation of both RocksDB and MySQL, utilized for evaluation in our paper. 
+It also includes a simple host application example to test the flashalloc command.
 -  More details are illustrated in our paper.
 
 ## Build
@@ -69,6 +70,97 @@ sudo ./playground /dev/nvmeXXX 0 32
 - `0` start LBA (4KiB-based offset)
 - `32` LBA length
   
+## Running the Experiments
+
+### RocksDB
+
+1. Build
+
+- Build the RocksDB database engine for both flashalloc or multi-streame ssd version
+- You can also build the vanilla version of Rocksdb using `bash ./scripts/build.sh` command
+
+```
+
+cd host/RocksDB/rocksdb-{flashalloc | msssd}
+bash ./scripts/build.sh cosmos
+
+```
+
+2. Configure File system
+
+- You can mount either EXT4 or F2FS filesystem with TRIM support on top of Cosmos+ OpenSSD
+
+```
+# EXT4 Filesystem
+bash ./scripts/setup-ext4-trim.sh
+
+# F2FS Filesystem
+bash ./scripts/setup-f2fs-trim.sh
+```
+
+3. Run `db_bench` wiht 4 tenants
+
+```
+# FlashAlloc version
+bash ./scripts/run_flashalloc.sh
+
+# Vanilla version
+bash ./scripts/run_vanilla.sh
+
+# Multi-stream SSD version
+bash ./scripts/run_msssd.sh
+```
+
+4. Run `db_bench` wiht single tenants
+
+```
+# FlashAlloc version
+bash ./scripts/falloc-single.sh
+
+# Multi-stream SSD version
+bash ./scripts/msssd-single.sh
+```
+
+### MySQL
+
+1. Build
+```
+cd hsot/MySQL
+bash ./build.sh
+```
+
+2. Initialize data directory
+
+```
+bash init.sh
+```
+
+3. Run MySQL server
+
+```
+bash ./run.sh
+```
+
+4. Run TPC-C Benchmark
+
+- You can also modify the configuration for TPC-C Benchmark (e.g., # of clients, wrapup time, duration, and etc)
+- To run the either vanilla or multi-stream ssd version, you can execute `run.sh` script.
+
+```
+cd host/tpcc-mysql
+bash ./run-flashalloc.sh
+```
+
+### Multi-tenant
+
+- In this experiment, you can evaluate the multi-tenant configuration.
+```
+# configure the filesystem and data directory for TPC-C and db_bench
+bash ./setup-multi.sh
+
+# run multi-tenant experiments
+bash run-multi.sh
+```
 
 ## Refercnes
 All guide document for Cosmos+ OpenSSD is provided by [Cosmos Open SSD Project](https://github.com/Cosmos-OpenSSD/Cosmos-OpenSSD/tree/master).
