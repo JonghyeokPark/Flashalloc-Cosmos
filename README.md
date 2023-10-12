@@ -20,7 +20,7 @@ FPGA: Xilinx XC7Z045-3FFG900 Zynq-7000
 - NEON DSP co-processor for each core
 - 350K LCs
 
-1GB DDR3 NAND Modules
+1GB DDR3 DRAM Modules
 1 SD CARD Slot
 Dual PCIe Gen2 x8 End-Points (Cabled PCIe Interface)
 1 Gigabit Ethernet Interface
